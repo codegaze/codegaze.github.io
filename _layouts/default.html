@@ -11,20 +11,7 @@
           <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
           <small>{{ site.tagline }}</small>
         </h3>
-        <nav>
-    <ul>
-    {% for link in site.data.navigation %}
-
-        {% assign current = nil %}
-        {% if page.url contains link.url %}
-            {% assign current = 'current' %}
-        {% endif %}
-        <li class="element {% if forloop.first %}first{% endif %} {{ current }} {% if forloop.last %}last{% endif %}">
-            <a href="{{ link.url }}">{{ link.title }}</a>
-        </li>
-    {% endfor %}
-    </ul>
-</nav>
+        {% include menu.html %}
       </header>
 
       <main>
@@ -33,7 +20,7 @@
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
+          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved. <a href="https://www.twitter.com/codegaze">@codegaze</a> mail: codegaze @ gmail
         </small>
       </footer>
     </div>

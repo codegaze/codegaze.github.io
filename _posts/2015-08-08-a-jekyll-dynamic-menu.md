@@ -1,25 +1,48 @@
 ---
 layout: post
-title: A Dynamic Jekyll Menu
+title: Dynamic navigation for Jekyll
+keywords: jekyll, menu, dynamic menu, ruby, static site
+description: How to create a dynamic navigation menu in jekyll
 ---
-`​``yml
+
+This is a tutorial on how to create a simple dynamic menu for [Jekyll](https://github.com/jekyll/jekyll).
+
+Jekyll is great for static sites, but if you are lazy like me you want to add some scripts here and there to make your life easier.
+
+Jekyll uses the _data folder to create dynamic data with the use of .yml files.
+You can name the file however you want but keep in mind that we are going to use it to retrieve the data with site.data.file_name.
+
+First of all you need to check if there is a _data folder in your project folder. If not we must create it and add a navigation.yml file in with this data:
+
+{% highlight yaml %}
+
 - title: Home
-  url: /index.html
-``​`
+  url: /
+- title: Blog
+  url: /blog/
+- title: About
+  url: /about/  
 
-Jekyll is great for static things, but if you are lazy like me you want to add some scripts here and there to make your life easier.
-
-{% highlight ruby %}
-{% for i in (1..10) %}
-
-    Don't repeat yourself!
-{% endfor %}
 {% endhighlight %}
 
-What you need to know when creating dynamic stuff with jekyll is that you need to create a _data folder if there isn't one in your working folder and add your yml file.
+Next add this script to your default.html in your _layout folder or create a menu.html file in your _include folder.
 
-[Jekyll](http://jekyllrb.com) is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From [the project's readme](https://github.com/jekyll/jekyll/blob/master/README.markdown):
 
-> Jekyll is a simple, blog aware, static site generator. It takes a template directory [...] and spits out a complete, static website suitable for serving with Apache or your favorite web server. This is also the engine behind GitHub Pages, which you can use to host your project’s page or blog right here from GitHub.
+{% highlight html %}
 
-It's an immensely useful tool. Find out more by [visiting the project on GitHub](https://github.com/jekyll/jekyll).
+<nav>
+    <ul>
+    {% for link in site.data.navigation %}
+
+        {% assign current = nil %}
+        {% if page.url contains link.url %}
+            {% assign current = 'active' %}
+        {% endif %}
+        <li class="{{ current }}">
+            <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+</nav>
+
+{% endhighlight %}

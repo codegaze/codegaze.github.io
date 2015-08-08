@@ -10,6 +10,7 @@ tagline:             Thanos K
 url:                 http://codegaze.github.io
 paginate:            1
 baseurl:             ""
+
 highlighter:         pygments
 # Assets
 #
