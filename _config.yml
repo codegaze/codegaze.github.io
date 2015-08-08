@@ -5,12 +5,12 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Thanos K
-tagline:             Test A Jekyll Blog
-url:                 http://getpoole.com
+title:               Codegaze
+tagline:             Thanos K
+url:                 http://codegaze.github.io
 paginate:            1
 baseurl:             ""
-
+highlighter:         rouge
 # Assets
 #
 # We specify the directory for Jekyll so we can use @imports.
@@ -18,13 +18,14 @@ sass:
   sass_dir:          _sass
   style:            :compressed
 
-# About/contact
-author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+# # About/contact
+# author:
+#   name:              Mark Otto
+#   url:               https://twitter.com/mdo
+#   email:             markdotto@gmail.com
 
 # Custom vars
 version:             1.0.0
 github:
   repo:              https://github.com/poole/poole
+
