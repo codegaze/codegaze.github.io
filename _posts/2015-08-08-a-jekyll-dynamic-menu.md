@@ -9,7 +9,11 @@ title: A Dynamic Jekyll Menu
 
 Jekyll is great for static things, but if you are lazy like me you want to add some scripts here and there to make your life easier.
 
-
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
 
 What you need to know when creating dynamic stuff with jekyll is that you need to create a _data folder if there isn't one in your working folder and add your yml file.
 
