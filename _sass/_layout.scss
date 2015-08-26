@@ -68,7 +68,7 @@
   &__link {
     padding: 10px;
     h3{ 
-      color: #F1654C;
+      color: $base-color-delta;
     }
     height: 100%;
     width: 100%;
@@ -84,7 +84,7 @@
       h3{
         color: #fff;
       }
-      background: #F1654C;
+      background: $base-color-delta;
       color:#fff;
       .post-date{
         color: #F69988;
