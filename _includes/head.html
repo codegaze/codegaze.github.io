@@ -7,11 +7,6 @@
   <meta name="keywords" content="{{ page.keywords }}">
   <meta name="description" content="{{ page.description }}">
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.7/styles/zenburn.min.css">
-  <script src="//cdn.jsdelivr.net/highlight.js/8.7/highlight.min.js"></script>
-  
-  
-  <script>hljs.initHighlightingOnLoad();</script>
   <title>
     {% if page.title == "Home" %}
       {{ site.title }} &middot; {{ site.tagline }}
@@ -19,12 +14,6 @@
       {{ page.title }} &middot; {{ site.title }}
     {% endif %}
   </title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
-
-  <!-- Icons -->
-
 
   <!-- RSS -->
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml">
