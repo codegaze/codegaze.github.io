@@ -17,12 +17,14 @@
 // Designed, built, and released under MIT license by @mdo. Learn more at
 // https://github.com/poole/poole.
 
+// Changed by @codegaze
+
+@import "variables";
+@import "mixins";
 @import "base";
 @import "type";
-@import "syntax";
-@import "code";
 @import "layout";
-@import "masthead";
+@import "header";
 @import "posts";
 @import "pagination";
 @import "message";

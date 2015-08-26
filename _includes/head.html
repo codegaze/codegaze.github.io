@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <meta name="keywords" content="{{ page.keywords }}">
   <meta name="description" content="{{ page.description }}">
-  <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.7/styles/zenburn.min.css">
+  <script src="//cdn.jsdelivr.net/highlight.js/8.7/highlight.min.js"></script>
+  
+  
+  <script>hljs.initHighlightingOnLoad();</script>
   <title>
     {% if page.title == "Home" %}
       {{ site.title }} &middot; {{ site.tagline }}

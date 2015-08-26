@@ -1,0 +1,56 @@
+.header {
+  
+  &--main {
+    @include cf();  
+    height: 60px;
+    max-width: 100%;
+    margin-left:  auto;
+    margin-right: auto;
+
+    @media (min-width: 960px) {
+      width: 960px;
+    }
+  }
+  &__title {
+    display: inline-block;
+    float: left;
+    padding: 17px 0;
+    margin: 0;
+    a{
+      color: #fff;
+    }
+    small {
+      font-weight: 300;
+    }
+  }
+  &__handler-more {
+
+    float:right;
+    float: right;
+    padding: 18px 0 0;
+    background-color: #fff;
+    height: 60px;
+
+    &-link {
+      font-size: 1em;
+      padding: 0 10px;
+      border-radius: 4px;
+      color: $base-color-beta;
+
+      &:hover{
+        text-decoration: none;
+        background: #fff;
+        color: $base-color-beta;
+      }
+    }
+  }
+  &__more-articles {
+    @include cf();
+    margin-left:  auto;
+    margin-right: auto;
+    @media (min-width: 960px) {
+      width: 960px;
+    }
+
+  }
+}

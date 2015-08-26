@@ -11,6 +11,8 @@ url:                 http://codegaze.github.io
 paginate:            1
 baseurl:             ""
 
+
+
 highlighter:         pygments
 # Assets
 #
@@ -18,17 +20,3 @@ highlighter:         pygments
 sass:
   sass_dir:          _sass
   style:            :compressed
-
-# # About/contact
-# author:
-#   name:              Mark Otto
-#   url:               https://twitter.com/mdo
-#   email:             markdotto@gmail.com
-
-# # Custom vars
-# version:             1.0.0
-# github:
-#   repo:              https://github.com/poole/poole
-
-gems:
-  - jekyll-sitemap

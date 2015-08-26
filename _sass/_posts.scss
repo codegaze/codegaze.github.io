@@ -5,7 +5,20 @@
 
 .page,
 .post {
+  max-width: 38em;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 4em;
+  font-weight: 300;
+  a{
+    color: $base-color-beta;
+    font-weight: 700;
+    &:hover {
+      text-decoration: none;
+      background: $base-color-beta;
+      color: #fff;
+    }
+  }
 }
 
 // Blog post or page title

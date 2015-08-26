@@ -4,6 +4,7 @@ title: Highlight ruby code in Jekyll
 keywords: jekyll, highlight, codegaze, ruby, static site, jekyll problem
 description: How to overcome problems with highlighting ruby code in Jekyll
 header_img: highlighting_ruby.jpg
+post_description: A few days ago I was trying to write a tutorial about creating a simple dynamic menu for Jekyll and I came across a strange problem while I was trying to show and highlight some ruby code.
 ---
 
 A few days ago I was trying to write a [tutorial](https://codegaze.github.io/2015/08/08/how-to-create-a-dynamic-navigation-menu-in-jekyll/){:target="_blank"} about creating a simple dynamic menu for Jekyll and I came across a strange problem while I was trying to show and highlight some ruby code.
@@ -21,7 +22,7 @@ Allows output of Liquid code on a page without being parsed.
 
 That means that if you use the following code(without the spaces between the curly brackets and %) after the highlight tag you can achieve the preferred result.
 
-{% highlight html %}
+{% highlight ruby %}
 
 { % highlight python % }
 { % raw % }
@@ -36,7 +37,7 @@ That means that if you use the following code(without the spaces between the cur
 
 results to: 
 
-{% highlight html %}
+{% highlight ruby %}
 {% raw %}
 {% if page.title == 'Highlight ruby code in Jekyll' %}
   You are right!

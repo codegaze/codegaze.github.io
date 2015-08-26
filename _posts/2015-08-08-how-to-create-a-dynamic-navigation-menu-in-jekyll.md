@@ -4,6 +4,7 @@ title: Dynamic navigation for Jekyll
 keywords: jekyll, menu, dynamic menu, ruby, static site
 description: How to create a dynamic navigation menu in Jekyll
 header_img: dynamic_menu.jpg
+post_description: This is a tutorial on how to create a simple dynamic menu for Jekyll
 ---
 
 This is a tutorial on how to create a simple dynamic menu for [Jekyll](https://github.com/jekyll/jekyll).

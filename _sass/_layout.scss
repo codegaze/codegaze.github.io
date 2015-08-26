@@ -2,14 +2,115 @@
 //
 // Styles for managing the structural hierarchy of the site.
 
-.container {
-  max-width: 38rem;
-  padding-left:  1.5rem;
-  padding-right: 1.5rem;
-  margin-left:  auto;
-  margin-right: auto;
+.layout {
+  &__row {
+    max-width: 100%;
+    padding-left:  1.5rem;
+    padding-right: 1.5rem;
+    margin-left:  auto;
+    margin-right: auto;
+    @media (min-width: 960px) {
+      width: 960px;
+    }
+    &--main {
+      margin-top: $base-gutter * 4;
+    }
+    &--header {
+      z-index: 20;
+      width: 100%;
+      background: $base-color-beta;
+      position: relative;
+    }
+    &--more-articles {
+      padding-top: $base-gutter;
+      position: relative;
+      z-index:0;
+      width: 100%;
+//     background-color: #8EE2E8;
+//     background-image: -webkit-linear-gradient(85deg, #4cd2da, #4cd2da 79%, #5adae2 50%, #5adae2 100%);
+//     background-image: -o-linear-gradient(85deg, #4cd2da, #4cd2da 79%, #5adae2 50%, #5adae2 100%);
+//     background-image: -moz-linear-gradient(6deg, #4cd2da, #4cd2da 79%, #5adae2 50%, #5adae2 100%);
+//     background-image: linear-gradient(6deg, #4cd2da, #4cd2da 79%, #5adae2 50%, #5adae2 100%);
+//     -webkit-transition: all .7s ease-out;
+//     -moz-transition: all .7s ease-out;
+//     -ms-transition: all .7s ease-out;
+//     -o-transition: all .7s ease-out;
+//     transition: all .7s ease-out;
+// -webkit-box-shadow: 0px 7px 16px -8px rgba(0,0,0,0.75);
+// -moz-box-shadow: 0px 7px 16px -8px rgba(0,0,0,0.75);
+// box-shadow: 0px 7px 16px -8px rgba(0,0,0,0.75);
+    }
+  }
+}
+
+.posts {
+  
+}
+
+.posts-grid {
+
+  display: inline-flex;
+  flex-direction: column;
+  @media (min-width: 30em ){
+    flex-direction: row;
+  }
+  &__item {
+  @media (min-width: 30em ){
+    margin: 5px;
+  }
+    display: inline-block;
+
+
+  }
+  &__summary {
+    font-weight: 300;
+  }
+  &__link {
+    padding: 10px;
+    h3{ 
+      color: #F1654C;
+    }
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    -webkit-transition: all 0.25s 0s ease;
+            transition: all 0.25s 0s ease;
+    &:hover {
+    height: 100%;
+    width: 100%;
+    display: block;
+      text-decoration: none;
+      h3{
+        color: #fff;
+      }
+      background: #F1654C;
+      color:#fff;
+      .post-date{
+        color: #F69988;
+      }
+    
+    }
+  }
 }
 
 footer {
   margin-bottom: 2rem;
 }
+
+.is-hidden { 
+  
+ margin-top:-140px;
+}
+
+
+    // &:hover {
+    //   background: #F1654C;
+    //   color: #fff;
+    //   a{ 
+    //     color: #fff;
+    //   }
+    //   .post-date{
+    //     color: #F69988;
+    //   }
+    // }
