@@ -13,13 +13,14 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+
 }
 
 html {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: 1.5;
-
+  overflow-y: scroll;
   @media (min-width: 38em) {
     font-size: 18px;
   }
