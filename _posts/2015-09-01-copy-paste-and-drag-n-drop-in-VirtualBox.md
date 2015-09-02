@@ -18,7 +18,7 @@ First of all I want to say that I am using VirtualBox 5.0.2 and a Xubuntu 15.04 
 
 ### Installing the Guest Additions
 
-In order to enable any interaction between the host and the machine and vise verca we need to install the Guest Additions.
+In order to enable any interaction between the host and the machine and vise versa we need to install the Guest Additions.
 
 1. Run ```sudo apt-get update```
 2. Run ```sudo apt-get upgrade```
@@ -41,7 +41,7 @@ In order to enable any interaction between the host and the machine and vise ver
 
 ### Create a shared folder
 
-For my configuration drag 'n' drop didn't work in any folder and raised an error wich suspended my machine. So I created a shared folder and used this to share any files I wanted.
+For my configuration drag 'n' drop didn't work in any folder and raised an error which suspended my machine. So I created a shared folder and used this to share any files I wanted.
 
 1. Go to your VirtualBox Manager select your machine and click settings.
 2. Select ```Shared Folders``` and add the folder you want to share between the host and the guest.
