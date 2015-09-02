@@ -57,4 +57,4 @@ In order to give your user access to any shared folder run
 Log off and on again. Your shared folders will be in ```/media/```
 
 - - -
-If I find a solution for the drag 'n' drop part I will make another post or add the solution here. If anyone has a valid solution for this feel free to comment!
+If I find a anything for the drag 'n' drop part I will make another post or add the solution here. If anyone has a valid solution for this feel free to comment!
