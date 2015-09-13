@@ -1,16 +1,22 @@
 ---
 layout: post
-title: How to catch user key strokes without a library
+title: How to capture user keystrokes without a library
 keywords: javascript, vanilla, keystroke, keycode, keypress, codegaze, no jquery
-description: How to catch user key strokes without a library with a few lines of code
+description: How to capture user keystrokes without a library but a few lines of code
 post_description: These days I am in the mood for ditching big libraries.
 ---
 
 These days I am in the mood for ditching big libraries and having my own mini libraries or a few lines of code only for using the things I need.
 
-An example I came accross will I was reading the [http://webtypography.net/](http://webtypography.net/){:target="_blank"} site — it's great, give it a try — was using keys to navigate through artiles. I know, I am a lazy person, but I miss this when I read tutorials with page sections or a book like site. It's a small script and won't affect the no javascript users.
+It's not that I don't like the libraries we have, it's that sometimes I just want to have only the things I need for my project. 
 
-Let's start by creating a function that catches keystrokes. After we include this in a script, the browser will execute this function for every key press.
+*Why should I map all the keys if I just want two or three of them?*
+
+Enough with the developers guilt that loves abstraction layers. Let's proceed with our script.
+
+An example I came accross while I was reading the [http://webtypography.net/](http://webtypography.net/){:target="_blank"} site — it's great, give it a try — was using keys to navigate through artiles. I know, I am a lazy person, but I miss this when I read tutorials with page sections or a book like site. It's a small script and won't affect the no javascript users.
+
+Let's start by creating a function that captures keystrokes. After we include this in a script, the browser will execute this function for every key press.
 
 {% highlight javascript %}
 document.onkeydown = function (e) {
@@ -18,7 +24,7 @@ document.onkeydown = function (e) {
 };
 {% endhighlight %}
 
-If you use this function in your document, for every key stroke the browser will log `I stroke a key`.
+If you use this function in your document, for every keystroke the browser will log `I stroke a key`.
 The ```e``` parameter is the event itself that is going to give us the unicode character of the key we pressed.
 
 Now we need to tell this function what to do when a specific key is pressed. In this case we need to map the right and left arrow key to send us to the next page or previous page.
