@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <style>
+    html {
+      box-sizing: border-box;
+      line-height: 1.5em;
+      font-size: 14px;
+      font-family: "Verdana";
+    }
+
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    .form-element {
+      width: 50%;
+      margin: 0 auto;
+    }
+    .form-elemet__input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px;
+
+
+    }
+    .button {
+      display: inline-block;
+      padding: 10px;
+      margin: 10px;
+      background: #333;
+      color: #fff;
+      text-decoration: none;
+    }
+    .multiple {
+      height: 130px;
+    }
+    h1{
+      padding: 10px;
+    }
+  </style>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+  <div class="form-element">
+    <h1>Lets try a form filter and click the button</h1>
+    <form id="form_to_serialize">
+      
+      <input type="text" id="text_value" name="text_value" class="form-elemet__input">
+      
+      <select id="select_value" class="form-elemet__input" name="select_value">
+        <option value="selected_1">Pick me 1!</option>
+        <option value="selected_2">Pick me 2!</option>
+        <option value="selected_3">Pick me 3!</option> 
+      </select>
+
+
+
+    </form>
+
+    <a href="page2.html" class="button">Click me after you select something</a>
+  </div>
+  <script>
+
+    
+    var selectBox = document.getElementById('select_value'),
+        textBox = document.getElementById('text_value');
+
+    textBox.onkeyup = function() {
+      setBrowserHistory(serializeForm());
+    }
+    selectBox.onchange = function() {
+      setBrowserHistory(serializeForm()); 
+    }  
+
+    function setBrowserHistory(url) {
+      history.pushState(null, null, "?" + url);
+    }
+    function serializeForm() {
+     return $('#form_to_serialize').serialize();
+    }
+
+    function deserializeForm() {
+        var qString = document.location.search;
+
+        if (qString != "") {
+          var parameters = qString.replace("?","").split("&");
+          for (var i = 0;i < parameters.length; i++) {
+            var parameter = parameters[i].split("=");
+            $("#" + parameter[0]).val(parameter[1]);
+          }
+        }
+        
+    }
+
+    $(document).ready(function(){
+      deserializeForm();  
+    })
+    
+  </script>
+  
+</body>
+</html>
