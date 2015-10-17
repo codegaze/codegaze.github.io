@@ -3,33 +3,18 @@ layout: default
 title: Home
 ---
 
-
-  
-  {% assign post_counter = 0 %}
-
-  {% for post in site.posts %}
-    {% if post_counter == 0 %}
-      <section class="posts-grid">
-    {% endif %}
-        <article class="posts-grid__item">
-        <a href="{{ site.baseurl }}{{ post.url }}" class="posts-grid__link">
-      <!--     <img src="{{ site.baseurl }}/public/{{ post.header_img }}" border="0"> -->
-          <h3 class="posts-grid__item-title">
-            
-              {{ post.title }}
-            
-          </h3>
-          <p class="posts-grid__summary">{{ post.post_description }}</p>
-          <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-          </a>
-        </article>
-    {% if post_counter == 2 %}
-      {% assign post_counter = 0 %} 
-      </section>
-    {% else %}
-      {% assign post_counter = post_counter | plus:1 %} 
-    {% endif %}
-    
-  {% endfor %}
+<section class="posts-grid">
+{% for post in site.posts %}
+  <article class="posts-grid__item">
+    <a href="{{ site.baseurl }}{{ post.url }}" class="posts-grid__link">
+    <h3 class="posts-grid__item-title">
+      {{ post.title }}
+    </h3>
+    <p class="posts-grid__summary">{{ post.post_description }}</p>
+      <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+    </a>
+  </article>
+{% endfor %}
+</section>
 
 
