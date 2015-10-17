@@ -4,6 +4,7 @@ title: Create custom description for your Jekyll posts
 keywords: jekyll, custom excerpt, custom description, codegaze, ruby, static site
 description: Creating a custom description for your Jekyll posts
 post_description: Learn how to create a custom description/excerpt for your Jekyll blog posts
+keywords: Jekyll 
 ---
 
 There are two ways to create a description from your post, the first one is use the existing ```post.excerpt``` tag Jekyll has after reading [Jekyll documentation](https://jekyllrb.com/docs/posts/#post-excerpts) or create your own with some simple steps.

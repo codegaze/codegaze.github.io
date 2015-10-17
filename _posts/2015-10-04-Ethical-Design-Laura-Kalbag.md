@@ -4,6 +4,7 @@ title: Laura Kalbag – Ethical Design @ Frontendconf Zürich
 keywords: Laura Kalbag, ethical design, frontend Conf, Zurich, codegaze
 description: A very nice talk about ethical design fron Layra Laura Kalbag
 post_description: A very nice talk about ethical design fron Layra Laura Kalbag.
+keywords: Design,Talk
 ---
 
 I always love this kind of talks about the ethical responsibilities we have. 

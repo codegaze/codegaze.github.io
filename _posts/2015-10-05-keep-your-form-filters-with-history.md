@@ -4,6 +4,7 @@ title: Browser history API
 keywords: javascript, browser history, frontend, codegaze, forms
 description: Keep your form selections with the help of browser history API
 post_description: Keep your form selections with the help of browser history API.
+keywords: Javascript,API
 ---
 
 This is a simple tutorial about using browsers' history API to keep your form selections.

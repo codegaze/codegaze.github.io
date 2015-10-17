@@ -4,6 +4,7 @@ title: Vanilla Javascript Selectors
 keywords: javascript, vanilla, selectors, jquery, zepto, codegaze, no jquery
 description: How to select dom elements with vanilla javascript.
 post_description: How to select dom elements with vanilla javascript.
+keywords: Javascript
 ---
 
 Everytime I start a new project I try to evaluate my needs for javascript and decide if I am going to use any third party library or not.

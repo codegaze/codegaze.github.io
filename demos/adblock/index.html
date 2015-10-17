@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Codegaze - Have you ad blocked anything?</title>
+</head>
+<body>
+<iframe width="300" height="100" src="ads.html" frameborder="0" allowfullscreen class="fake_service" id="fake_service"></iframe>
+<div class="error-msg hidden" id="error_msg">
+    <div class="error-msg__info">
+      <div class="info__letter">i</div>
+      <div class="info__text">
+        <p>If your are seeing this message means that you have an ad blocker installed!</p>
+        <p>Please disable it and refresh the page or follow this <a href="#">link</a> to continue to our 3d party service!</p>
+      </div>
+    </div>
+</div>
+<style>
+
+</style>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+
+  setTimeout(function() {checkAdBlocker('fake_service', 'error_msg'); }, 1000);
+
+</script>
+</body>
+</html>

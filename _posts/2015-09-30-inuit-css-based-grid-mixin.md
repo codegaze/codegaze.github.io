@@ -4,6 +4,7 @@ title: BEMIT CSS based grid mixin
 keywords: BEMIT, css, csswizardry, sass, codegaze, bem
 description: Create a grid based on a Harry Roberts' article
 post_description: Create a grid based on a Harry Roberts' article.
+keywords: CSS,SASS,BEM
 ---
 
 After reading [this](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) article from [@csswizardry](https://twitter.com/csswizardry) about taking the BEM naming a step further I wanted to create as simple mixin to build grid classes with this pattern ```u-1/3@md```.

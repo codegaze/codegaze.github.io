@@ -4,6 +4,7 @@ title: How to capture user keystrokes with vanilla javascript
 keywords: javascript, vanilla, keystroke, keycode, keypress, codegaze, no jquery
 description: How to capture user keystrokes with a few lines of javascript code
 post_description: These days I am in the mood for ditching big libraries.
+keywords: Javascript
 ---
 
 These days I am in the mood for ditching big libraries and having my own mini libraries or a few lines of code only for using the things I need.

@@ -4,6 +4,7 @@ title: Swiper-JW Player
 keywords: javascript, jwplayer, swiper, idangerous, plugin
 description: Swiper-JW Player - A plugin to extend Swiper for easier JW Player integration
 post_description: A plugin to extend Swiper for easier JW Player integration.
+keywords: Javascript,JW Player,Plugin 
 ---
 
 [Swiper-JW Player](https://github.com/codegaze/Swiper-JWPlayer) is a very small plugin that extends iDangero.us [Swiper](http://www.idangero.us/swiper/) to avoid setting up the configuration for stopping [JW Player](http://www.jwplayer.com/) videos between slide navigation in each Swiper instance. 
