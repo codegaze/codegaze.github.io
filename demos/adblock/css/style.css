@@ -36,3 +36,13 @@
     margin-bottom: 10px;
   }
   .hidden { display: none;}
+
+  .button {
+    width: 300px;
+    padding: 10px;
+    background: #000;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+  }
