@@ -49,16 +49,18 @@
 
 .posts-grid {
 
-  display: inline-flex;
-  flex-direction: column;
-  @media (min-width: 30em ){
+  display: flex;
+  // flex-direction: column;
+  // @media (min-width: 30em ){
+    flex-wrap: wrap;
     flex-direction: row;
-  }
+  // }
   &__item {
-  @media (min-width: 30em ){
-    margin: 5px;
-  }
-    display: inline-block;
+    @media (min-width: 30em ){
+     // margin: 5px;
+    }
+    // flex: 1;
+    width: 33%;
 
 
   }

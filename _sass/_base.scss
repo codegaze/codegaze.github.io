@@ -22,7 +22,7 @@ html {
   line-height: 1.5;
   overflow-y: scroll;
   @media (min-width: 38em) {
-    font-size: 18px;
+    font-size: 20px;
   }
 
 }
@@ -87,4 +87,12 @@ th {
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
+}
+.highlight {
+  font-size: 16px;
+}
+code {
+    color: #F1654C;
+    background-color: #f9f2f4;
+    border-radius: 4px;
 }
