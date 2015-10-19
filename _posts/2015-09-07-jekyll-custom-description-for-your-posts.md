@@ -27,3 +27,15 @@ and in my default.html or any other place I want to use it instead of ```post.ex
 You can use these page values anywhere you want. For instance I am using this for creating meta tags for description and keywords in my ```<head>``` tag. You can take a peak in my [github repository](https://github.com/codegaze/codegaze.github.io) for this site. 
 
 You can add and image for your facebook og tags or anything else you can think of. 
+
+**Update:** As Emilio Lopez correctly mentioned in the [comments](http://codegaze.github.io/2015/09/07/jekyll-custom-description-for-your-posts/#comment-2242343497) you can declare post_excerpt in the page variables too. 
+
+{% highlight yaml %}
+---
+layout: post
+title: My post title
+excerpt: This is my post description 
+---
+{% endhighlight %}
+
+The truth is I prefer extending things than overwriting default environment variables but this is in the Jekyll documentation so, it's safe. (Thanks Emilio!)
