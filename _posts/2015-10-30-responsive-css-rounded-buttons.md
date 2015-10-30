@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Responsive CSS Rounded Buttons
+title: Responsive Rounded Buttons
 keywords: CSS, responsive, buttons, frontend, codegaze
 description: Responsive Rounded Buttons with a few lines of CSS
 post_description: With a few lines of CSS.
