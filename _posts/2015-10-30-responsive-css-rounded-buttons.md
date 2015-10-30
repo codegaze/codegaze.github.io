@@ -117,6 +117,6 @@ Maybe it works for you too **:)**.
 
   <ul>
     <li>Drink: Coffee</li>
-    <li>Listen To: <a href="https://www.youtube.com/watch?v=4a-YB6Cch0w" target="_blank">The Cure - Three Imaginary Boys</a></li>
+    <li>Music: <a href="https://www.youtube.com/watch?v=4a-YB6Cch0w" target="_blank">The Cure - Three Imaginary Boys</a></li>
   </ul>
 </div>
