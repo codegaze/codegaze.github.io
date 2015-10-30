@@ -1,0 +1,32 @@
+.demo--buttons {
+  padding: 0;
+  margin: 0;
+  li {
+    width: 33%;
+    display: inline-block;
+    padding: 0 5px;
+  }
+
+  .button {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+
+    &__link {
+      display: inline-block;
+      width: 100%;
+      padding-top: 50%;
+      padding-bottom: 50%;
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+      line-height: 2em;
+      font-size: 1.2em;
+      margin-top: -1em;
+      background: #E9C46A; 
+    }
+  }
+}

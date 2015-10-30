@@ -96,4 +96,35 @@
 }
 .highlight {
   font-size: 16px;
+  margin: 60px 0;
 }
+
+.happy-hour {
+  // background: #F1654C;
+  // color: #fff;
+  border-top: 5px solid #F1654C;
+  border-bottom: 5px solid #F1654C;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 60px;
+  ul {
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+    padding-left: 3.1em;
+    margin-bottom:0;
+    padding-left:0;
+
+  }
+}
+
+.happy-hour ul:before {
+  // left:-50%;
+    line-height: 1em;
+    font-family: "codegaze";
+    content: "a";
+    font-size: 3em;  
+    padding-right: 10px;
+    float: left;
+    color: #F1654C;
+} 
