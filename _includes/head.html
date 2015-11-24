@@ -18,4 +18,21 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
   <!-- RSS -->
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml">
+  
+  <!-- Facebook Tags -->
+  <meta property="og:title" content="{{ site.title }} - {{ page.title }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  <meta property="og:site_name" content="Codegaze">
+  <meta property="og:content" content="website">
+  <meta property="og:image" content="{{ site.url }}assets/img/social/codegaze-450x250.png" >
+  <meta property="og:description" content="{{ page.description }}">
+
+  <!-- Twitter Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@codegaze">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+  <meta name="twitter:creator" content="@codegaze">
+  <meta name="twitter:image" content="{{ site.url }}assets/img/social/codegaze-120x120.png">
+
 </head>
