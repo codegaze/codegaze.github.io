@@ -25,7 +25,7 @@ Here is the HTML code for the buttons. We are just creating simple links. We use
 
 {% highlight html %}
 <a href="#" class="share__button facebook js-share-button" data-service="facebook">Share on Facebook</a>
-<a href="#" class="share__button twitter js-share-button" data-service="twitter" title="This is a simple Share">Share on Twitter</a>
+<a href="#" class="share__button twitter js-share-button" data-service="twitter" title="Share Buttons Performance Issues and how to deal with them - @codegaze">Share on Twitter</a>
 {% endhighlight %}
 
 
@@ -77,7 +77,7 @@ You  can check the demo of these buttons, will give you a share to the current p
 
 <div class="has-centered">
   <a href="#" class="share__button facebook js-share-button" data-service="facebook">Share on Facebook</a>
-  <a href="#" class="share__button twitter js-share-button" data-service="twitter" title="This is a simple Share">Share on Twitter</a>
+  <a href="#" class="share__button twitter js-share-button" data-service="twitter" title="Share Buttons Performance Issues and how to deal with them - @codegaze">Share on Twitter</a>
 </div>
 
 
