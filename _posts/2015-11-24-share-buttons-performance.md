@@ -107,8 +107,8 @@ You  can check the demo of these buttons, will give you a share to the current p
           url+= 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(window.location);
           break;
         case 'twitter':
-          url+='https://twitter.com/intent/tweet/?text=' + encodeURIComponent(window.location);
-          url+='&url=' + encodeURIComponent(this.href);
+          url+='https://twitter.com/intent/tweet/?text=' + encodeURIComponent(this.title);
+          url+='&url=' + encodeURIComponent(window.location);
       }
       
       window.open(url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=500,height=300');
