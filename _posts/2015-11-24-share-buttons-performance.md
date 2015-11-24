@@ -61,6 +61,10 @@ And the javascript code for it with some comments to explain what's going on.
         case 'twitter':
           url+='https://twitter.com/intent/tweet/?text=' + encodeURIComponent(this.title);
           url+='&url=' + encodeURIComponent(window.location);
+          break;
+        default:
+          console.log('There is no such share service in your `switch`!');
+          break;
       }
       
       window.open(url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=500,height=300');
@@ -109,6 +113,10 @@ You  can check the demo of these buttons, will give you a share to the current p
         case 'twitter':
           url+='https://twitter.com/intent/tweet/?text=' + encodeURIComponent(this.title);
           url+='&url=' + encodeURIComponent(window.location);
+          break;
+        default:
+          console.log('There is no such share service in your `switch`!');
+          break;
       }
       
       window.open(url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=500,height=300');
