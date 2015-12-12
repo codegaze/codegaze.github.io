@@ -7,9 +7,7 @@ post_description: It's easy.
 keywords: XAMPP,APACHE,DEVELOPMENT
 ---
 
-If you are developing sites the you 've come to a place where you are furstrated with constantly having to change things when you move to production such as changing urls to get the thing work. 
-
-We spent three hours of our lives with a friend of mine to reconfigure a Wordpress site from a XAMPP server to production server. Another example I can think of is the Laravel's public folder, I don't want to go to ```localhost/site/public``` each time, a mywebsite.com would be fine.
+If you are developing sites the you 've come to a place where you are furstrated with constantly having to change things when you move to production such as changing urls to get the thing work. We spent three hours of our lives with a friend of mine to reconfigure a Wordpress site from a XAMPP server to production server. Another example I can think of is the Laravel's public folder, I don't want to go to ```localhost/site/public``` each time, a mywebsite.com would be fine.
 
 The best thing you could do is configure your local setup as your production server. To do this we need to edit our hosts file and our httpd-vhosts.conf file.
 
