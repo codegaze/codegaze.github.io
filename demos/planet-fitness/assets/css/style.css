@@ -1,0 +1,243 @@
+/* RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* BASE */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/*
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+.clearfix {
+  *zoom: 1; }
+
+html, body {
+  padding: 0;
+  margin: 0; }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  height: 100%; }
+
+p {
+  padding: 5px 10px 5px;
+  line-height: 1.3em;
+  text-align: center; }
+
+.row--holder {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative; }
+
+header {
+  background: #000;
+  color: #fff; }
+
+.header {
+  height: 85px; }
+  .header__logo {
+    height: 55px;
+    width: 250px;
+    display: inline-block;
+    padding: 10px; }
+  .header__social {
+    padding: 10px; }
+    .header__social-link {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.75em; }
+
+.hero {
+  background: url(../img/bg-sm.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  color: #fff;
+  padding: 10px 0;
+  position: relative; }
+
+.video {
+  background: #000;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0; }
+  .video__wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden; }
+    .video__wrapper iframe, .video__wrapper embed, .video__wrapper object {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+
+.more-info {
+  background: url(../img/bg-bottom-sm.jpg) no-repeat top center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding: 20px 0 30px; }
+  .more-info__logo {
+    text-align: center; }
+    .more-info__logo-img {
+      margin-left: -30px;
+      display: inline-block;
+      width: 190px; }
+  .more-info__img {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 15px 10px;
+    display: block; }
+
+/* BUTTONS */
+.button-list {
+  text-align: center; }
+  .button-list__item-link {
+    padding: 10px;
+    line-height: 1.3em;
+    max-width: 300px;
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none; }
+    .button-list__item-link--purple {
+      margin: 5px;
+      border-radius: 5px;
+      text-align: center;
+      -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
+      box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.4);
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e8008a+0,ab066f+100 */
+      background: #e8008a;
+      /* Old browsers */
+      /* FF3.6-15 */
+      /* Chrome10-25,Safari5.1-6 */
+      background: -webkit-gradient(linear, left top, left bottom, from(#e8008a), to(#ab066f));
+      background: linear-gradient(to bottom, #e8008a 0%, #ab066f 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8008a', endColorstr='#ab066f',GradientType=0 );
+      /* IE6-9 */ }
+
+/* UTILITIES */
+.u-float-left {
+  float: left; }
+
+.u-float-right {
+  float: right; }
+
+.u-smaller {
+  font-size: .8em; }
+
+figure {
+  position: relative; }
+  figure img {
+    width: 100%;
+    max-width: 100%; }
+  @media screen and (min-width: 768px) {
+  p {
+    text-align: left; }
+  .hero {
+    background: url(../img/bg-top-md.jpg) no-repeat top center;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .hero__text {
+    position: absolute;
+    bottom: 10px; }
+  .more-info {
+    background: url(../img/bg-bottom-md.jpg) no-repeat top center;
+    -webkit-background-size: cover;
+            background-size: cover; } }
+  @media screen and (min-width: 490px) {
+  .header__social-link {
+    display: inline-block;
+    line-height: 2.5em; }
+  .hero__text, .hero__image {
+    float: left;
+    width: 50%; }
+  .hero__image {
+    float: right; } }
+  @media screen and (min-width: 990px) {
+  .hero {
+    background: url(../img/bg-top-lg.jpg) no-repeat top center;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .hero__text {
+    font-size: 1.375em; }
+  .more-info {
+    background: url(../img/bg-bottom-lg.jpg) no-repeat top center;
+    -webkit-background-size: cover;
+            background-size: cover; }
+  .more-info__logo-img {
+    width: auto; }
+  .more-info__img {
+    max-width: 892px; } }
