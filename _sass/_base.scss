@@ -91,7 +91,7 @@ tbody tr:nth-child(odd) th {
 .highlight {
   font-size: 16px;
 }
-code {
+code:not([class*="language-"]) {
     color: #F1654C;
     background-color: #f9f2f4;
     border-radius: 4px;
