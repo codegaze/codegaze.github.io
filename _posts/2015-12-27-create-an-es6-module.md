@@ -84,7 +84,7 @@ But here are some examples:
     let logMe = (what, name) => { 
         let text = what + ' ' + name;
         console.log(text);
-    }
+    };
 
     logMe('Hello', 'Jim');
 
@@ -98,12 +98,12 @@ But here are some examples:
         setTimeout(() => { 
             console.log("Who:", this.name);
         },500);
-    }
+    };
 
     // or 
     function logMe() {
         setTimeout(() => console.log("Who:", this.name),500);
-    }
+    };
 
     logMe.call({name: 'Jim'})();
 
@@ -130,7 +130,7 @@ Here is how we are going to use our ```logMe()``` with the new shiny string temp
     let logMe = (what, name) => { 
         let text = `${what} ${name}`;
         console.log(text);
-    }
+    };
 
     // or even in a crazy ugly multiline string
     let logMe = (what, name) => { 
@@ -138,7 +138,7 @@ Here is how we are going to use our ```logMe()``` with the new shiny string temp
          say ${what} to my friend
                     ${name}`;
         console.log(text);
-    }
+    };
 
 {% endhighlight %}
 
@@ -155,7 +155,7 @@ This is an example with a default export. This can be a function or a class.
     // myLogModule.js
     export default function(text) {
         console.log(`This is from myLogModule and it says ${text}`)
-    }
+    };
 
     // main.js
     import whateverNameYouWant from './myLogModule.js';
@@ -170,10 +170,10 @@ If we were going to use named exports this is what we were going to do.
     // myLogModule.js
     export function saySomething(text) {
         console.log(`This is from myLogModule and it says ${text}`);
-    }
+    };
     export function saySomethingElse(text) {
         console.log(`This is something else ${text}`);
-    }
+    };
 
 
     // main.js
@@ -227,7 +227,7 @@ shareButtons = function(){
   
   var window_open = function(url){
     window.open(url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=500,height=300');
-  }
+  };
 
   var add_listeners_to_buttons = function(){
 
@@ -296,7 +296,7 @@ We can use let instead of var for everything without getting and error. This was
         //  No need for a parenthesis here we got one parameter
         let window_open = url => {
 
-        }
+        };
 
         let add_listeners_to_buttons = () => {
 
@@ -391,7 +391,7 @@ let shareButtons = function(){
   //  No need for a parenthesis here we got one parameter
   let window_open = url => {
     window.open(url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=500,height=300');
-  }
+  };
 
   let add_listeners_to_buttons = () => {
 
