@@ -158,7 +158,7 @@ This is an example with a default export. This can be a function or a class.
     };
 
     // main.js
-    import whateverNameYouWant from './myLogModule.js';
+    import whateverNameYouWant from './myLogModule';
     whateverNameYouWant('hello');
 
 {% endhighlight %}
@@ -177,7 +177,7 @@ If we were going to use named exports this is what we were going to do.
 
 
     // main.js
-    import * as myLogModule from './myLogModule.js';
+    import * as myLogModule from './myLogModule';
 
     myLogModule.saySomething('hellooooo');
     myLogModule.saySomethingElse('hello again');
@@ -189,7 +189,7 @@ Or we can always import a specific function in our main.js
 {% highlight javascript %}
 
     // main.js
-    import {saySomething} from './myLogModule.js';
+    import {saySomething} from './myLogModule';
     saySomething('hellooooo');
 
 {% endhighlight %}
@@ -199,7 +199,7 @@ Or more than one
 {% highlight javascript %}
 
     // main.js
-    import {saySomething, saySomethingElse} from './myLogModule.js';
+    import {saySomething, saySomethingElse} from './myLogModule';
     saySomething('hellooooo');
     saySomethingElse('hello again');
 
@@ -437,7 +437,7 @@ export default shareButtons;
 For our main.js file things are much easier. We just import our module as we did before and call the init function.
 
 {% highlight javascript %}
-import ShareButtons from './ShareButtons.js';
+import ShareButtons from './ShareButtons';
 
 ShareButtons.init();
 {% endhighlight %}
