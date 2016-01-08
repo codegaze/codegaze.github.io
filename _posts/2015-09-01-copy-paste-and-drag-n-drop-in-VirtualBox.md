@@ -1,9 +1,9 @@
 ---
 layout: post
-title: VirtualBox Copy/Paste & Drag 'n' Drop
+title: VirtualBox Copy/Paste &amp; Drag &apos;n&apos; Drop
 keywords: Virtualbox, copy, codegaze, host, guest,machine, virtual machine, xubuntu
-description: How to enable Drag 'n' Drop & Copy/Paste between guest OS & Linux host
-post_description: How to enable Drag 'n' Drop & Copy/Paste between guest OS & Linux host.
+description: How to enable Drag &apos;n&apos; Drop &amp; Copy/Paste between guest OS & Linux host
+post_description: How to enable Drag &apos;n&apos; Drop &amp; Copy/Paste between guest OS & Linux host.
 keywords: VirtualBox,Linux 
 ---
 
