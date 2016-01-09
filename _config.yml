@@ -11,8 +11,7 @@ url:                 http://codegaze.github.io
 paginate:            1
 baseurl:             ""
 
-gems:
-  - jekyll-sitemap
+
 
 highlighter:         pygments
 # Assets
