@@ -136,7 +136,7 @@ const base_path = './',
           scss: [ src +'/sass/*.scss', 
                   src +'/sass/**/* .scss', 
                   src +'/sass/**/**/*.scss'],
-          jekyll: ['index.html', '_posts/*', '_layouts/*', '_includes/*']
+          jekyll: ['index.html', '_posts/*', '_layouts/*', '_includes/*' , 'assets/*', 'assets/**/*']
       };
 
 
