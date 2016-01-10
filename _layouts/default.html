@@ -36,10 +36,14 @@
 
 
     <!-- Styles -->
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' >
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/prism.css">
+
     <!-- Scripts -->
-    <script src="/assets/js/prism.js"></script>
+    <script src="/assets/js/prism.js" ></script>
+    <script src="/assets/js/fontfaceobserver.min.js" ></script>
+    
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -49,6 +53,13 @@
       ga('create', 'UA-66051503-1', 'auto');
       ga('send', 'pageview');
 
+    </script>
+    <script>
+      var observer = new FontFaceObserver('Roboto');
+
+      observer.check().then(function () {
+        document.body.className = 'fonts-loaded';
+      });
     </script>
   </body>
 </html>

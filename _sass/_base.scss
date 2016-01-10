@@ -17,7 +17,7 @@ body {
 }
 
 html {
-  font-family: $base-font-family;
+  
   font-size: $base-font-size;
   line-height: 1.5;
   overflow-y: scroll;
@@ -28,12 +28,17 @@ html {
 }
 
 body {
-
+  font-family: $base-font-family-plain;
   color: $base-font-color;
   background-color: $base-color-alpha;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
+
+body.fonts-loaded {
+  font-family: $base-font-family;
+}
+
 body:after {
     content: "";
     position: fixed;
