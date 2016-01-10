@@ -182,6 +182,8 @@ gulp.task('default', [ 'compile-sass', 'build-jekyll', 'server', 'watch' ]);
 
 **Important For Windows users:** You need to replace in the build-jekyll task the 'jekyll' string with the path of your jekyll.bat. In my case it was in the `C:\Ruby22-x64\bin` so I changed this code to:
 
+**01/10/2016 Update:** As [Ron Dyar](https://talk.jekyllrb.com/t/jekyll-workflow-with-gulp-tutorial/1752/2?u=codegaze) commented, in some Windows OS cases a jekyll.bat is enough, without the path. You can try both and see which one works for you.
+
 {% highlight javascript %}
 
 // Rebuild Jekyll 
@@ -191,6 +193,8 @@ gulp.task('build-jekyll', (code) => {
     .on('close', code)
 })
 {% endhighlight %}
+
+
 
 <div class="important">
 Now, if you don't care to know how this works or why, just copy/paste all these we talked about, and when you are ready just execute in your terminal <code>gulp</code> and you can go to <code>http://localhost:4000</code> and see your site. All changes will be watched and compiled.
