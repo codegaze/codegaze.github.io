@@ -2,7 +2,7 @@
 layout: post
 title: A simple BEM advice
 keywords: BEM, SASS, frontend, codegaze
-description: A BEM advice and how not to lose your mind
+description: A simple BEM advice and how not to lose your mind
 post_description: And how not to lose your mind.
 keywords: SASS,BEM
 ---
