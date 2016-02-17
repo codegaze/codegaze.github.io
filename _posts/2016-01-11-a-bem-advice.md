@@ -87,6 +87,6 @@ This code after a while (or even now) will be incomprehensible. The solution is 
 }
 {% endhighlight %}
 
-IYou will write more but you will now what you are doing the next time you or someone else opens your SASS files.
+Now you will know what you are doing the next time you or someone else opens your SASS files.
 
 Cheers!
