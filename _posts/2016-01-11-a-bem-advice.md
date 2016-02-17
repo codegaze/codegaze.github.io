@@ -10,9 +10,9 @@ For some time now I have been using the BEM methodology for production and I cam
 
 **"Don't get carried away!"**
 
-What I mean is, when I started using BEM I thought SASS will be my saviour, I will use the sh*t out of '&' and don't ever repeat one single word... 
+What I mean is, when I started using BEM I thought SASS will be my savior, I will use the sh*t out of '&' and don't ever repeat one single word... 
 
-This was a mistake. If you have a small project that won't scale it's ok, but if you have a big project that will grow, you and your colleagues are going to have a big problem. Code will get more and more complicated, even a simple navigation menu with some modifiers will be difficult to find the right line to change or add something. 
+This was a mistake. If you have a small project that won't scale it's okay, but if you have a big project that will grow, you and your colleagues are going to have a big problem. Code will get more and more complicated, even a simple navigation menu with some modifiers will be difficult to find the right line to change or add something. 
 
 Let me be more clear with an example.
 
