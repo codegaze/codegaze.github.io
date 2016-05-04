@@ -17,7 +17,7 @@ But I have one question:
 Anyway I 'll give a mini start guide for the RSS feed thing for everyone who is interested, with some issues I dealt with.
 
 ## What happened
-Started working with Facebook's Instant Articles a few days ago. After two days of frustration I got my first articles [----] by this new Facebook feature. This might be due to my lack of patience with facebook's documentation or their lack of good documentation. I just tried the RSS way to add content to the Articles (Who the f*ck is going to add manually content to this thing FFS?!)
+Started working with Facebook's Instant Articles a few days ago. After two days of frustration I got my first articles consumed by this new Facebook feature. This might be due to my lack of patience with facebook's documentation or their lack of good documentation. I just tried the RSS way to add content to the Articles (Who the f*ck is going to add manually content to this thing FFS?!)
 
 I'm not going to guide you through the steps of enabling the Instant Articles because there are ton of articles out there, but I am going to guide you through the painful work of creating a compatible RSS feed by yourself and not by using some plugin.
 
