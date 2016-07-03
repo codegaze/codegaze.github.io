@@ -23,7 +23,7 @@ Let me be more clear with an example.
     display: inline;
     
     &--primary {
-      background: #blue;
+      background: blue;
     }
     &--dashed {
       border: 1px dashed #000;
@@ -57,7 +57,7 @@ This code after a while (or even now) will be incomprehensible. The solution is 
   display: inline;
 
   &--primary {
-    background: #blue;
+    background: blue;
     display: block;
   }
 
