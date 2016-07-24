@@ -1,9 +1,35 @@
-$(document).ready(function(){
+CG = window.CG || {};
 
-  $('#more_posts').on('click', function(){ 
+CG = {
+    _init: function()
+    {
+        window.addEventListener('offline', function() {
+            CG.offlineStatus();
+        });     
+        window.addEventListener('online', function() {
+            console.log('online');
+        });       
+    },
+    
+    offlineStatus: function()
+    {
+        this.showToast();
+        var t = setTimeout(function() {
+            CG.hideToast();
+            t = null;
+        }, 2000);
+    },
 
-      $('.layout__row--more-articles').toggleClass('is-hidden');
+    showToast: function()
+    {
+        document.getElementById('offline-status').classList.remove('is-hidden');
+    },
 
-  })
+    hideToast: function()
+    {
+        document.getElementById('offline-status').classList.add('is-hidden');  
+    }
 
-})
+}
+
+CG._init();
