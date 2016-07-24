@@ -16,7 +16,7 @@ var version = "v1::";
 
 var staticPrimaryAssets = [
     '/',
-    '/offline',
+    'https://codegaze.github.io/offline',
     '/styles.css',
     '/scripts/main.js'
 ]
