@@ -12,11 +12,10 @@ console.log = (str) => _log('%c' + str + ' ', logStyle);
 var staticAssetsCacheName = "StaticAssets";
 var imageAssetsCacheName = "ImgStatic";
 
-var version = "v1::";
+var version = "v2::";
 
 var staticPrimaryAssets = [
     '/',
-    'https://codegaze.github.io/offline',
     '/styles.css',
     '/scripts/main.js'
 ]
