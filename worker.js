@@ -14,7 +14,7 @@ var logStyle = 'color: #fff; background: #F1654C';
 var staticAssetsCacheName = "StaticAssets";
 var imageAssetsCacheName = "ImgStatic";
 
-var version = "v1::";
+var version = "v1.1::";
 
 var staticPrimaryAssets = [
     '/',
@@ -65,8 +65,10 @@ self.addEventListener('activate', function (event) {
 self.addEventListener('fetch', event => {
   // … Perhaps respond to this fetch in a useful way? 
     var request = event.request;
-  
-    if (isHTMLContent(request)) {
+    
+    if (isDoNotCacheDomain(request)) {
+        event.respondWith(fetch(event.request));
+    } else if (isHTMLContent(request)) {
         event.respondWith(handleHTMLContent(request));
     } else if (isStaticImage(request)) {
         event.respondWith(handleImageContent(request));
@@ -79,6 +81,8 @@ self.addEventListener('fetch', event => {
     }
 
 });
+
+
 
 function handleImageContent(request)
 {
@@ -154,7 +158,16 @@ function isHTMLContent(request)
     }
     return false;
 }
- 
+
+function isDoNotCacheDomain(request)
+{
+
+    if (request.url.indexOf('analytics') !== -1){
+      return true;  
+    } 
+    return false;
+
+}
 
 if ('serviceWorker' in navigator) {
   console.log(' ☑ Service Worker Is available. Yeah!');
