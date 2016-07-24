@@ -16,9 +16,10 @@ var version = "v1::";
 
 var staticPrimaryAssets = [
     '/',
-    'https://codegaze.github.io/offline',
     '/styles.css',
-    '/scripts/main.js'
+    '/scripts/main.js',
+    '/offline/'
+
 ]
 var staticSecondaryAssets = [
     '/assets/js/fontfaceobserver.min.js',
