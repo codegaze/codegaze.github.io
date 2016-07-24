@@ -1,1 +1,36 @@
-<h1>Beautiful offline page</h1>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Codegaze Offline Page</title>
+
+</head>
+<body>
+    <div class="message">
+        <h1>Codegaze</h1>
+        <p>Dear friend, you have no internet connection.</p>
+        <p>You can only view pages you have visited while being online!</p></div>
+    <style>
+        body {
+            background: #E9C46A;
+            font-family: Verdana;
+        }
+        h1 {
+            margin: 0;
+        }
+        @media screen and (max-width: 400px) {
+            h1 {
+                font-size: 1.2em;
+            }
+        }
+        .message {
+            width: 50%;
+            margin: 4em auto;
+            background: #fff;
+            border-radius: .5em;
+            padding: 1em;
+            border: 5px dashed #F1654C;
+        }
+    </style>
+</body>
+</html>

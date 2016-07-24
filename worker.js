@@ -14,7 +14,11 @@ var logStyle = 'color: #fff; background: #F1654C';
 var staticAssetsCacheName = "StaticAssets";
 var imageAssetsCacheName = "ImgStatic";
 
+<<<<<<< HEAD
 var version = "v1.3::";
+=======
+var version = "v1.2::";
+>>>>>>> a52c489c9bb9d9c93ad8ba8d23f89533d3613d09
 
 var staticPrimaryAssets = [
     '/',
