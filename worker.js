@@ -2,9 +2,11 @@
 * Log With Colors. Stolen from a google dev video.
 */
 
-// var _log = console.log;
-// var logStyle = 'color: #fff; background: #F1654C';
-// console.log.prototype = function(str) { _log('%c' + str + ' ', logStyle); }
+var _log = console.log;
+var logStyle = 'color: #fff; background: #F1654C';
+
+//console.log = (str) => _log('%c' + str + ' ', logStyle);
+//console.log = function(str) {  _log('%c' + str + ' ', logStyle);  }
 
 /********** 
 * Set 
@@ -121,7 +123,7 @@ function handleHTMLContent(request)
         .catch(function () {
             return caches.match(request)
                 .then(function (response) {
-                    return response || caches.match('https://codegaze.github.io/offline');
+                    return response || caches.match('/offline/');
                 })
         })
     
