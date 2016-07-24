@@ -2,9 +2,9 @@
 * Log With Colors. Stolen from a google dev video.
 */
 
-var _log = console.log;
-var logStyle = 'color: #fff; background: #F1654C';
-console.log = function(str) { _log('%c' + str + ' ', logStyle); }
+// var _log = console.log;
+// var logStyle = 'color: #fff; background: #F1654C';
+// console.log.prototype = function(str) { _log('%c' + str + ' ', logStyle); }
 
 /********** 
 * Set 
