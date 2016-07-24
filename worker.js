@@ -14,13 +14,13 @@ var logStyle = 'color: #fff; background: #F1654C';
 var staticAssetsCacheName = "StaticAssets";
 var imageAssetsCacheName = "ImgStatic";
 
-var version = "v1.1::";
+var version = "v1.3::";
 
 var staticPrimaryAssets = [
     '/',
     '/styles.css',
     '/scripts/main.js',
-    '/offline/'
+    '/offline.html'
 
 ]
 var staticSecondaryAssets = [
@@ -127,7 +127,7 @@ function handleHTMLContent(request)
         .catch(function () {
             return caches.match(request)
                 .then(function (response) {
-                    return response || caches.match('/offline/');
+                    return response || caches.match('/offline.html');
                 })
         })
     
