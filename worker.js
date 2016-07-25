@@ -1,21 +1,8 @@
-/********** 
-* Log With Colors. Stolen from a google dev video.
-*/
-
-var _log = console.log;
-var logStyle = 'color: #fff; background: #F1654C';
-
-//console.log = (str) => _log('%c' + str + ' ', logStyle);
-//console.log = function(str) {  _log('%c' + str + ' ', logStyle);  }
-
-/********** 
-* Set 
-*/
 var staticAssetsCacheName = "StaticAssets";
 var imageAssetsCacheName = "ImgStatic";
 
 
-var version = "v1.3::";
+var version = "v1.5::";
 
 
 
