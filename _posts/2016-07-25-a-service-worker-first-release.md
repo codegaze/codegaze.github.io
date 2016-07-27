@@ -18,6 +18,13 @@ But what's next?
 * Fix a bug on mobile devices that offline fallback page doesn't get retrieved.
 * Maybe write a post about this experience and issues I've dealt with.
 * Implement offline google analytics.
-* Maybe create a manifest file.
+* <span class="check">✔</span> Maybe create a manifest file.
+* <span class="check">✔</span> Check score with google's [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) (100 / 100). 
 
 Cheers!
+
+<style>
+    .check {
+        color: #8fc847;
+    }
+</style>
