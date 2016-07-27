@@ -2,7 +2,7 @@ var staticAssetsCacheName = "StaticAssets";
 var imageAssetsCacheName = "ImgStatic";
 
 
-var version = "v1.5::";
+var version = "v1.6::";
 
 
 
