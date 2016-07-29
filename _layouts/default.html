@@ -4,10 +4,9 @@
   {% include head.html %}
 
   <body>
-
     <div class="layout">
       <div class="layout__row layout__row--header">
-          <header class="header header--main">
+          <header class="header header--main" role="banner">
             <h3 class="header__title">
               <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
               <small>{{ site.tagline }}</small>
@@ -19,10 +18,10 @@
             {% endif %}
           </header>
       </div>
-      <main class="layout__row layout__row--main">
+      <main class="layout__row layout__row--main" role="main">
         {{ content }}
       </main>
-      <footer class="layout__row layout__row--footer">
+      <footer class="layout__row layout__row--footer" role="contentinfo">
         <small>
           &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. 
           All rights reserved. <a href="https://www.twitter.com/codegaze" target="_blank">@codegaze</a> 
