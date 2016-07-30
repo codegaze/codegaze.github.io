@@ -12,11 +12,13 @@ url:                 https://codegaze.github.io
 baseurl:             ""
 
 
-
-# highlighter:         pygments
-# Assets
-#
 # We specify the directory for Jekyll so we can use @imports.
 sass:
   sass_dir:          _sass
   style:            :compressed
+
+
+exclude: ["_dev",
+          "gulpfile.js",
+          "node_modules",
+          "package.json"]

@@ -2,22 +2,17 @@ var staticAssetsCacheName = "StaticAssets";
 var imageAssetsCacheName = "ImgStatic";
 
 
-var version = "v1.6::";
-
-
+var version = "v1.7::";
 
 var staticPrimaryAssets = [
     '/',
     '/styles.css',
-    '/scripts/main.js',
     '/offline.html'
-
 ]
+
 var staticSecondaryAssets = [
-    '/assets/js/fontfaceobserver.min.js',
-    '/assets/js/prism.js',
-    '/assets/css/prism.css',
-    '/assets/css/styles.css',
+    '/assets/js/all.js',
+    '/assets/css/all.css',
     'https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2'
 ]
 
