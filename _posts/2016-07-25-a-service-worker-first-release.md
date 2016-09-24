@@ -11,15 +11,15 @@ I 've been experimenting for some time with progressive web apps and service wor
 
 I just wanted to say that you can read the posts you have visited while you have internet connection available, when you are offline.
 
-But what's next? 
+But what's next?
 
-* Observe update issues with current service worker setup.
+* <span class="check">✔</span> Observe update issues with current service worker setup.
 * Implement better caching strategy for pages.
 * Fix a bug on mobile devices that offline fallback page doesn't get retrieved.
 * Maybe write a post about this experience and issues I've dealt with.
 * Implement offline google analytics.
 * <span class="check">✔</span> Maybe create a manifest file.
-* <span class="check">✔</span> Check score with google's [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) (100 / 100). 
+* <span class="check">✔</span> Check score with google's [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en) (100 / 100).
 
 Cheers!
 
