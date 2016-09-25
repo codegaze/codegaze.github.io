@@ -8,7 +8,7 @@ keywords: FACEBOOK,RSS
 ---
 
 ## Introduction
-I think Instant Articles is the Facebook's way of saying "You had one job" to all developers out there. For me (a developer) is nothing more than a way to give your content to users fast without all the problems that our CMS's and code add to the user experience. 
+I think Instant Articles is the Facebook's way of saying "You had one job" to all developers out there. For me (a developer) is nothing more than a way to give your content to users fast without all the problems that our CMS's and code add to the user experience.
 
 But I have one question:
 
@@ -97,7 +97,7 @@ As you see there is nothing special. Of course this had my content but these wer
 
 For some time I was changing things and trying the results but nothing happened, not even one error. I even tried using a 404 page to see if I was going to get any message from Facebook... **Nope!**(again)
 
-After some time I was ready to give up and my last hope was installing Wordpress and the plugin for Instant Messages to see the differences and come up with a solution. After a while I found out that the only different thing was the `pubDate`. 
+After some time I was ready to give up and my last hope was installing Wordpress and the plugin for Instant Messages to see the differences and come up with a solution. After a while I found out that the only different thing was the `pubDate`.
 
 What did you say? Facebook says it is not required? Yes it does:
 
@@ -121,9 +121,13 @@ The reason: **Your wysiwyg editor sucks!**
 
 <hr class="post__separator"/>
 
-Facebook Instant Articles need clean HTML code. If your image is wrapped in a paragraph you have a problem. If your text isn't inside a paragraph you have a problem and other stuff that I haven't gotten into. 
+Facebook Instant Articles need clean HTML code. If your image is wrapped in a paragraph you have a problem. If your text isn't inside a paragraph you have a problem and other stuff that I haven't gotten into.
 
-This means you may have to do some code-post-clean-up work. 
+This means you may have to do some code-post-clean-up work.
+
+
+**2016-09-25 Update:**
+Chris Coyer wrote a interesting  [article](http://mediatemple.net/blog/tips/wordpress-apple-news-instant-articles-amp/) about making content available to Instant Articles, Apple News and AMP. Not everyone uses Wordpress (only the 25% of the internet websites do :P), but it'a a great case study.
 
 <hr class="post__separator"/>
 
