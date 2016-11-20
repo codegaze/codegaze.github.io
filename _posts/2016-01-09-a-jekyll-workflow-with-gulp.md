@@ -13,7 +13,7 @@ This weekend I decided to take this blog's design and create a theme. Of course 
 
 ## Gulp to the rescue
 
-So, we are going to include Gulp and some plugins to make our lives easier. 
+So, we are going to include Gulp and some plugins to make our lives easier.
 
 This process has two parts. The first one is the Jekyll's _config.yml configuration and the creation of a new folder we are going to have our development files, and our gulpfile.js configuration/setup.
 
@@ -34,7 +34,7 @@ Let's add some configuration to _config.yml.
 
 >Exclude directories and/or files from the conversion. These exclusions are relative to the site's source directory and cannot be outside the source directory.
 
-So, we don't want these files in our production site. I think it's pretty straightforward what we did here, but what you are goin to say is **'What the f*uck is the _dev folder?'** and you 'll be right. The _dev folder is going to be the folder to keep our sass,js...(and whatever you want) source files which we don't want to be visible to the website. 
+So, we don't want these files in our production site. I think it's pretty straightforward what we did here, but what you are goin to say is **'What the f*uck is the _dev folder?'** and you 'll be right. The _dev folder is going to be the folder to keep our sass,js...(and whatever you want) source files which we don't want to be visible to the website.
 
 Our project folder should be like this. The partials folder isn't mandatory, it's the way I structure my sass code. (if you feel comfortable tweaking the gulpfile.js you can work with any structure you want :) ):
 
@@ -64,7 +64,7 @@ Our project folder should be like this. The partials folder isn't mandatory, it'
     |-- _includes
     |-- _layouts
     |-- _posts
-    |-- _site 
+    |-- _site
 </pre>
 
 And that's all we need to do for the Jekyll part.
@@ -73,7 +73,7 @@ And that's all we need to do for the Jekyll part.
 
 Now, let's install all the things!
 
-You can copy paste this to a package.json file 
+You can copy paste this to a package.json file
 
 {% highlight json %}
 {
@@ -81,7 +81,7 @@ You can copy paste this to a package.json file
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-connect": "^2.3.1",
-    "gulp-minify-css": "^1.2.3",
+    "gulp-clean-css": "^2.0.13",
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.1.1",
@@ -102,12 +102,12 @@ or create an empty package.json by typing
 npm init
 {% endhighlight %}
 
-and follow the instructions to create a package.json file. 
+and follow the instructions to create a package.json file.
 
-And then install by 
+And then install by
 
 {% highlight javascript %}
-npm install --save-dev gulp gulp-sass gulp-util gulp-plumber gulp-rename gulp-minify-css gulp-autoprefixer gulp-connect
+npm install --save-dev gulp gulp-sass gulp-util gulp-plumber gulp-rename gulp-clean-css gulp-autoprefixer gulp-connect
 {% endhighlight %}
 
 <hr class="post__separator"/>
@@ -122,7 +122,7 @@ const gulp = require('gulp'),
       gutil = require('gulp-util'),
       plumber = require('gulp-plumber'),
       rename = require('gulp-rename'),
-      minifyCSS = require('gulp-minify-css'),
+      minifyCSS = require('gulp-clean-css'),
       prefixer = require('gulp-autoprefixer'),
       connect = require('gulp-connect');
       cp = require('child_process');
@@ -133,8 +133,8 @@ const base_path = './',
       dist = base_path + 'assets',
       paths = {  
           js: src + '/js/*.js',
-          scss: [ src +'/sass/*.scss', 
-                  src +'/sass/**/* .scss', 
+          scss: [ src +'/sass/*.scss',
+                  src +'/sass/**/* .scss',
                   src +'/sass/**/**/*.scss'],
           jekyll: ['index.html', '_posts/*', '_layouts/*', '_includes/*' , 'assets/*', 'assets/**/*']
       };
@@ -154,9 +154,9 @@ gulp.task('compile-sass', () => {
     .pipe(gulp.dest('./'));
 });
 
-// Rebuild Jekyll 
+// Rebuild Jekyll
 gulp.task('build-jekyll', (code) => {
-  return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
+  return cp.spawn('jekyll', ['build', '--incremental'], { stdio: 'inherit' }) // Adding incremental reduces build time.
     .on('error', (error) => gutil.log(gutil.colors.red(error.message)))
     .on('close', code);
 })
@@ -182,11 +182,11 @@ gulp.task('default', [ 'compile-sass', 'build-jekyll', 'server', 'watch' ]);
 
 **Important For Windows users:** You need to replace in the build-jekyll task the 'jekyll' string with the path of your jekyll.bat. In my case it was in the `C:\Ruby22-x64\bin` so I changed this code to:
 
-**01/10/2016 Update:** As [Ron Dyar](https://talk.jekyllrb.com/t/jekyll-workflow-with-gulp-tutorial/1752/2?u=codegaze) commented, in some Windows OS cases a jekyll.bat is enough, without the path. You can try both and see which one works for you.
+**2016/11/20 Update:** As [Ron Dyar](https://talk.jekyllrb.com/t/jekyll-workflow-with-gulp-tutorial/1752/2?u=codegaze) commented, in some Windows OS cases a jekyll.bat is enough, without the path. You can try both and see which one works for you.
 
 {% highlight javascript %}
 
-// Rebuild Jekyll 
+// Rebuild Jekyll
 gulp.task('build-jekyll', (code) => {
   return cp.spawn('C:\\Ruby22-x64\\bin\\jekyll.bat', ['build'], {stdio: 'inherit'})
     .on('error', (error) => gutil.log(gutil.colors.red(error.message)))
@@ -194,6 +194,7 @@ gulp.task('build-jekyll', (code) => {
 })
 {% endhighlight %}
 
+**2016/01/10 Update:** [Alex Lockwood](http://disq.us/p/1ds1bx6) was kind enough to create a [gist](https://gist.github.com/alexjlockwood/9a4201b5a4b47c3f1c3de69dde4e8ece) for older npm versions on which ES6 features cause errors.
 
 
 <div class="important">
@@ -220,12 +221,12 @@ What our gulpfile does:
 
 **gulp-rename:** Renames our CSS files because if we didn't we would get a file like this `/assets/css/src/css/style.css`.
 
-**gulp-minify-css:** Simple!
+**gulp-~~minify~~clean-css:** Simple!
 
 **gulp-autoprefixer:** What started all this! This prefixes our css. There are some great options for this plugin, be sure to check them out! [Github](https://github.com/postcss/autoprefixer)
 
 **gulp-connect:** Setups a local web server to preview our site. It's inevitable because we can't use `jekyll serve` like we did before.
-      
+
 **child_process:** This is not a plugin. This is a Node.js core module. We are using this because (very roughly) Gulp is running in one process and we need to run the `jekyll build` process at the same time, we cannot stop Gulp. So we are 'attaching' the jekyll command to a child process that returns that everything went fine when it finishes. I want to see this in depth but I got carried away with the Windows problem I warned you before.
 
 <hr class="post__separator"/>
@@ -266,4 +267,3 @@ Cheers!
     margin-bottom: 10px;
   }
 </style>
-
