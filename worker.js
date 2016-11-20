@@ -2,7 +2,7 @@ var staticAssetsCacheName = "StaticAssets";
 var imageAssetsCacheName = "ImgStatic";
 
 
-var version = "v1.7::";
+var version = "v1.8::";
 
 var staticPrimaryAssets = [
     '/',
@@ -48,9 +48,9 @@ self.addEventListener('activate', function (event) {
 
 
 self.addEventListener('fetch', event => {
-  // … Perhaps respond to this fetch in a useful way? 
+  // … Perhaps respond to this fetch in a useful way?
     var request = event.request;
-    
+
     if (isDoNotCacheDomain(request)) {
         event.respondWith(fetch(event.request));
     } else if (isHTMLContent(request)) {
@@ -62,7 +62,7 @@ self.addEventListener('fetch', event => {
             caches.match(event.request).then(function(response) {
                 return response || fetch(event.request);
             })
-        );  
+        );
     }
 
 });
@@ -87,7 +87,7 @@ function handleImageContent(request)
 
 function handleHTMLContent(request)
 {
-    
+
     // Fix for Chrome bug: https://code.google.com/p/chromium/issues/detail?id=573937
     if (request.mode != 'navigate') {
         request = new Request(request.url, {
@@ -98,7 +98,7 @@ function handleHTMLContent(request)
             redirect: request.redirect
         });
     }
-    
+
     return fetch(request)
         .then(function (response) {
             // Stash a copy of this page in the cache
@@ -115,7 +115,7 @@ function handleHTMLContent(request)
                     return response || caches.match('/offline.html');
                 })
         })
-    
+
 }
 
 function updateStaticAssets()
@@ -148,8 +148,8 @@ function isDoNotCacheDomain(request)
 {
 
     if (request.url.indexOf('analytics') !== -1){
-      return true;  
-    } 
+      return true;
+    }
     return false;
 
 }
