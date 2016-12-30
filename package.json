@@ -6,6 +6,9 @@
     "gulp-rename": "^1.2.2",
     "gulp-util": "^3.0.7",
     "gulp-concat": "latest",
-    "gulp-uglify": "latest"
+    "gulp-uglify": "latest",
+    "eslint": "^3.10.2",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1"
   }
 }
