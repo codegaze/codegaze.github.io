@@ -188,7 +188,7 @@ gulp.task('default', [ 'compile-sass', 'build-jekyll', 'server', 'watch' ]);
 
 // Rebuild Jekyll
 gulp.task('build-jekyll', (code) => {
-  return cp.spawn('C:\\Ruby22-x64\\bin\\jekyll.bat', ['build'], {stdio: 'inherit'})
+  return cp.spawn('C:\\your_ruby_path\\bin\\jekyll.bat', ['build'], {stdio: 'inherit'})
     .on('error', (error) => gutil.log(gutil.colors.red(error.message)))
     .on('close', code)
 })
@@ -196,6 +196,7 @@ gulp.task('build-jekyll', (code) => {
 
 **2016/01/10 Update:** [Alex Lockwood](http://disq.us/p/1ds1bx6) was kind enough to create a [gist](https://gist.github.com/alexjlockwood/9a4201b5a4b47c3f1c3de69dde4e8ece) for older npm versions on which ES6 features cause errors.
 
+**2017/02/11 Update:** A user's comment I cannot find requested to update the ruby path with a newer version. So, in the `your_ruby_path` you need to set your ruby path. For example, mine was `Ruby22-x64` at the time.
 
 <div class="important">
 Now, if you don't care to know how this works or why, just copy/paste all these we talked about, and when you are ready just execute in your terminal <code>gulp</code> and you can go to <code>http://localhost:4000</code> and see your site. All changes will be watched and compiled.
