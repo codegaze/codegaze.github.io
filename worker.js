@@ -1,6 +1,6 @@
 var staticAssetsCacheName = 'StaticAssets',
     imageAssetsCacheName = 'ImgStatic',
-    version = 'v1.10::';
+    version = 'v1.11::';
 
 var staticPrimaryAssets = [
   '/',
@@ -10,8 +10,7 @@ var staticPrimaryAssets = [
 
 var staticSecondaryAssets = [
   '/assets/js/all.js',
-  '/assets/css/all.css',
-  'https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2'
+  '/assets/css/all.css'
 ];
 
 self.addEventListener('install', event => {

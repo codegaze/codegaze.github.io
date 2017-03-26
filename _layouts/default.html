@@ -23,18 +23,17 @@
       </main>
       <footer class="layout__row layout__row--footer" role="contentinfo">
         <small>
-          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. 
-          All rights reserved. <a href="https://www.twitter.com/codegaze" target="_blank">@codegaze</a> 
-        </small>      
-      </footer> 
+          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>.
+          All rights reserved. <a href="https://www.twitter.com/codegaze" target="_blank">@codegaze</a>
+        </small>
+      </footer>
     </div>
     <div id="offline-status" class="is-hidden user-message">Hey friend, you can browse offline!</div>
 
     <!-- Styles -->
-    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto:700,300'>
     <link rel="stylesheet" href="/assets/css/all.css">
 
-    <!-- Scripts -->   
+    <!-- Scripts -->
     <script src="/worker.js" ></script>
     <script src="/assets/js/all.js" ></script>
 
@@ -49,11 +48,5 @@
         ga('send', 'pageview');
       </script>
     {% endif %}
-    <script>
-      var observer = new FontFaceObserver('Roboto');
-      observer.check().then(function () {
-        document.body.className = 'fonts-loaded';
-      });
-    </script>
   </body>
 </html>
