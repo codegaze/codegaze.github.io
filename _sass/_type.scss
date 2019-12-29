@@ -11,14 +11,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 1em;
-  @media (min-width: 30em) {
-   font-size: 3.4375rem;
-  }
-  font-weight: 700;
+  font-size: 3rem;
 }
-
 h2 {
   margin-top: 2rem;
   font-size: 1.5rem;
@@ -37,6 +31,8 @@ h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1.3rem;
+  font-family: Georgia, serif;
+  font-size: 19px;
 }
 
 strong {
@@ -54,14 +50,6 @@ dt {
 
 dd {
   margin-bottom: .5rem;
-}
-
-hr {
-  position: relative;
-  margin: 1.5rem 0;
-  border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
 }
 
 abbr {
@@ -110,13 +98,4 @@ a[href^="#fnref:"] {
 .footnotes {
   margin-top: 2rem;
   font-size: 85%;
-}
-
-// Custom type
-//
-// Extend paragraphs with `.lead` for larger introductory text.
-
-.lead {
-  font-size: 1.25rem;
-  font-weight: 300;
 }

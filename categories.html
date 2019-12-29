@@ -1,0 +1,35 @@
+---
+layout: page
+permalink: /categories/
+title: Categories
+---
+
+
+<section class="posts-grid">
+{% for category in site.categories %}
+  <div class="archive-group">
+    {% capture category_name %}{{ category | first }}{% endcapture %}
+    <a name="{{ category_name | slugize }}"></a>
+    <h2>{{category_name}}</h2>
+    <hr>
+    {% for post in site.categories[category_name] %}
+    <article class="posts-grid__item">
+      <a href="{{ site.baseurl }}{{ post.url }}" class="posts-grid__link">
+        <h3 class="posts-grid__item-title">
+          {{ post.title }}
+        </h3>
+      </a>
+      <p class="posts-grid__summary">{{ post.excerpt| strip_html }}</p>
+      <div class="posts-grid__meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
+        <span> -
+        {% for category in post.categories %}
+          <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{ category }}</a>
+        {% endfor %}
+        </span>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+{% endfor %}
+</section>

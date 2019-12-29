@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Vanilla Javascript Selectors
-keywords: javascript, vanilla, selectors, jquery, zepto, codegaze, no jquery
 description: How to select dom elements with vanilla javascript.
 post_description: How to select dom elements with vanilla javascript.
-keywords: Javascript
+categories: [Coding, JS]
 ---
 
 Everytime I start a new project I try to evaluate my needs for javascript and decide if I am going to use any third party library or not.
@@ -44,7 +43,7 @@ If you think this is boring we can create a simple wrapper function to help our 
 var element = getById('my_elements_id');
 
 function getById(el_id) {
-  
+
   return document.getElementById(el_id);
 
 }
@@ -70,12 +69,12 @@ var elements = document.getElementsByClassName('my_elements_class');
 for ( var i = 0; i < elements.length; i++ ) {
 
     elements[i].innerHTML = 'New Text';
-    
+
 }
 
 {% endhighlight %}
 
 
-That's all for now. 
+That's all for now.
 
 Within a few lines of code we saved ourselves a 40kb - 80kb library request and browser memory.

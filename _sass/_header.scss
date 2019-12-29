@@ -1,60 +1,71 @@
 .header {
-  
   &--main {
-    @include cf();  
-    height: 60px;
-    max-width: 100%;
-    margin-left:  auto;
-    margin-right: auto;
-
-    @media (min-width: 960px) {
-      width: 960px;
+    // max-width: 100%;
+    // margin-left:  auto;
+    // margin-right: auto;
+    // padding-top: 20px;
+  }
+  &__nav {
+    display: flex;
+    align-items: stretch;
+    &--home {
+      display: block;
     }
   }
   &__title {
-    display: inline-block;
-    float: left;
-    // padding: 17px 0;
-    line-height: 3.72rem;
-    @media screen and (min-width: 38em) {
-      line-height: 2.9rem;
+    max-width: 200px;
+    &--home {
+      max-width: 768px;
+      margin: 0 auto;
     }
-    margin: 0;
-    a{
-      color: #fff;
-    }
-    small {
-      font-weight: 300;
+    &-img {
+      max-width: 100%;
+      width: 100%;
     }
   }
-  &__handler-more {
+}
 
-    float:right;
-    float: right;
-    padding: 18px 0 0;
-    background-color: #fff;
-    height: 60px;
-
-    &-link {
-      font-size: 1em;
-      padding: 0 10px;
-      border-radius: 4px;
-      color: $base-color-beta;
-
-      &:hover{
+.nav {
+  list-style-type: none;
+  padding: 0;
+  // margin: 0;
+  display: flex;
+  justify-content: center;
+  &--main {
+    &__item {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+      font-weight: 700;
+      svg {
+        width: .7rem;
+        height: .7rem;
+      }
+      a:hover {
+        color: var(--cs-link-active-color);
+        fill: var(--cs-link-active-color);
+        box-shadow: 0 3px 0 0 #000;
         text-decoration: none;
-        background: #fff;
-        color: $base-color-beta;
       }
     }
   }
-  &__more-articles {
-    @include cf();
-    margin-left:  auto;
-    margin-right: auto;
-    @media (min-width: 960px) {
-      width: 960px;
-    }
+}
 
+.avatar {
+  &--header {
+    max-width: 100px;
+    padding-top: 20px;
+    margin: 0 auto;
+    .avatar__image {
+      max-width: 100%;
+      border-radius: 50%;
+      border: 5px solid var(--cs-brand-color);
+    }
+  }
+  &--about {
+    .avatar__image {
+      margin: 0 auto;
+      border-bottom: 5px solid var(--cs-brand-color);
+    }
   }
 }

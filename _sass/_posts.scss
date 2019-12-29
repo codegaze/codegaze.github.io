@@ -1,87 +1,78 @@
-// Posts and pages
-//
-// Each post is wrapped in `.post` and is used on default and post layouts. Each
-// page is wrapped in `.page` and is only used on the page layout.
-
-.page,
-.post {
-  max-width: 970px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 4em;
-  font-weight: 300;
-  a{
-    color: $base-color-delta;
-    font-weight: 700;
+.posts-grid {
+  margin: 0 auto;
+  max-width: remTron(570);
+  &__item {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  &__summary {
+    font-weight: 300;
+    margin-bottom: 0.3rem;
+    line-height: 1.5rem;
+    color: #393939;
+  }
+  &__link {
+    h3 {
+      margin-top: 0;
+    }
+    height: 100%;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 0.2rem;
+    -webkit-transition: all 0.25s 0s ease;
+            transition: all 0.25s 0s ease;
     &:hover {
+      h3 {
+        color: var(--cs-link-active-color);
+      }
       text-decoration: none;
-      background: $base-color-delta;
-      color: #fff;
+    }
+  }
+  &__meta {
+    color: #6f6f6f;
+    font-size: .8em;
+    a {
+      color: #e03030;
     }
   }
 }
 
-// Blog post or page title
-.page-title,
-.post-title,
-.post-title a {
-  color: #F1654C;
+
+.page,
+.post {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4em;
+  font-weight: 300;
 }
-.page-title,
-.post-title {
-  margin-top: 0;
+
+.post a,
+.page a {
+  color: #e03030;
+}
+.post__info {
+  margin-bottom: .5rem;
+  text-align: center;
 }
 
 // Meta data line below post title
-.post-date {
+.post__date {
   display: inline-block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
   color: #585858;
 }
-.post-tags {
-  tag {
-    display: inline-block;
-    padding: 0px 5px;
-    margin: 0 0px;
-    // background: #F1654C;
-    color: #F1654C;
-  }
-}
 
 .post h4 {
   color: #ABABAB;
 }
-// Related posts
-.related {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  border-top: 1px solid #eee;
+.post__title {
+  text-align: center;
 }
-
-.related-posts {
-  padding-left: 0;
-  list-style: none;
-
-  h3 {
-    margin-top: 0;
-  }
-
-  li {
-    small {
-      font-size: 75%;
-      color: #999;
-    }
-
-    a:hover {
-      color: #268bd2;
-      text-decoration: none;
-
-      small {
-        color: inherit;
-      }
-    }
-  }
+.post__content {
+  padding-bottom: 2rem;
 }
 
 .video-fluid-wrapper {
@@ -102,33 +93,3 @@
   font-size: 16px;
   margin: 30px 0;
 }
-
-.happy-hour {
-  // background: #F1654C;
-  // color: #fff;
-  border-top: 5px solid #F1654C;
-  border-bottom: 5px solid #F1654C;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 60px;
-  ul {
-    list-style: none;
-    position: relative;
-    overflow: hidden;
-    padding-left: 3.1em;
-    margin-bottom:0;
-    padding-left:0;
-
-  }
-}
-
-.happy-hour ul:before {
-  // left:-50%;
-    line-height: 1em;
-    font-family: "codegaze";
-    content: "a";
-    font-size: 3em;  
-    padding-right: 10px;
-    float: left;
-    color: #F1654C;
-} 

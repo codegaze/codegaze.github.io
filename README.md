@@ -11,11 +11,6 @@ After one month or so of use I decided its time to change the default theme/file
 >In case of an emergency break glass
 
 ```
-$ sudo gem install Jekyll
+$ gem install Jekyll
 $ npm install
 ```
-
-
-## Todo
-
-Make a repository a separate Jekyll setup/theme

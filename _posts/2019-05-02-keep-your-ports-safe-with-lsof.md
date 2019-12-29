@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Checking your open ports with lsof
-keywords: security, development, workflow, codegaze
 description: Checking your open ports with lsof, while doing some development work or not.
 post_description: While doing some development work or not.
-keywords: SECURITY WORKFLOW
+categories: Workflow
 ---
 
 Ok, some terminal stuff today. 💻

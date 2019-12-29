@@ -6,33 +6,44 @@
   <body>
     <div class="layout">
       <div class="layout__row layout__row--header">
-          <header class="header header--main" role="banner">
-            <h3 class="header__title">
-              <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-              <small>{{ site.tagline }}</small>
-            </h3>
-            {% if page.url != '/' %}
-            <div class="header__handler-more">
-              <a href="{{ site.baseurl }}/" class="header__handler-more-link" id="more_posts"> Back</a>
+        <header class="header header--main" role="banner">
+          {% if page.url == '/' %}
+          <figure class="avatar avatar--header">
+            <img src="/assets/img/avatar.jpg" class="avatar__image" title="Thanos Kolovos" alt="Thanos Kolovos">
+          </figure>
+          {% endif %}
+          <nav role="navigation" class="header__nav {% if page.url == '/' %}header__nav--home{% endif %}">
+            <div class="header__title {% if page.url == '/' %}header__title--home{% endif %}">
+              <a href="{{ site.baseurl }}/" title="Home">
+                <img src="/assets/img/logo.svg" class="header__title-img" title="CodegazeRants Home" alt="CodegazeRants Home">
+              </a>
             </div>
-            {% endif %}
-          </header>
+            <ul class="nav nav--main u-alignRight">
+              <li class="nav--main__item"><a href="{{ site.baseurl }}/writings" title="Writings">WRITINGS</a></li>
+              <li class="nav--main__item"><a href="{{ site.baseurl }}/about" title="About">ABOUT</a></li>
+              <li class="nav--main__item">
+                <a href="{{site.url}}/atom" title="RSS" aria-label="RSS">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188h4.817c-.03-13.231-10.755-23.954-24-24v4.812z"/></svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
       </div>
       <main class="layout__row layout__row--main" role="main">
         {{ content }}
       </main>
       <footer class="layout__row layout__row--footer" role="contentinfo">
         <small>
-          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>.
-          All rights reserved. <a href="https://www.twitter.com/codegaze" target="_blank">@codegaze</a>
+          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time> <a href="/about">Thanos Kolovos</a>
         </small>
       </footer>
     </div>
     <div id="offline-status" class="is-hidden user-message">Hey friend, you can browse offline!</div>
 
+
     <!-- Styles -->
     <link rel="stylesheet" href="/assets/css/all.css">
-
     <!-- Scripts -->
     <script src="/worker.js" ></script>
     <script src="/assets/js/all.js" ></script>

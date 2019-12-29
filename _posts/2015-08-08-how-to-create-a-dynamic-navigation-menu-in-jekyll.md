@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Dynamic navigation for Jekyll
-keywords: jekyll, menu, dynamic menu, ruby, static site
 description: How to create a dynamic navigation menu in Jekyll
 post_description: This is a tutorial on how to create a simple dynamic menu for Jekyll
-keywords: Jekyll,Ruby 
+categories: Jekyll
 ---
 
 This is a tutorial on how to create a simple dynamic menu for [Jekyll](https://github.com/jekyll/jekyll).
@@ -23,7 +22,7 @@ First of all you need to check if there is a _data folder in your project folder
 - title: Blog
   url: /blog/
 - title: About
-  url: /about/  
+  url: /about/
 
 {% endhighlight %}
 

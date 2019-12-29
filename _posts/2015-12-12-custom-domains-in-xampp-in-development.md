@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Create custom domains for development in XAMPP
-keywords: servers, domains, development, xampp, codegaze
 description: Create custom domains for development in XAMPP. It's easy.
 post_description: It's easy.
-keywords: XAMPP,APACHE,DEVELOPMENT
+categories: [Workflow, Coding]
 ---
 
 If you are developing sites the you 've come to a place where you are furstrated with constantly having to change things when you move to production such as changing urls to get the thing work. We spent three hours of our lives with a friend of mine to reconfigure a Wordpress site from a XAMPP server to production server. Another example I can think of is the Laravel's public folder, I don't want to go to ```localhost/site/public``` each time, a mywebsite.com would be fine.
@@ -14,7 +13,7 @@ The best thing you could do is configure your local setup as your production ser
 
 ## Hosts File
 
-Just go to your ```C:\Windows\System32\drivers\etc```, edit(as administrator) your hosts file and add your preffered domain. For this example I used ```yourdomain.io```. Remember, my driver is 'C:\', yours might be something else. 
+Just go to your ```C:\Windows\System32\drivers\etc```, edit(as administrator) your hosts file and add your preffered domain. For this example I used ```yourdomain.io```. Remember, my driver is 'C:\', yours might be something else.
 
 When you do this open your command and type ```ipconfig /flushdns``` to flush your local dns settings.
 
@@ -61,7 +60,7 @@ Navigate to 'your XAMPP install folder\apache\conf\extra\', for me is 'C:\xampp\
 # use only name-based virtual hosts so the server doesn't need to worry about
 # IP addresses. This is indicated by the asterisks in the directives below.
 #
-# Please see the documentation at 
+# Please see the documentation at
 # <URL:http://httpd.apache.org/docs/2.4/vhosts/>
 # for further details before you try to setup virtual hosts.
 #
@@ -107,13 +106,3 @@ Navigate to 'your XAMPP install folder\apache\conf\extra\', for me is 'C:\xampp\
 
 
 Just in case start and stop your apache service. Next thing you got to do is navigate to your url by typing www.yourdomain.io in your browser.
-
-
-<div class="happy-hour">
-
-  <ul>
-    <li>Drink: Wine</li>
-    <li>Music: <a href="https://www.youtube.com/watch?v=EyiiwNHAC8M" target="_blank">Kurt Vile - Full Performance (Live on KEXP 10/19/2015)</a></li>
-  </ul>
-</div>
-

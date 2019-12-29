@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Browser history API
-keywords: javascript, browser history, frontend, codegaze, forms
 description: Keep your form selections with the help of browser history API
 post_description: Keep your form selections with the help of browser history API.
-keywords: Javascript,API
+categories: [Coding, JS]
 ---
 
 This is a simple tutorial about using browsers' history API to keep your form selections.
@@ -14,14 +13,14 @@ This can be easily bypassed with the use of browser history API.
 
 ## Back to the future I
 
-We 've all used the ```history.back()``` back in the old days (and in this example too) to go back to a previous page. 
+We 've all used the ```history.back()``` back in the old days (and in this example too) to go back to a previous page.
 
 ***It was awful! Don't do it***
 
 If you don't have your own controlled environment e.g a mobile app, you don't know what was the previous page.
 
 
-## Back to the future II 
+## Back to the future II
 
 Nowadays we have ```history.pushState();``` that adds a state to the browser history.
 
@@ -37,20 +36,20 @@ I didn't explained all the parameters in depth because we are only going to use 
 
 What we want to do is pass all our form parameters to our url and when we come back we will get these parameters to fill our form.
 
-[Here](https://codegaze.github.io/demos/history) is a live example of what we are going to do. 
+[Here](https://codegaze.github.io/demos/history) is a live example of what we are going to do.
 
 
 
 {% highlight javascript %}
-    
+
     // Get our elements by id
     var selectBox = document.getElementById('select_value'),
         textBox = document.getElementById('text_value');
-    
-    /* 
-       With every value change in our elements 
+
+    /*
+       With every value change in our elements
        we serialize our form (I was to lazy to create a serialize
-       function so I used jquery) and send it to the function 
+       function so I used jquery) and send it to the function
        setBrowserHistory();
     */
 
@@ -59,17 +58,17 @@ What we want to do is pass all our form parameters to our url and when we come b
     }
 
     selectBox.onchange = function() {
-      setBrowserHistory(serializeForm()); 
-    }  
+      setBrowserHistory(serializeForm());
+    }
 
-    /* 
+    /*
        Serialize the form with jQuery (Lazy SOB)
        as a string
     */
-    
+
     function serializeForm() {
      return $('#form_to_serialize').serialize();
-    } 
+    }
 
 {% endhighlight %}
 

@@ -1,20 +1,19 @@
 ---
 layout: post
 title: Swiper-JW Player
-keywords: javascript, jwplayer, swiper, idangerous, plugin
 description: Swiper-JW Player - A plugin to extend Swiper for easier JW Player integration
 post_description: A plugin to extend Swiper for easier JW Player integration.
-keywords: Javascript,JW Player,Plugin 
+categories: [Coding, JS]
 ---
 
-[Swiper-JW Player](https://github.com/codegaze/Swiper-JWPlayer) is a very small plugin that extends iDangero.us [Swiper](http://www.idangero.us/swiper/) to avoid setting up the configuration for stopping [JW Player](http://www.jwplayer.com/) videos between slide navigation in each Swiper instance. 
+[Swiper-JW Player](https://github.com/codegaze/Swiper-JWPlayer) is a very small plugin that extends iDangero.us [Swiper](http://www.idangero.us/swiper/) to avoid setting up the configuration for stopping [JW Player](http://www.jwplayer.com/) videos between slide navigation in each Swiper instance.
 
 
-This was created to satisfy my need for a fairly abstract/dynamic way to deal with JW Player events, in this case stopping it, without writing code in Swipper callbacks everytime I need something like this. 
+This was created to satisfy my need for a fairly abstract/dynamic way to deal with JW Player events, in this case stopping it, without writing code in Swipper callbacks everytime I need something like this.
 
 The goal was to be slide targeted and not just call a ```jwplayer().stop()``` that can cause a UX problem by stopping any other player on the page.
 
-### Code 
+### Code
 {% highlight javascript %}
 (function (Swiper) {
 
@@ -25,7 +24,7 @@ The goal was to be slide targeted and not just call a ```jwplayer().stop()``` th
           onSlideChangeStart: function () {
 
             var jwplayer_elements = swiper.slides[swiper.previousIndex].getElementsByClassName('jwplayer');
-            
+
             if ( jwplayer_elements.length > 0) {
               for (var i = 0; i < jwplayer_elements.length; i++){
                 jwplayer(jwplayer_elements[i].id).stop();
@@ -35,7 +34,7 @@ The goal was to be slide targeted and not just call a ```jwplayer().stop()``` th
           }
       };
   };
-    
+
 })(Swiper);
 {% endhighlight %}
 

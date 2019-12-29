@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Andrew Shafer @ Cloud Foundry Summit 2014
-keywords: oraganizational learning, devops, andrew shafer, codegaze
 description: Andrew Shafer @ Cloud Foundry Summit 2014 - There is no talent shortage, Organizational Learning is a Competitive Advantage
 post_description:  There is no talent shortage - Organizational Learning is a Competitive Advantage.
-keywords: ORGANIZATIONAL LEARNING, DEVOPS
+categories: [Organizational Learning]
 ---
 
 <div class="video-fluid-wrapper">

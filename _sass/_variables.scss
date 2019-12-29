@@ -1,16 +1,16 @@
-/* Base Background Color */
-$base-color-alpha: #fff;
-
-/* Base theme Color */
-$base-color-beta: #E9C46A;
-$base-color-gamma: #515151;
-$base-color-delta: #F1654C;
 /* Font attributes */
-$base-font-family-plain:  Helvetica, Arial, sans-serif;
+$base-font-family-plain: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
 $base-font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
-$base-font-color: #515151;
-$base-font-size: 16px;
+$base-font-size: 16;
 
-$base-link-color: #000;
-$post-link-color: $base-color-beta;
 $base-gutter: 15px;
+
+:root {
+  --cs-bg: #fff;
+  --cs-brand-color: #ff6263;
+  --cs-font-color: #2F2F2F;
+  --cs-font-size: 18px;
+  --cs-link-active-color: #e03030;
+  --cs-link-color: #000;
+  --cs-secondary-color: #3B3B3B;
+}

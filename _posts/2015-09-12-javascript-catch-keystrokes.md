@@ -1,15 +1,14 @@
 ---
 layout: post
 title: How to capture user keystrokes with vanilla javascript
-keywords: javascript, vanilla, keystroke, keycode, keypress, codegaze, no jquery
 description: How to capture user keystrokes with a few lines of javascript code
 post_description: These days I am in the mood for ditching big libraries.
-keywords: Javascript
+categories: [Coding, JS]
 ---
 
 These days I am in the mood for ditching big libraries and having my own mini libraries or a few lines of code only for using the things I need.
 
-It's not that I don't like the libraries we have, it's that sometimes I just want to have only the things I need for my project. 
+It's not that I don't like the libraries we have, it's that sometimes I just want to have only the things I need for my project.
 
 *Why should I map all the keys if I just want two or three of them?*
 
@@ -46,10 +45,7 @@ document.onkeydown = function (e) {
 };
 {% endhighlight %}
 
-And that's it! 
+And that's it!
 
 You can use whatever key you want without using any library, or create your own lightweight 'plugin' for a number of keys!
 Here is a list of keycodes from the [Adobe](http://help.adobe.com/en_US/AS2LCR/Flash_10.0/help.html?content=00000520.html){:target="_blank"} website.
-
-
-

@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Working with ES6 in the browser
-keywords: Javascript, ES6, browser, frontend, codegaze
 description: Working with ES6 in the browser. The easy configuration and more advanced with Babelify, Browserify and Watchify.
 post_description: The easy configuration and more advanced with Babelify, Browserify and Watchify
-keywords: JAVASCRIPT,ES6
+categories: [Coding, JS]
 ---
 
 These are some ways to work with ES6 in the browser. We are going to use [Babel](http://babeljs.io/) 6 as our transpiler and [Gulp](http://gulpjs.com/) as our task runner.
@@ -26,7 +25,7 @@ Creating a package.json and add the `gulp`, `gulp-babel`, `gulp-concat`, `gulp-s
 }
 {% endhighlight %}
 
-or just in our command line 
+or just in our command line
 
 {% highlight javascript %}
 npm install --save-dev gulp gulp-babel gulp-sourcemaps gulp-concat babel-preset-es2015
@@ -85,10 +84,10 @@ For our html file we just need to add our app.js file to our simple html structu
   <title>ES6 Browser Starter</title>
 </head>
 <body>
-  
+
 <script src="./dist/app.js"></script>
 </body>
-</html>  
+</html>
 {% endhighlight %}
 
 <hr class="post__separator"/>
@@ -180,8 +179,8 @@ let bundle = (bundler) => {
 gulp.task('default', () => {
 
   let bundler = browserify(config.src, {debug: true})
-                  .plugin(watchify) 
-                  .transform(babelify, {presets: ['es2015']}); 
+                  .plugin(watchify)
+                  .transform(babelify, {presets: ['es2015']});
 
   bundle(bundler);
 
@@ -194,8 +193,8 @@ Let's start from the bottom.
 
 {% highlight javascript %}
   let bundler = browserify(config.src, {debug: true})
-                  .plugin(watchify) 
-                  .transform(babelify, {presets: ['es2015']}); 
+                  .plugin(watchify)
+                  .transform(babelify, {presets: ['es2015']});
 {% endhighlight %}
 
 Our default task is creating a bundler variable with a browserify object. Takes two parameters, one is our source file and the second one is to return inline sourcemaps in our `bundle.js` file. Then adds the watchify plugin and transforms it with babelify to ES5 code.
@@ -225,7 +224,7 @@ The ```bundle``` function bundles our code and puts the result in our destinatio
 
 <hr class="post__separator"/>
 
-For this example we are going to create one more js file to test our module works. 
+For this example we are going to create one more js file to test our module works.
 
 **Important:** Remember to put './' in front of the import folder. I lost a lot of time because I forgot to.
 
@@ -235,7 +234,7 @@ For this example we are going to create one more js file to test our module work
 
   import {y} from './libs/simpleModule';
   y();
-  
+
   //---- ./libs/simpleModule.js
   export function y() {
     console.log('This is a Module!');
@@ -254,10 +253,10 @@ For this html file we are going to change our app.js from our previous example w
   <title>ES6 Browser Modules</title>
 </head>
 <body>
-  
+
 <script src="./dist/bundle.js"></script>
 </body>
-</html>  
+</html>
 {% endhighlight %}
 <hr class="post__separator"/>
 And our folder structure must be something like this right now.
@@ -273,14 +272,6 @@ And our folder structure must be something like this right now.
 </pre>
 
 Just execute ```gulp``` in your terminal and any change in your javascript files will be watched and compiled. If everything went well you should be able to see the '==> Successful Bundle!' message.
-
-
-<div class="happy-hour">
-  <ul>
-    <li>Drink: Coffee(s)</li>
-    <li>Music: <a href="https://www.youtube.com/watch?v=9L5ya3xRA58" target="_blank">Incubus - Fungus Amongus</a></li>
-  </ul>
-</div>
 
 <style>
   table tr td:first-child {

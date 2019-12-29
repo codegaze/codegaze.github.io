@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Jekyll workflow with Gulp
-keywords: Jekyll, Gulp, workflow, frontend, codegaze
 description: Jekyll workflow with Gulp
 post_description: It's never too late.
-keywords: JEKYLL,GULP,WORKFLOW
+categories: [Jekyll, Coding]
 ---
 
 ## Introduction
@@ -131,7 +130,7 @@ const gulp = require('gulp'),
 const base_path = './',
       src = base_path + '_dev/src',
       dist = base_path + 'assets',
-      paths = {  
+      paths = {
           js: src + '/js/*.js',
           scss: [ src +'/sass/*.scss',
                   src +'/sass/**/* .scss',
@@ -141,7 +140,7 @@ const base_path = './',
 
 
 // Compile sass to css
-gulp.task('compile-sass', () => {  
+gulp.task('compile-sass', () => {
   return gulp.src(paths.scss)
     .pipe(plumber((error) => {
         gutil.log(gutil.colors.red(error.message));
@@ -170,7 +169,7 @@ gulp.task('server', () => {
 })
 
 // Watch files
-gulp.task('watch', () => {  
+gulp.task('watch', () => {
   gulp.watch(paths.scss, ['compile-sass']);
   gulp.watch(paths.jekyll, ['build-jekyll']);
 });
@@ -241,13 +240,6 @@ Having this workflow might be strange at the beginning but it will help you, I p
 If you have and questions or comments don't hesitate to contact me here or at my [twitter](https://twitter.com/codegaze) account.
 
 Cheers!
-
-<div class="happy-hour">
-  <ul>
-    <li>Drink: Coffee/Wine</li>
-    <li>Music: <a href="https://www.youtube.com/watch?list=PLSRDGXudTSm-ltlPolUWFU0LCIZol16qc&v=MbEOR2Flc-4" target="_blank">VA - Cinematic Moments</a></li>
-  </ul>
-</div>
 
 <style>
 

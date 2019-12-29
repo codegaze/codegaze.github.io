@@ -20,12 +20,14 @@
 // Changed by @codegaze
 
 @import "variables";
-@import "mixins";
 @import "base";
 @import "type";
+@import "mixins";
 @import "layout";
 @import "header";
 @import "posts";
-@import "pagination";
-@import "message";
 @import "demos";
+
+* > * {
+  // border: 1px solid blue;
+}
