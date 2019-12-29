@@ -1,13 +1,15 @@
 # Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
+# permalink:           pretty
 # relative_permalinks: true
+
+permalink: /:year/:month/:day/:title/
 
 # Setup
 title:               CodegazeRants
 tagline:             Thanos Kolovos
-url:                 https://codegaze.github.io
+url:                 https://codegazerants.com
 # paginate:            1
 baseurl:             ""
 
