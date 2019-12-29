@@ -1,13 +1,12 @@
 ---
 layout: post
 title: Create an ES6 module
-keywords: Javascript, social, share, buttons, frontend, codegaze
 description: Create an ES6 module & other ES6 features
 post_description: And other ES6 features.
-keywords: JAVASCRIPT,ES6
+categories: [Coding, JS]
 ---
 
-### Introduction 
+### Introduction
 
 ES6 Time! I decided to migrate the share buttons script to ECMASCRIPT 6.
 
@@ -63,25 +62,25 @@ In my opinion the main difference of using arrow functions is that the word ```t
 
 But here are some examples:
 {% highlight javascript %}
-    
-    
+
+
     // No parameters (parenthesis is required)
     let logMe = () => console.log('ME!');
-    
+
     logMe();
 
     // One parameter (can ommit parenthesis)
     let logMe = name => console.log(name);
-    
+
     logMe('Jim');
 
     // More than one parameter (parenthesis is required)
     let logMe = (what, name) => console.log(what + ' ' + name);
-    
+
     logMe('Hello', 'Jim');
 
     // More than one parameter and multiple line expression
-    let logMe = (what, name) => { 
+    let logMe = (what, name) => {
         let text = what + ' ' + name;
         console.log(text);
     };
@@ -89,18 +88,18 @@ But here are some examples:
     logMe('Hello', 'Jim');
 
 
-    /* 
+    /*
         The `this` scope. this will refer to the logMe() and not the setTimeout function.
         There is no `this` inside that arrow function.
     */
 
     function logMe() {
-        setTimeout(() => { 
+        setTimeout(() => {
             console.log("Who:", this.name);
         },500);
     };
 
-    // or 
+    // or
     function logMe() {
         setTimeout(() => console.log("Who:", this.name),500);
     };
@@ -121,20 +120,20 @@ Here is how we are going to use our ```logMe()``` with the new shiny string temp
 
 {% highlight javascript %}
     // The old way
-    let logMe = (what, name) => { 
+    let logMe = (what, name) => {
         let text = what + ' ' + name;
         console.log(text);
     }
 
     // The New way
-    let logMe = (what, name) => { 
+    let logMe = (what, name) => {
         let text = `${what} ${name}`;
         console.log(text);
     };
 
     // or even in a crazy ugly multiline string
-    let logMe = (what, name) => { 
-        let text = `I just wanted to 
+    let logMe = (what, name) => {
+        let text = `I just wanted to
          say ${what} to my friend
                     ${name}`;
         console.log(text);
@@ -224,7 +223,7 @@ shareButtons = function(){
   var init = function(){
     add_listeners_to_buttons();
   };
-  
+
   var window_open = function(url){
     window.open(url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=500,height=300');
   };
@@ -246,12 +245,12 @@ shareButtons = function(){
 
         // Check which service we want and attach the right url.
         // window.location give the current url.
-        // 
+        //
         // IMPORTANT! Always remember we need to encode our urls
         //            and variables we are sending.
         switch (service) {
           case 'facebook':
-            url+= 'https://www.facebook.com/sharer/sharer.php?u=' 
+            url+= 'https://www.facebook.com/sharer/sharer.php?u='
                + page_url;
             break;
           case 'twitter':
@@ -262,7 +261,7 @@ shareButtons = function(){
             console.log('There is no such share service in your `switch`!');
             break;
         }
-        
+
         window_open(url);
       });
     }
@@ -313,13 +312,13 @@ Nothing else is changed in our `init` or `window_open` function
   let init = () => {
     add_listeners_to_buttons();
   };
-  
+
   let window_open = url => {
     window.open(url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=500,height=300');
   }
 {% endhighlight %}
 
-The most interesting parts are in the `add_listeners_to_buttons` function. 
+The most interesting parts are in the `add_listeners_to_buttons` function.
 
 First of all instead of using a `for(var i=....)` function we used the new ES6 `for...of` to iterate through our array of elements. Then we replaced our traditional string concatenation with the new ES6 string templates as we did in our examples before. That was easy and fun, I must say!
 
@@ -329,7 +328,7 @@ First of all instead of using a `for(var i=....)` function we used the new ES6 `
     for (let button of shareButtons) {
       button.addEventListener('click', e => {
         e.preventDefault();
-        
+
         let service = button.getAttribute('data-service'),
             title = encodeURIComponent(button.title),
             page_url = encodeURIComponent(button.href),
@@ -346,7 +345,7 @@ First of all instead of using a `for(var i=....)` function we used the new ES6 `
             console.log(`There is no ${service} share service in your 'switch'!`);
             break;
         }
-        
+
         window_open(url);
       });
     }
@@ -355,7 +354,7 @@ First of all instead of using a `for(var i=....)` function we used the new ES6 `
 
 And now the evil event listener with arrow function and `this`!
 
-First I tried using `this.getAttribute()` and never worked. Of course it never worked, it returned undefined, because `this` doesn't refer to the dom element but to some parent function. 
+First I tried using `this.getAttribute()` and never worked. Of course it never worked, it returned undefined, because `this` doesn't refer to the dom element but to some parent function.
 {% highlight javascript %}
     button.addEventListener('click', e => {
         e.preventDefault();
@@ -387,7 +386,7 @@ let shareButtons = function(){
   let init = () => {
     add_listeners_to_buttons();
   };
-  
+
   //  No need for a parenthesis here we got one parameter
   let window_open = url => {
     window.open(url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=500,height=300');
@@ -396,13 +395,13 @@ let shareButtons = function(){
   let add_listeners_to_buttons = () => {
 
     for (let button of shareButtons) {
-      /* 
+      /*
         We cannot use an arrow function because `this` will return `undefined`.
         So, we are using the button variable to have the preferred functionality.
       */
       button.addEventListener('click', e => {
         e.preventDefault();
-        
+
         let service = button.getAttribute('data-service'),
             title = encodeURIComponent(button.title),
             page_url = encodeURIComponent(button.href),
@@ -419,7 +418,7 @@ let shareButtons = function(){
             console.log(`There is no ${service} share service in your 'switch'!`);
             break;
         }
-        
+
         window_open(url);
       });
     }
@@ -444,7 +443,7 @@ ShareButtons.init();
 
 ### The code
 
-You can try this code by downloading <a href="https://github.com/codegaze/es6-module-codegaze-blog-post-code">this</a> repository from my github account. 
+You can try this code by downloading <a href="https://github.com/codegaze/es6-module-codegaze-blog-post-code">this</a> repository from my github account.
 
 ### Conclusion
 
@@ -452,12 +451,3 @@ Well, this was a big and fun post, at least for me.
 
 As I said before, ES6 is new to me and I 'm sure there are some errors in my concept or the code and it would be great if someone has any comment on this to make it better.
 Cheers!
-
-
-<div class="happy-hour">
-  <ul>
-    <li>Drink: Wine</li>
-    <li>Music: <a href="https://www.youtube.com/watch?v=hvHA-nkQ4jg" target="_blank">The Feelies - Crazy Rhythms</a></li>
-  </ul>
-</div>
-

@@ -1,18 +1,17 @@
 ---
 layout: post
 title: A simple BEM advice
-keywords: BEM, SASS, frontend, codegaze
 description: A simple BEM advice and how not to lose your mind
 post_description: And how not to lose your mind.
-keywords: SASS,BEM
+categories: [Coding, CSS]
 ---
-For some time now I have been using the BEM methodology for production and I came to a conclusion. 
+For some time now I have been using the BEM methodology for production and I came to a conclusion.
 
 **"Don't get carried away!"**
 
-What I mean is, when I started using BEM I thought SASS will be my savior, I will use the sh*t out of '&' and don't ever repeat one single word... 
+What I mean is, when I started using BEM I thought SASS will be my savior, I will use the sh*t out of '&' and don't ever repeat one single word...
 
-This was a mistake. If you have a small project that won't scale it's okay, but if you have a big project that will grow, you and your colleagues are going to have a big problem. Code will get more and more complicated, even a simple navigation menu with some modifiers will be difficult to find the right line to change or add something. 
+This was a mistake. If you have a small project that won't scale it's okay, but if you have a big project that will grow, you and your colleagues are going to have a big problem. Code will get more and more complicated, even a simple navigation menu with some modifiers will be difficult to find the right line to change or add something.
 
 Let me be more clear with an example.
 
@@ -21,7 +20,7 @@ Let me be more clear with an example.
 
   &__item {
     display: inline;
-    
+
     &--primary {
       background: blue;
     }
@@ -53,7 +52,7 @@ This code after a while (or even now) will be incomprehensible. The solution is 
 
 {% highlight css %}
 .nav__item {
-  
+
   display: inline;
 
   &--primary {
@@ -62,7 +61,7 @@ This code after a while (or even now) will be incomprehensible. The solution is 
   }
 
   &--dashed {
-    border: 1px dashed #000;    
+    border: 1px dashed #000;
   }
 
 }
@@ -72,13 +71,13 @@ This code after a while (or even now) will be incomprehensible. The solution is 
 }
 
 .nav__item-link {
- 
+
   color: #000;
   width: 100%;
 
   &--gray {
     background: gray;
-    color: #fff;    
+    color: #fff;
   }
 }
 

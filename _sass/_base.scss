@@ -13,50 +13,42 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-
 }
 
 html {
-  
-  font-size: $base-font-size;
-  line-height: 1.5;
+  font-size: $base-font-size * 1px;
+  line-height: 1.35;
   overflow-y: scroll;
   @media (min-width: 38em) {
-    font-size: 20px;
+    font-size: 18px;
   }
-
 }
 
 body {
   font-family: $base-font-family-plain;
-  color: $base-font-color;
-  background-color: $base-color-alpha;
+  color: #373737;
+  background-color: var(--cs-bg);
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
 
-body.fonts-loaded {
-  font-family: $base-font-family;
-}
-
 body:after {
-    content: "";
-    position: fixed;
-    background: $base-color-beta;
-    height: 10px;
-    bottom: 0;
-    width: 100%;
-} 
+  content: "";
+  position: fixed;
+  background: var(--cs-secondary-color);
+  height: 5px;
+  bottom: 0;
+  width: 100%;
+}
 // No `:visited` state is required by default (browsers will use `a`)
 a {
-  color: $base-link-color;
+  color: var(--cs-link-color);
   text-decoration: none;
 
   // `:focus` is linked to `:hover` for basic accessibility
   &:hover,
   &:focus {
     text-decoration: underline;
-    // color: #fff;
   }
 
   strong {
@@ -93,15 +85,17 @@ tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
+
 .highlight {
   font-size: 16px;
-}
-code:not([class*="language-"]) {
-    color: #F1654C;
-    background-color: #f9f2f4;
-    border-radius: 4px;
 }
 
 .is-hidden {
   display: none;
+}
+.u-alignRight {
+  margin-left: auto;
+}
+.u-margin-center {
+  margin: 0 auto;
 }

@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Got rid of Google Fonts and I feel fine
-keywords: Jekyll, performance, google fonts,static, codegaze
 description: Got rid of Google Fonts and I feel fine. I really do.
 post_description: I really do.
-keywords: PERFORMANCE, TYPOGRAPHY
+categories: [Performance, UX]
 ---
 
 I started writing in this blog in 2015, and I made a decision to use the Roboto font as my weapon of choice. Why? Actually, I'm not sure. But I did.

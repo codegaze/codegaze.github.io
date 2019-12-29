@@ -1,10 +1,9 @@
 ---
 layout: post
 title: IE's innerHTML quirks
-keywords: IE, regular expressions, quirks, codegaze
 description: IE's innerHTML quirks and a definition of insanity
 post_description: And a definition of insanity.
-keywords: IE, DOM, PARSING
+categories: [Coding, JS]
 ---
 
 ### The background
@@ -52,7 +51,7 @@ of course).
 
 When you get the innerHTML of an element in IE, [its attributes are sorted by name, native attributes first. But if you add an attribute at runtime IE adds it at the end](http://stackoverflow.com/a/32273037/2321666).
 
-My regex would fail because of this. I did find I quick solution for this:  
+My regex would fail because of this. I did find I quick solution for this:
 
 {% highlight javascript %}
   new RegExp('<span.[^>]*?class=\"no-highlight.*?<\/span>|' + word, 'gi');

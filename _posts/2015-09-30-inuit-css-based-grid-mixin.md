@@ -1,10 +1,9 @@
 ---
 layout: post
 title: BEMIT CSS based grid mixin
-keywords: BEMIT, css, csswizardry, sass, codegaze, bem
 description: Create a grid based on a Harry Roberts' article
 post_description: Create a grid based on a Harry Roberts' article.
-keywords: CSS,SASS,BEM
+categories: [Coding, CSS]
 ---
 
 After reading [this](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) article from [@csswizardry](https://twitter.com/csswizardry) about taking the BEM naming a step further I wanted to create as simple mixin to build grid classes with this pattern ```u-1/3@md```.
@@ -31,7 +30,7 @@ This is the (current) sass code to create this kind of grid.
 {% highlight css %}
 
 @mixin u-grid-setup($namespace, $width) {
-  
+
   @media screen and (min-width: $width) {
 
     @for $i from 1 through $max-cols {
@@ -40,21 +39,21 @@ This is the (current) sass code to create this kind of grid.
       @if( index($ignore, $i)) {}
       @else {
         $j: 1;
-        
+
         // Take care of the one col 100% width
         // The `\` character is used to escape characters
         @if $j == 1 and $i == 1 {
           .u-#{$j}\/#{$i}\@#{$namespace} {
-              width: percentage($j/$i); 
+              width: percentage($j/$i);
           }
         }
-        
+
         // Take care of the rest
         @while $j < $i {
           .u-#{$j}\/#{$i}\@#{$namespace} {
-              width: percentage($j/$i); 
+              width: percentage($j/$i);
           }
-          
+
           $j: $j + 1
         }
       }

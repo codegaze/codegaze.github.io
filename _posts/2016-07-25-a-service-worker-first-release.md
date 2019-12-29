@@ -1,10 +1,9 @@
 ---
 layout: post
 title: A Service Worker first release
-keywords: Service Wrokers, javascript, pwa, ux, codegaze
 description: A Service Worker first release. Just added offline availability for this blog
 post_description: Just added offline availability for this blog.
-keywords: SERVICE WORKERS,UX
+categories: Coding
 ---
 
 I 've been experimenting for some time with progressive web apps and service workers. I know I am not the first one not even have the best implementation (google has already [built](https://github.com/GoogleChrome/sw-toolbox) a collection of tools for service workers), but this works and I am happy about it.

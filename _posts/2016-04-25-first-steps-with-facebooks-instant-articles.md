@@ -1,10 +1,9 @@
 ---
 layout: post
 title: First steps with Facebook's Instant Articles
-keywords: Facebook, Instant Articles, RSS, codegaze
 description: First steps with Facebook's Instant Articles and things I dealt with
 post_description: And things I dealt with.
-keywords: FACEBOOK,RSS
+categories: Coding
 ---
 
 ## Introduction

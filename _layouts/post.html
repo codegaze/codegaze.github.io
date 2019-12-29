@@ -2,23 +2,23 @@
 layout: default
 ---
 
-  <article class="post">
-<div class="post-info"><time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time> -
-    <tags class="post-tags">
-      {% assign keywords = page.keywords | split: ',' %}
-      {% for keyword in keywords %}<tag>{{ keyword }}</tag>{% endfor %}
-    </tags>
-    </div>
-    <h1 class="post-title">{{ page.title }}</h1>
-    
+<article class="post">
+  <h1 class="post__title">{{ page.title }}</h1>
+  <div class="post__info">
+    <time datetime="{{ page.date | date_to_xmlschema }}" class="post__date">
+      {{ page.date | date_to_long_string }}
+    </time> -
+    {% for category in page.categories %}<a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{ category }}</a> {% endfor %}
+  </div>
+  <div class="post__content">
     {{ content }}
-    
-    
-  <div id="disqus_thread"></div>
+  </div>
+</article>
+<div id="disqus_thread"></div>
   <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES * * */
       var disqus_shortname = 'codegazegithubio';
-      
+
       /* * * DON'T EDIT BELOW THIS LINE * * */
       (function() {
           var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -27,5 +27,3 @@ layout: default
       })();
   </script>
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-  </article>
-

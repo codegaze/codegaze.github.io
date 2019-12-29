@@ -1,7 +1,7 @@
 {
-	"name": "Codegaze - Thanos K",
-	"short_name": "Codegaze",
-	"start_url": "https://codegaze.github.io",
+	"name": "CodegazeRants by Thanos Kolovos",
+	"short_name": "CodegazeRants",
+	"start_url": "https://www.codegazerants.com",
 	"icons": [
 		{
 			"src": "\/assets\/img\/icons\/android-chrome-192x192.png",
@@ -10,6 +10,6 @@
 		}
 	],
 	"background_color": "#ffffff",
-	"theme_color": "#578661",
+	"theme_color": "#ff6263",
 	"display": "standalone"
 }

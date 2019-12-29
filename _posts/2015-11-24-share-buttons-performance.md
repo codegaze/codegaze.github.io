@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Share Buttons Performance Issues
-keywords: Javascript, social, share, buttons, frontend, codegaze
 description: Share Buttons Performance Issues and how to deal with them
 post_description: And how to deal with them.
-keywords: JAVASCRIPT,PERFORMANCE,SOCIAL
+categories: [Performance, Coding]
 ---
 
 Last week we had a series of interviews with a number of candidates for a junior frontend developer position and at the end of each session we gave them a "code challenge" to complete in their spare time, only if they wanted to. Nothing special, just a simple responsive prototype so as to take a peak at the quality of their code.
@@ -29,11 +28,11 @@ Here is the HTML code for the buttons. We are just creating simple links. We use
 {% endhighlight %}
 
 
-And the javascript code for it with some comments to explain what's going on. 
+And the javascript code for it with some comments to explain what's going on.
 
 {% highlight javascript %}
 <script>
-  
+
   // Select all our buttons with the js-share-button class
   var shareButtons = document.querySelectorAll('.js-share-button');
 
@@ -50,12 +49,12 @@ And the javascript code for it with some comments to explain what's going on.
 
       // Check which service we want and attach the right url.
       // window.location give the current url.
-      // 
+      //
       // IMPORTANT! Always remember we need to encode our urls
       //            and variables we are sending.
       switch (service) {
         case 'facebook':
-          url+= 'https://www.facebook.com/sharer/sharer.php?u=' 
+          url+= 'https://www.facebook.com/sharer/sharer.php?u='
              + encodeURIComponent(window.location);
           break;
         case 'twitter':
@@ -66,7 +65,7 @@ And the javascript code for it with some comments to explain what's going on.
           console.log('There is no such share service in your `switch`!');
           break;
       }
-      
+
       window.open(url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=500,height=300');
 
     });
@@ -78,7 +77,7 @@ And the javascript code for it with some comments to explain what's going on.
 ## Update 12/12/2015
 
 I wanted to create a module for this script so I can use it to ajax elements too.
-This could be better, for example the ```window_open``` function could be in another module with global small utilities but this is good for now. The only difference for the user is that the URL comes from the link and not from the current page. This is great when you got an ajax list you want to share each item. 
+This could be better, for example the ```window_open``` function could be in another module with global small utilities but this is good for now. The only difference for the user is that the URL comes from the link and not from the current page. This is great when you got an ajax list you want to share each item.
 
 Just use ```shareButtons.init();``` when you want to parse the DOM.
 
@@ -94,7 +93,7 @@ shareButtons = function(){
   var init = function(){
     add_listeners_to_buttons();
   };
-  
+
   var window_open = function(url){
     window.open(url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=500,height=300');
   }
@@ -116,12 +115,12 @@ shareButtons = function(){
 
         // Check which service we want and attach the right url.
         // window.location give the current url.
-        // 
+        //
         // IMPORTANT! Always remember we need to encode our urls
         //            and variables we are sending.
         switch (service) {
           case 'facebook':
-            url+= 'https://www.facebook.com/sharer/sharer.php?u=' 
+            url+= 'https://www.facebook.com/sharer/sharer.php?u='
                + page_url;
             break;
           case 'twitter':
@@ -132,7 +131,7 @@ shareButtons = function(){
             console.log('There is no such share service in your `switch`!');
             break;
         }
-        
+
         window_open(url);
       });
     }
@@ -160,14 +159,6 @@ You  can check the demo of these buttons, will give you a share to the current p
 </div>
 
 
-<div class="happy-hour">
-
-  <ul>
-    <li>Drink: Water</li>
-    <li>Music: <a href="https://www.youtube.com/watch?v=kxyUl3DrOLE" target="_blank">Iron and Wine - Our Endless Numbered Days</a></li>
-  </ul>
-</div>
-
 
 
 <script>
@@ -180,7 +171,7 @@ shareButtons = function(){
   var init = function(){
     add_listeners_to_buttons();
   };
-  
+
   var window_open = function(url){
     window.open(url, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=500,height=300');
   }
@@ -202,12 +193,12 @@ shareButtons = function(){
 
         // Check which service we want and attach the right url.
         // window.location give the current url.
-        // 
+        //
         // IMPORTANT! Always remember we need to encode our urls
         //            and variables we are sending.
         switch (service) {
           case 'facebook':
-            url+= 'https://www.facebook.com/sharer/sharer.php?u=' 
+            url+= 'https://www.facebook.com/sharer/sharer.php?u='
                + page_url;
             break;
           case 'twitter':
@@ -218,7 +209,7 @@ shareButtons = function(){
             console.log('There is no such share service in your `switch`!');
             break;
         }
-        
+
         window_open(url);
       });
     }
@@ -234,7 +225,7 @@ shareButtons.init();
 </script>
 
 <style>
-  
+
   a.share__button{
     padding: 20px;
     margin: 20px;

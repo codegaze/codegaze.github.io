@@ -1,10 +1,9 @@
 ---
 layout: post
 title: VirtualBox Copy/Paste & Drag 'n' Drop
-keywords: Virtualbox, copy, codegaze, host, guest,machine, virtual machine, xubuntu
 description: How to enable Drag 'n' Drop & Copy/Paste between guest OS & Linux host
 post_description: How to enable Drag 'n' Drop & Copy/Paste between guest OS & Linux host.
-keywords: VirtualBox,Linux 
+categories: Workflow
 ---
 
 You are working with VirtualBox and you want to share clipboard and files between your guest machine and your Linux host?
@@ -36,7 +35,7 @@ In order to enable any interaction between the host and the machine and vise ver
 
 ### Enable communication between Host and Guest
 
-1. Go to your VirtualBox Manager select your machine and click settings. 
+1. Go to your VirtualBox Manager select your machine and click settings.
 2. From the first selection General, select the Advanced tab and select Bidirectional to Shared Clipboard and Drag 'n' Drop.
 3. Restart your machine.
 

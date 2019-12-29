@@ -1,13 +1,12 @@
 ---
 layout: post
 title: Responsive Rounded Buttons
-keywords: CSS, responsive, buttons, frontend, codegaze
 description: Responsive Rounded Buttons with a few lines of CSS
 post_description: With a few lines of CSS.
-keywords: SASS
+categories: [Coding, CSS]
 ---
 
-Last week I wanted to create three rounded buttons for a client's site. 
+Last week I wanted to create three rounded buttons for a client's site.
 
 I didn't keep it in the design but here is some code and explaination of how this is done for responsive cases.
 
@@ -15,7 +14,7 @@ I didn't keep it in the design but here is some code and explaination of how thi
 First of all our button needs to have a wrapper with a width. For our example we are going to use a list.
 
 {% highlight css %}
-    
+
 li {
   width: 15%;
   display: inline-block;
@@ -53,7 +52,7 @@ For the next part, our link needs to have ```padding-top: 50%;``` & ```padding-b
     line-height: 2em;
     font-size: 2em;
     margin-top: -1em;
-    background: #E9C46A; 
+    background: #E9C46A;
   }
 {% endhighlight %}
 
@@ -103,20 +102,11 @@ li {
     line-height: 2em;
     font-size: 2em;
     margin-top: -1em;
-    background: #E9C46A; 
+    background: #E9C46A;
   }
 }
 {% endhighlight %}
 
-That's all you need to know to work with rounded buttons. Below there is a new "section" you can check out about status when I write each post. 
+That's all you need to know to work with rounded buttons. Below there is a new "section" you can check out about status when I write each post.
 
 Maybe it works for you too **:)**.
-
-
-<div class="happy-hour">
-
-  <ul>
-    <li>Drink: Coffee</li>
-    <li>Music: <a href="https://www.youtube.com/watch?v=4a-YB6Cch0w" target="_blank">The Cure - Three Imaginary Boys</a></li>
-  </ul>
-</div>
