@@ -1,6 +1,7 @@
 ---
 layout: post
 title: After the Intermission
+description: Back after a long time. Some updates!
 categories: Personal
 ---
 
