@@ -25,4 +25,21 @@ layout: null
  </entry>
  {% endfor %}
 
+ {% for page in site.pages %}
+ {% if page.title == 'Categories' or page.title == 'About' or page.title == 'Home' or page.title == 'Writings' %}
+    <entry>
+      <title>{{ page.title | xml_escape }}</title>
+      <link href="{{ site.url }}{{ page.url }}"/>
+      <updated>
+        {% if page.date %}
+          {{ page.date | date_to_xmlschema }}
+        {% else %}
+          {{ site.time | date_to_xmlschema }}
+        {% endif %}
+      </updated>
+      <id>{{ site.url }}{{ page.id }}</id>
+      <content type="html">{{ page.content | xml_escape }}</content>
+    </entry>
+ {% endif %}
+ {% endfor %}
 </feed>
