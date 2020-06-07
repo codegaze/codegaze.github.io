@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create custom domains for development in XAMPP
+title: Create Custom Domains for Development in XAMPP
 description: Create custom domains for development in XAMPP. It's easy.
 post_description: It's easy.
 categories: [Workflow, Coding]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Highlight ruby code in Jekyll
+title: Highlight Ruby Code in Jekyll
 description: How to overcome problems with highlighting ruby code in Jekyll
 post_description: A few days ago I was trying to write a tutorial about creating a simple dynamic menu for Jekyll and I came across a strange problem while I was trying to show and highlight some ruby code.
 categories: Jekyll

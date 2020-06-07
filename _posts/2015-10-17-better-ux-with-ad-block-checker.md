@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Better UX for users with ad blockers
+title: Better UX for Users With Ad Blockers
 description: Inform your users about a feature they might miss
 post_description: Inform your users about a feature they might miss.
 categories: [Coding, JS]

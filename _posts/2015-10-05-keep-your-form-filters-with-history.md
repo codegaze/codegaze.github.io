@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Browser history API
+title: Browser History API
 description: Keep your form selections with the help of browser history API
 post_description: Keep your form selections with the help of browser history API.
 categories: [Coding, JS]

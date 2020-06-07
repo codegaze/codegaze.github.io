@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Got rid of Google Fonts and I feel fine
+title: Got Rid of Google Fonts and I Feel Fine
 description: Got rid of Google Fonts and I feel fine. I really do.
 post_description: I really do.
 categories: [Performance, UX]

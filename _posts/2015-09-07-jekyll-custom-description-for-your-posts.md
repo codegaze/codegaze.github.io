@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create custom description for your Jekyll posts
+title: Create Custom Description for Your Jekyll Posts
 description: Creating a custom description for your Jekyll posts
 post_description: Learn how to create a custom description/excerpt for your Jekyll blog posts
 categories: Jekyll

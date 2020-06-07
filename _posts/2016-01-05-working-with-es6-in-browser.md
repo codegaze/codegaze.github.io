@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with ES6 in the browser
+title: Working With ES6 in the Browser
 description: Working with ES6 in the browser. The easy configuration and more advanced with Babelify, Browserify and Watchify.
 post_description: The easy configuration and more advanced with Babelify, Browserify and Watchify
 categories: [Coding, JS]

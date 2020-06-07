@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Service Worker first release
+title: A Service Worker First Release
 description: A Service Worker first release. Just added offline availability for this blog
 post_description: Just added offline availability for this blog.
 categories: Coding

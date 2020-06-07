@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A modal alternative proposal
+title: A Modal Alternative Proposal
 description: A simple lightweight solution for not using modals
 post_description: A simple lightweight solution for not using modals.
 categories: [Coding, UX]

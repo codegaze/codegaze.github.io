@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jekyll workflow with Gulp
+title: Jekyll Workflow With Gulp
 description: Jekyll workflow with Gulp
 post_description: It's never too late.
 categories: [Jekyll, Coding]

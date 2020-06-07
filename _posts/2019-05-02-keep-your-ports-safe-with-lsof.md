@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Checking your open ports with lsof
+title: Checking Your Open Ports With lsof
 description: Checking your open ports with lsof, while doing some development work or not.
 post_description: While doing some development work or not.
 categories: Workflow

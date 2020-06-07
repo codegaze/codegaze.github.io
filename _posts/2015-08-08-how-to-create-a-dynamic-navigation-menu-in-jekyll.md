@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dynamic navigation for Jekyll
+title: Dynamic Navigation for Jekyll
 description: How to create a dynamic navigation menu in Jekyll
 post_description: This is a tutorial on how to create a simple dynamic menu for Jekyll
 categories: Jekyll

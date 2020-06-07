@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BEMIT CSS based grid mixin
+title: BEMIT CSS Based Grid Mixin
 description: Create a grid based on a Harry Roberts' article
 post_description: Create a grid based on a Harry Roberts' article.
 categories: [Coding, CSS]

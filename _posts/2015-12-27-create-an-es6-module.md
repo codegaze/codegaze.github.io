@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create an ES6 module
+title: Create an ES6 Module
 description: Create an ES6 module & other ES6 features
 post_description: And other ES6 features.
 categories: [Coding, JS]

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to capture user keystrokes with vanilla javascript
+title: How to Capture User Keystrokes With Vanilla Javascript
 description: How to capture user keystrokes with a few lines of javascript code
 post_description: These days I am in the mood for ditching big libraries.
 categories: [Coding, JS]

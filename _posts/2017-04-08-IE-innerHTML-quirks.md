@@ -1,6 +1,6 @@
 ---
 layout: post
-title: IE's innerHTML quirks
+title: IE's InnerHTML Quirks
 description: IE's innerHTML quirks and a definition of insanity
 post_description: And a definition of insanity.
 categories: [Coding, JS]

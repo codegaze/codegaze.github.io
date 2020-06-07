@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A simple BEM advice
+title: A Simple BEM Advice
 description: A simple BEM advice and how not to lose your mind
 post_description: And how not to lose your mind.
 categories: [Coding, CSS]

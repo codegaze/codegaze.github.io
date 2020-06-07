@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First steps with Facebook's Instant Articles
+title: First Steps With Facebook's Instant Articles
 description: First steps with Facebook's Instant Articles and things I dealt with
 post_description: And things I dealt with.
 categories: Coding
