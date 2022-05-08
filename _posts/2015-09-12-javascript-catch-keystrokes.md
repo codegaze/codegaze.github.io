@@ -48,4 +48,4 @@ document.onkeydown = function (e) {
 And that's it!
 
 You can use whatever key you want without using any library, or create your own lightweight 'plugin' for a number of keys!
-Here is a list of keycodes from the [Adobe](http://help.adobe.com/en_US/AS2LCR/Flash_10.0/help.html?content=00000520.html){:target="_blank"} website.
+Here is a list of keycodes from the [Toptal](https://www.toptal.com/developers/keycode){:target="_blank"} website.

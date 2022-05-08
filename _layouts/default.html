@@ -9,13 +9,13 @@
         <header class="header header--main" role="banner">
           {% if page.url == '/' %}
           <figure class="avatar avatar--header">
-            <img src="/assets/img/avatar.jpg" class="avatar__image" title="Thanos Kolovos" alt="Thanos Kolovos">
+            <img src="/assets/img/avatar.jpg" class="avatar__image" title="Thanos Kolovos" alt="Thanos Kolovos" width="100%" height="100%">
           </figure>
           {% endif %}
           <nav role="navigation" class="header__nav {% if page.url == '/' %}header__nav--home{% endif %}">
             <div class="header__title {% if page.url == '/' %}header__title--home{% endif %}">
               <a href="{{ site.baseurl }}/" title="Home">
-                <img src="/assets/img/logo.svg" class="header__title-img header__title-img--large" title="CodegazeRants Home" alt="CodegazeRants Home">
+                <img src="/assets/img/logo.svg" class="header__title-img header__title-img--large" title="CodegazeRants Home" alt="CodegazeRants Home" width="100%" height="100%">
                 <svg class="header__title-img header__title-img--small" style="isolation:isolate" viewBox="19 117.36 165.5 125.29" xmlns="http://www.w3.org/2000/svg">
                   <path d="m55.162 160.66q-7.861 0-12.174 5.907-4.312 5.908-4.312 16.464 0 21.967 16.486 21.967 6.918 0 16.756-3.459v11.68q-8.086 3.369-18.059 3.369-14.33 0-21.921-8.693-7.592-8.692-7.592-24.954 0-10.242 3.728-17.946 3.729-7.704 10.714-11.814 6.985-4.111 16.374-4.111 9.568 0 19.227 4.627l-4.493 11.321q-3.683-1.752-7.412-3.055-3.728-1.303-7.322-1.303z" fill="#2f2f2f"/>
                   <path d="m99.814 161.42v17.744h4.493q6.603 0 9.748-2.201 3.144-2.201 3.144-6.918 0-4.672-3.212-6.649-3.212-1.976-9.95-1.976h-4.223zm7.413 29.064h-7.413v25.201h-13.925v-65.675h19.136q13.387 0 19.811 4.874t6.424 14.801q0 5.795-3.19 10.31-3.189 4.515-9.029 7.075 14.824 22.147 19.316 28.615h-15.453l-15.677-25.201z" fill="#ff6363"/>
@@ -40,7 +40,7 @@
       </main>
       <footer class="layout__row layout__row--footer" role="contentinfo">
         <small>
-          &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time> <a href="/about">Thanos Kolovos</a>
+          &copy; <time datetime="{{ 'now' | date_to_xmlschema }}">{{ 'now' | date: '%Y' }}</time> <a href="/about">Thanos Kolovos</a>
         </small>
       </footer>
     </div>
