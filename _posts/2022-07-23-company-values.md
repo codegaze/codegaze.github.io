@@ -2,7 +2,7 @@
 layout: post
 title: Articulating Company Values & Living Them Authentically by Jeff Lawson
 description: Video | Articulating Company Values & Living Them Authentically by Jeff Lawson
-categories: Leadership
+categories: [Leadership, External]
 ---
 
 I really enjoyed watching Jeff Lawson's - CEO of Twilio - presentation about a company's values.
