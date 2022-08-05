@@ -26,7 +26,7 @@ html {
 
 body {
   font-family: $base-font-family-plain;
-  color: #373737;
+  color: var(--cs-font-color);
   background-color: var(--cs-bg);
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;

@@ -13,4 +13,18 @@ $base-gutter: 15px;
   --cs-link-active-color: #e03030;
   --cs-link-color: #000;
   --cs-secondary-color: #3B3B3B;
+  --cs-heading-color: #313131;
 }
+
+// @media (prefers-color-scheme: dark) {
+
+//   :root {
+//     --cs-bg: #252627;
+//     --cs-brand-color: #fff;
+//     --cs-font-color: #fff;
+//     --cs-font-size: 18px;
+//     --cs-link-active-color: #fff;
+//     --cs-link-color: #fff;
+//     --cs-secondary-color: #fff;
+//   }
+// }
