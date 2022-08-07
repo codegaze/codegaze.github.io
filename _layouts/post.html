@@ -13,7 +13,11 @@ layout: default
   <div class="post__content">
     {{ content }}
   </div>
+  <footer class="post__footer">
+    Read more articles about {% for category in page.categories %}<a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{ category }}</a>{% if forloop.last != true %}, {% endif %}{% endfor %}.
+  </footer>
 </article>
+
 <div id="disqus_thread"></div>
   <script type="text/javascript">
       /* * * CONFIGURATION VARIABLES * * */
