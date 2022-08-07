@@ -40,7 +40,7 @@ Of course, as a responsible engineer, I then went through the proper channels (i
 
 Using undocumented, internal parts of libraries, is a bad practice.
 
-Especially in a work environment, that can result to money loss because someone changed an internal part of tha library.
+Especially in a work environment, that can result to money loss because someone changed their library.
 
 It’s not worth it, trying to understand what went wrong six months from now.
 
