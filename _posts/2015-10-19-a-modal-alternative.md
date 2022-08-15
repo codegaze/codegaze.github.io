@@ -10,7 +10,7 @@ When I saw modals some years ago, I thought it was one of the best things happen
 
 In my projects I usually use a modal either to show a new feature (announcement) to the user or in a photo gallery or something like this. I am ok with the latter - although there is always another solution - but when it comes to the first we can always choose a more lightweight and simplified way.
 
-Here is what I am proposing (live [demo](https://codegaze.github.io/demos/modal_alternative)):
+Here is what I am proposing (live [demo](https://codegaze.github.io/demos/modal_alternative/)):
 
 <figure>
   <a href="/public/example_big.png"><img src="/public/example_big.png" border="0"></a>
@@ -50,7 +50,7 @@ module_close_handler.onclick = function() {
 
 
 **Notes:**<br>
-In my [demo](https://codegaze.github.io/demos/modal_alternative) I don't use a cookie.<br>
+In my [demo](https://codegaze.github.io/demos/modal_alternative/) I don't use a cookie.<br>
 I used a <a href="http://www.initializr.com/">http://www.initializr.com/</a> boilerplate for the demo.<br>
 Maybe I'll do another part about an image gallery version.
 

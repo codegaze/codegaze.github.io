@@ -36,7 +36,7 @@ I didn't explained all the parameters in depth because we are only going to use 
 
 What we want to do is pass all our form parameters to our url and when we come back we will get these parameters to fill our form.
 
-[Here](https://codegaze.github.io/demos/history) is a live example of what we are going to do.
+[Here](https://codegaze.github.io/demos/) is a live example of what we are going to do.
 
 
 
