@@ -11,6 +11,13 @@
     line-height: 1.5rem;
     color: var(--cs-font-color);
   }
+  &__header{
+    display: flex;
+    align-items: baseline;
+    h2 {
+      flex-grow: 1;
+    }
+  }
   &__link {
     h3 {
       margin-top: 0;

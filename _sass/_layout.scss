@@ -19,11 +19,13 @@
 }
 
 .button {
-  font-weight: bold;
-  text-decoration: none;
-  &:hover {
-    text-decoration: none;
-    color: var(--cs-link-active-color);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  text-decoration-style: wavy;
+  text-decoration-color: var(--cs-brand-color);
+  text-decoration-line: underline;
+   &:hover {
+    text-decoration-thickness: 2.3px;
   }
 }
 

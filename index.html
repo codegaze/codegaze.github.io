@@ -5,10 +5,13 @@ title: Home
 
 <section class="posts-grid">
   <header>
-    <h2 class="posts-grid__header">Latest Writings</h2>
+    <div class="posts-grid__header">
+      <h2>Latest Writings</h2>
+      <a href="{{site.baseurl}}/writings/" class="button">View All →</a>
+    </div>
     <hr/>
   </header>
-{% for post in site.posts limit:5 %}
+{% for post in site.posts limit:8 %}
   <article class="posts-grid__item">
     <a href="{{ site.baseurl }}{{ post.url }}" class="posts-grid__link">
       <h3 class="posts-grid__item-title">
@@ -26,8 +29,4 @@ title: Home
     </div>
   </article>
 {% endfor %}
-  <footer class="u-text-right">
-    <hr/>
-    <a href="{{site.baseurl}}/writings/" class="button">All Writings →</a>
-  </footer>
 </section>
