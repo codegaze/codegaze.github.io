@@ -15,6 +15,7 @@ var staticSecondaryAssets = [
 
 self.addEventListener('install', event => {
   console.log(' 💾 Worker Installation');
+  self.skipWaiting();
   event.waitUntil(updateStaticAssets());
 });
 
