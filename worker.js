@@ -134,7 +134,7 @@ function isDoNotCacheDomain(request) {
 
 if ('serviceWorker' in navigator) {
   console.log(' ☑ Service Worker Is available. Yeah!');
-  navigator.serviceWorker.register('/worker.js', {
+  navigator.serviceWorker.register('/worker.js?v=1', {
     scope: '/',
   });
 }
