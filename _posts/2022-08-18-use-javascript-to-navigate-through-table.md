@@ -2,7 +2,7 @@
 layout: post
 title: "Use JavaScript to Navigate Through a Table And Other Elements"
 description: Capture key with Javascript to navigate an HTML table or other elements
-categories: [JS, Code]
+categories: [JS, Coding]
 ---
 
 The browser API has given us many tools to navigate through a webpage, and if done correctly, you will have a great result without the use of any Javascript.
