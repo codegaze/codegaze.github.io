@@ -6,7 +6,7 @@ post_description: The easy configuration and more advanced with Babelify, Browse
 categories: [Coding, JS]
 ---
 
-These are some ways to work with ES6 in the browser. We are going to use [Babel](http://babeljs.io/) 6 as our transpiler and [Gulp](http://gulpjs.com/) as our task runner.
+These are some ways to work with ES6 in the browser. We are going to use [Babel](https://babeljs.io/) 6 as our transpiler and [Gulp](https://gulpjs.com/) as our task runner.
 
 ## The playground
 
@@ -107,7 +107,7 @@ We execute ```gulp``` in our terminal and any change in our javascript files wil
 
 ## Let's get serious
 
-That was fun, but if we want to use modules requires a different setup. This time we are going to use [Browserify](http://browserify.org/) to bundle our module. You can check how to do this with [Webpack](https://webpack.github.io/) in a [previous post](http://codegaze.github.io/2015/12/27/create-an-es6-module/).
+That was fun, but if we want to use modules requires a different setup. This time we are going to use [Browserify](https://browserify.org/) to bundle our module. You can check how to do this with [Webpack](https://webpack.github.io/) in a [previous post](https://codegazerants.com/2015/12/27/create-an-es6-module/).
 
 Like before, we need to install our dependences by creating this package.json:
 

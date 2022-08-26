@@ -35,7 +35,7 @@ didn't help either (loving the tool but sometimes local testing is a bitch).
 
 > The definition of insanity is doing something over and over again and
 expecting a different result.
-[*](http://www.news.hypercrit.net/2012/11/13/einstein-on-misattribution-i-probably-didnt-say-that/)
+[*](https://www.news.hypercrit.net/2012/11/13/einstein-on-misattribution-i-probably-didnt-say-that/)
 
 ### The epiphany
 Then... what was my input? As I said before, my input was a DOM element,
@@ -45,11 +45,11 @@ wasn't the same, IE had its own way of dealing with the order of the HTML attrib
 
 I've lost three hours of my life because of this stupid mistake.
 
-[Here](http://codepen.io/codegaze/pen/WpqJWj) is a simple example you can check
+[Here](https://codepen.io/codegaze/pen/WpqJWj) is a simple example you can check
 the difference in any other browser than IE and IE itself (in a Windows machine
 of course).
 
-When you get the innerHTML of an element in IE, [its attributes are sorted by name, native attributes first. But if you add an attribute at runtime IE adds it at the end](http://stackoverflow.com/a/32273037/2321666).
+When you get the innerHTML of an element in IE, [its attributes are sorted by name, native attributes first. But if you add an attribute at runtime IE adds it at the end](https://stackoverflow.com/a/32273037/2321666).
 
 My regex would fail because of this. I did find I quick solution for this:
 

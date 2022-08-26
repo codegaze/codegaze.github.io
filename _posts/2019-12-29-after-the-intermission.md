@@ -15,7 +15,7 @@ If you have visited before, here are some more changes you will notice:
 
 * New domain. No Github in it. Rants is something that can describe some of my posts, and I also find it funny!
 * A new layout, hopefully, more readable. I'm sure I'll have some debugging and code clean up to do.
-* An [About](/about) section, in which I share more stuff about me and this blog. It's time to be a bit more out there.
+* An [About](/about/) section, in which I share more stuff about me and this blog. It's time to be a bit more out there.
 * Categories, in which you can find something you like, easier. Needs improvement I know.
 
 That's all for now... Let's see how this will turn up!

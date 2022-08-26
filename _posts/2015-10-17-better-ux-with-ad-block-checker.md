@@ -44,7 +44,7 @@ setTimeout(function() {checkAdBlocker('fake_service', 'error_msg'); }, 1000);
 
 {% endhighlight %}
 
-Here is a [demo](http://codegaze.github.io/demos/adblock) you can check it's functionality. If you have an add blocker enabled you will see a message, if not you will see an iframe with a ```This is a fake 3d party iframe!``` text.
+Here is a [demo](https://codegazerants.com/demos/adblock/) you can check it's functionality. If you have an add blocker enabled you will see a message, if not you will see an iframe with a ```This is a fake 3d party iframe!``` text.
 
 
 This script isn't a solid solution but works for most cases. Is just a first step to help your user not miss a feature in your site, but use it carefully.

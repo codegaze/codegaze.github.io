@@ -13,7 +13,7 @@ In my projects I usually use a modal either to show a new feature (announcement)
 Here is what I am proposing (live [demo](https://codegaze.github.io/demos/modal_alternative/)):
 
 <figure>
-  <a href="/public/example_big.png"><img src="/public/example_big.png" border="0"></a>
+  <a href="/public/example_big.png"><img src="/public/example_big.png" border="0" alt="Example 1"></a>
 </figure>
 
 Add your big announcement in your content. Use just a small script to close your "modal". No more big chunks of js and css.
@@ -51,7 +51,7 @@ module_close_handler.onclick = function() {
 
 **Notes:**<br>
 In my [demo](https://codegaze.github.io/demos/modal_alternative/) I don't use a cookie.<br>
-I used a <a href="http://www.initializr.com/">http://www.initializr.com/</a> boilerplate for the demo.<br>
+I used a <a href="https://www.initializr.com/">https://www.initializr.com/</a> boilerplate for the demo.<br>
 Maybe I'll do another part about an image gallery version.
 
 If you have any questions or reccomendations, feel free to comment.

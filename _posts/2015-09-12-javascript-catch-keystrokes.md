@@ -14,7 +14,7 @@ It's not that I don't like the libraries we have, it's that sometimes I just wan
 
 Enough with the developers guilt that loves abstraction layers. Let's proceed with our script.
 
-An example I came accross while I was reading the [http://webtypography.net/](http://webtypography.net/){:target="_blank"} site — it's great, give it a try — was using keys to navigate through artiles. I know, I am a lazy person, but I miss this when I read tutorials with page sections or a book like site. It's a small script and won't affect the no javascript users.
+An example I came accross while I was reading the [https://webtypography.net/](https://webtypography.net/){:target="_blank"} site — it's great, give it a try — was using keys to navigate through artiles. I know, I am a lazy person, but I miss this when I read tutorials with page sections or a book like site. It's a small script and won't affect the no javascript users.
 
 Let's start by creating a function that captures keystrokes. After we include this in a script, the browser will execute this function for every key press.
 

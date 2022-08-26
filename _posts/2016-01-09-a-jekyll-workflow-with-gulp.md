@@ -193,7 +193,7 @@ gulp.task('build-jekyll', (code) => {
 })
 {% endhighlight %}
 
-**2016/01/10 Update:** [Alex Lockwood](http://disq.us/p/1ds1bx6) was kind enough to create a [gist](https://gist.github.com/alexjlockwood/9a4201b5a4b47c3f1c3de69dde4e8ece) for older npm versions on which ES6 features cause errors.
+**2016/01/10 Update:** [Alex Lockwood](https://disq.us/p/1ds1bx6) was kind enough to create a [gist](https://gist.github.com/alexjlockwood/9a4201b5a4b47c3f1c3de69dde4e8ece) for older npm versions on which ES6 features cause errors.
 
 **2017/02/11 Update:** A user's comment I cannot find requested to update the ruby path with a newer version. So, in the `your_ruby_path` you need to set your ruby path. For example, mine was `Ruby22-x64` at the time.
 

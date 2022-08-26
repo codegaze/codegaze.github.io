@@ -30,7 +30,7 @@ Well, no. If I use Helvetica (or Arial for windows and Linux machines) will have
 <hr class="post__separator"/>
 
 
-[Here](http://theunderstatement.com/post/11645166791/roboto-vs-helvetica) is a `Roboto/Helvetica` and [here](http://www.webdesignerdepot.com/2013/03/arial-vs-helvetica-can-you-spot-the-difference/) a `Helvetica/Arial` comparison.
+[Here](https://theunderstatement.com/post/11645166791/roboto-vs-helvetica) is a `Roboto/Helvetica` and [here](https://www.webdesignerdepot.com/2013/03/arial-vs-helvetica-can-you-spot-the-difference/) a `Helvetica/Arial` comparison.
 
 Not a long time ago Github changed its stack to `-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"`. So, who am I to judge?
 

@@ -23,8 +23,8 @@ I know this subject has been covered by many people but here is an example for f
 Here is the HTML code for the buttons. We are just creating simple links. We use the `js-share-button` class in our script to select all the share buttons. And the `data-service` attribute gives us the services we are going to use.
 
 {% highlight html %}
-<a href="http://codegaze.github.io/2015/11/24/share-buttons-performance/" class="share__button facebook js-share-button" data-service="facebook">Share on Facebook</a>
-<a href="http://codegaze.github.io/2015/11/24/share-buttons-performance/" class="share__button twitter js-share-button" data-service="twitter" title="Share Buttons Performance Issues and how to deal with them - @codegaze">Share on Twitter</a>
+<a href="https://codegazerants.com/2015/11/24/share-buttons-performance/" class="share__button facebook js-share-button" data-service="facebook">Share on Facebook</a>
+<a href="https://codegazerants.com/2015/11/24/share-buttons-performance/" class="share__button twitter js-share-button" data-service="twitter" title="Share Buttons Performance Issues and how to deal with them - @codegaze">Share on Twitter</a>
 {% endhighlight %}
 
 
@@ -154,8 +154,8 @@ shareButtons.init();
 You  can check the demo of these buttons, will give you a share to the current page url.
 
 <div class="has-centered">
-  <a href="http://codegaze.github.io/2015/11/24/share-buttons-performance/" class="share__button facebook js-share-button" data-service="facebook">Share on Facebook</a>
-  <a href="http://codegaze.github.io/2015/11/24/share-buttons-performance/" class="share__button twitter js-share-button" data-service="twitter" title="Share Buttons Performance Issues and how to deal with them - @codegaze">Share on Twitter</a>
+  <a href="https://codegazerants.com/2015/11/24/share-buttons-performance/" class="share__button facebook js-share-button" data-service="facebook">Share on Facebook</a>
+  <a href="https://codegazerants.com/2015/11/24/share-buttons-performance/" class="share__button twitter js-share-button" data-service="twitter" title="Share Buttons Performance Issues and how to deal with them - @codegaze">Share on Twitter</a>
 </div>
 
 

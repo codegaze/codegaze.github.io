@@ -8,7 +8,7 @@ categories: Jekyll
 
 At February 1st Github [announced](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0) the upgrade of Jekyll from 2.4 to 3.0 for Guthub Pages. I thought this was the time to upgrade my local setup to the new version. I 've tried it some time ago but got some error and was too tired to debug anything, but now I had no choice.
 
-Jekyll has a [guide](http://jekyllrb.com/docs/upgrading/2-to-3/) for upgrading but it wasn't enough for me. I ran ```gem update jekyll``` and tried to start my site with ```jekyll serve``` as always but I got the following errors.
+Jekyll has a [guide](https://jekyllrb.com/docs/upgrading/2-to-3/) for upgrading but it wasn't enough for me. I ran ```gem update jekyll``` and tried to start my site with ```jekyll serve``` as always but I got the following errors.
 
 ### Error Message #1
 >Deprecation: You appear to have pagination turned on, but you haven't included the `jekyll-paginate` gem. Ensure you have `gems: [jekyll-paginate]` in your configuration file.</b>

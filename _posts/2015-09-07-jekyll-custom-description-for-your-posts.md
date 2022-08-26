@@ -27,7 +27,7 @@ You can use these page values anywhere you want. For instance I am using this fo
 
 You can add and image for your facebook og tags or anything else you can think of.
 
-**Update:** As Emilio Lopez correctly mentioned in the [comments](http://codegaze.github.io/2015/09/07/jekyll-custom-description-for-your-posts/#comment-2242343497) you can declare post_excerpt in the page variables too.
+**Update:** As Emilio Lopez correctly mentioned in the [comments](https://codegazerants.com/2015/09/07/jekyll-custom-description-for-your-posts/#comment-2242343497) you can declare post_excerpt in the page variables too.
 
 {% highlight yaml %}
 ---

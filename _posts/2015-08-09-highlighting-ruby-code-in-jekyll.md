@@ -10,7 +10,7 @@ A few days ago I was trying to write a [tutorial](https://codegaze.github.io/201
 
 Instead of ruby code and html I was getting whitespace and html only.
 
-I reinstalled [pip](https://pip.pypa.io/){:target="_blank"} and [pygments](http://pygments.org/){:target="_blank"} to check if something was wrong with my installation but that wasn't the problem.
+I reinstalled [pip](https://pip.pypa.io/){:target="_blank"} and [pygments](https://pygments.org/){:target="_blank"} to check if something was wrong with my installation but that wasn't the problem.
 
 After a little research I found out that the problem was that Liquid, the template language Jekyll uses, considered everything inside the curly braces as code to execute.
 

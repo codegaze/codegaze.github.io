@@ -43,7 +43,7 @@ When you see `*:port` means open to everyone. Everything else that has `127.0.0.
 Here is another example with two Python simple servers. Based on our previous examples, one is open to everyone and one only in the local machine.
 
 <figure>
-  <a href="/public/terminal.png"><img src="/public/terminal.png" border="0"></a>
+  <a href="/public/terminal.png"><img src="/public/terminal.png" border="0" alt="lsof example"></a>
 </figure>
 
 So, try to remember to bind your services to `127.0.0.1`! :)

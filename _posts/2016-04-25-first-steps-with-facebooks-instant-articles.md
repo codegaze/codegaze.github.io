@@ -126,7 +126,7 @@ This means you may have to do some code-post-clean-up work.
 
 
 **2016-09-25 Update:**
-Chris Coyer wrote a interesting  [article](http://mediatemple.net/blog/tips/wordpress-apple-news-instant-articles-amp/) about making content available to Instant Articles, Apple News and AMP. Not everyone uses Wordpress (only the 25% of the internet websites do :P), but it'a a great case study.
+Chris Coyer wrote a interesting  [article](https://mediatemple.net/blog/tips/wordpress-apple-news-instant-articles-amp/) about making content available to Instant Articles, Apple News and AMP. Not everyone uses Wordpress (only the 25% of the internet websites do :P), but it'a a great case study.
 
 <hr class="post__separator"/>
 

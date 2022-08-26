@@ -6,7 +6,7 @@ post_description: A plugin to extend Swiper for easier JW Player integration.
 categories: [Coding, JS]
 ---
 
-[Swiper-JW Player](https://github.com/codegaze/Swiper-JWPlayer) is a very small plugin that extends iDangero.us [Swiper](http://www.idangero.us/swiper/) to avoid setting up the configuration for stopping [JW Player](http://www.jwplayer.com/) videos between slide navigation in each Swiper instance.
+[Swiper-JW Player](https://github.com/codegaze/Swiper-JWPlayer) is a very small plugin that extends iDangero.us [Swiper](https://www.idangero.us/swiper/) to avoid setting up the configuration for stopping [JW Player](https://www.jwplayer.com/) videos between slide navigation in each Swiper instance.
 
 
 This was created to satisfy my need for a fairly abstract/dynamic way to deal with JW Player events, in this case stopping it, without writing code in Swipper callbacks everytime I need something like this.

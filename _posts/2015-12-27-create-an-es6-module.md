@@ -14,12 +14,12 @@ First some things I want to say:
 
 * This is a prototype that may contain errors in code or concept. I am open to suggestions :)
 * I just started, and if you are interested in ES6 you should too, reading the <a href="https://leanpub.com/exploring-es6/" target="_blank">"Exploring ES6 - Upgrade to the next version of JavaScript"</a> by Axel Rauschmayer.
-* I started this code by reading <a href="http://exploringjs.com/es6/ch_deploying-es6.html#sec_webpack-babel" target="_blank">this chapter</a> from this book and using this <a href="https://github.com/rauschma/webpack-babel-demo" target="_blank">repository</a>.
+* I started this code by reading <a href="https://exploringjs.com/es6/ch_deploying-es6.html#sec_webpack-babel" target="_blank">this chapter</a> from this book and using this <a href="https://github.com/rauschma/webpack-babel-demo" target="_blank">repository</a>.
 * The code of this article is available in my github account in <a href="https://github.com/codegaze/es6-module-codegaze-blog-post-code">this</a> repository to check it out.
 
 ### What's this post about
 
-This post is about creating a small ES6 module we created in a previous post about <a href="http://codegaze.github.io/2015/11/24/share-buttons-performance/">Share Buttons Performance</a> and a script to avoid all these problems. It's a simple script that scans the dom for a specific class and adds a click event.
+This post is about creating a small ES6 module we created in a previous post about <a href="https://codegazerants.com/2015/11/24/share-buttons-performance/">Share Buttons Performance</a> and a script to avoid all these problems. It's a simple script that scans the dom for a specific class and adds a click event.
 
 ### ES6 fast catchup
 

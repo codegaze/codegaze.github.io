@@ -6,7 +6,7 @@ post_description: Create a grid based on a Harry Roberts' article.
 categories: [Coding, CSS]
 ---
 
-After reading [this](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) article from [@csswizardry](https://twitter.com/csswizardry) about taking the BEM naming a step further I wanted to create as simple mixin to build grid classes with this pattern ```u-1/3@md```.
+After reading [this](https://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/) article from [@csswizardry](https://twitter.com/csswizardry) about taking the BEM naming a step further I wanted to create as simple mixin to build grid classes with this pattern ```u-1/3@md```.
 
 If you 've read any of Harry Roberts' articles, you know that ```u``` stands for utility, ```1/3``` declares that this element takes one third of the available space  and ```@md``` declares the breakpoint.
 
