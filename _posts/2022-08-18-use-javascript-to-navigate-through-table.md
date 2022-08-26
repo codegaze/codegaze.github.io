@@ -73,10 +73,10 @@ Let's design our navigation function. What could be the main parts of it.
 
 We have one main function here called `navigateElement` - which I'm sure you can find a better name for it - that takes some parameters. We could have everything hardcoded, but you will probably reuse this in other elements in your application.
 
-`elementID`: The element we are going to add our key capture event listener to and includes our list items. We need to have this in case we have more than one `navigateElement` instance.
-`itemsTagName`: The element's tag name we will navigate through.
-`activeClass`: The active class we mentioned in our CSS part.
-`scroller`: The element that is responsible for our content overflow. More on that later. Secret sauce.
+* `elementID`: The element we are going to add our key capture event listener to and includes our list items. We need to have this in case we have more than one `navigateElement` instance.
+* `itemsTagName`: The element's tag name we will navigate through.
+* `activeClass`: The active class we mentioned in our CSS part.
+* `scroller`: The element that is responsible for our content overflow. More on that later. Secret sauce.
 
 The `handleKeyboard` does what it promises. It will handle the navigation between items, and the `handleScroll` will be responsible for always having in our viewport the selected element. This simple design is all we need for now.
 
