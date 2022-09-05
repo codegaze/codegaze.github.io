@@ -1,6 +1,6 @@
 var staticAssetsCacheName = 'StaticAssets',
     imageAssetsCacheName = 'ImgStatic',
-    version = 'v2.27::';
+    version = 'v2.30::';
 
 var staticPrimaryAssets = [
   '/',
@@ -22,17 +22,17 @@ self.addEventListener('install', event => {
 self.addEventListener('activate', event => {
   console.log(' ☑ Worker Activation');
   event.waitUntil(
-      caches.keys().
+    caches.keys().
       then(function(keys) {
         // Remove caches no longer valid
         return Promise.all(keys.
-            filter(function(key) {
-              return key.indexOf(version) !== 0;
-            }).
-            map(function(key) {
-              console.log(' New key available, delete old key: ' + key);
-              return caches.delete(key);
-            })
+          filter(function(key) {
+            return key.indexOf(version) !== 0;
+          }).
+          map(function(key) {
+            console.log(' New key available, delete old key: ' + key);
+            return caches.delete(key);
+          })
         );
       }).
       catch(function() {
@@ -53,9 +53,9 @@ self.addEventListener('fetch', event => {
     event.respondWith(handleImageContent(request));
   } else {
     event.respondWith(
-        caches.match(event.request).then(function(response) {
-          return response || fetch(event.request);
-        })
+      caches.match(event.request).then(function(response) {
+        return response || fetch(event.request);
+      })
     );
   }
 });
