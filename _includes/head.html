@@ -26,7 +26,11 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:site_name" content="Codegaze">
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="{{ site.url }}/assets/img/social/linkedin.png?v=2" >
+  {% if page.social_image %}
+    <meta property="og:image" content="{{ site.url }}/assets/img/posts/{{page.social_image}}" >
+  {% else %}
+    <meta property="og:image" content="{{ site.url }}/assets/img/social/linkedin.png?v=2" >
+  {% endif %}
   <meta property="og:description" content="{{ page.description }}">
   <meta property="og:image:width" content="400" />
   <meta property="og:image:height" content="400" />

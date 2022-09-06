@@ -1,15 +1,16 @@
 ---
 layout: post
-title: The Five Minute Talk
-description: The Five Minute Talk. Why you should never look busy
+title: The Five Minutes Talk
+description: The Five Minutes Talk. Why you should never look busy
 categories: Leadership
+social_image: fiveminutestalk.png
 ---
 
 It's a random Tuesday morning after the team's standup, and Josh just nodded and asked if you had five minutes to talk.
 
 You know that look because you've been there a few times before so you take your notebook and a pen. It's going to be more than five minutes. Best case scenario, half an hour. Worst case... who knows.
 
-For a few seconds, you are thinking about the new OKRs, the ad hoc report someone asked for, the next big thing and other initiatives you promised to drive or help this week. You think you have a lot on your plate, and for some reason, you are feeling a bit grumpy today because something is off at home. You are only human, after all. But everyone is busy, and you are on a mission, so you decide to shove these thoughts into a mental room and close the door for a bit.
+For a few seconds, you are thinking about the new OKRs, the ad hoc report someone asked for, the next big thing and other initiatives you promised to drive or help this week. You think you have a lot on your plate, and for some reason, you are feeling a bit grumpy today because something is off at home. You are only human, after all. But everyone is busy, so you decide to shove these thoughts into a mental room and close the door for a bit.
 
 Josh seems a bit stressed out. You can notice that from his body language. He may even have imagined how this could go. How the conversation would start, progress and probably some possible outcomes. It seems like he really needs to get something out of his chest.
 
@@ -41,4 +42,4 @@ Leadership is not only about big gestures and fireworks. It's about consistency.
 
 I'm not going to lie. This isn't easy. It's messy, unpredictable and you need to make sense of all the noise and, on top of it, make it look easy. People are not going to stay with you forever in the company. That's a fact. But interactions like these could sometimes determine someone's future in the company and show the kind of leader you are.
 
-The five minutes talk is a lie. In reality, it's a well-disguised opportunity for meaningful conversations.
+The five minutes talk is a lie. In reality, it's a well-disguised opportunity for meaningful conversations and trust-building.
