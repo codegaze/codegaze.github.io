@@ -17,6 +17,6 @@ Now here come the questions:
 * Do you know which parts of the product are your core value?
 * If you could give a version number to each one of these parts, what would it be? And remember, it doesn’t matter how many iterations you’ve done. What matters is if you consider it to be stable, “boring”. If it just works.
 
-People may join and pay for your product if you have some shiny things or extra features, but they will not stay if your core service - your main value proposition - is faulty.
+Like you do, your customers have ROI (Return of Investment) in their vocabulary. They may join and pay for your product if you have some shiny things or extra features, but they will not stay if your core service - your main value proposition - is faulty.
 
 Are you sure you are moving in the right direction?
