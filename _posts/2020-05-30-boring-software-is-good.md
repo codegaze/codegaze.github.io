@@ -3,6 +3,7 @@ layout: post
 title: Boring Software Is Good
 description: Some Questions of Self Reflection
 categories: Product
+social_image: boringsoftwareisgood.png
 ---
 
 Last night I was wandering around the internet reading a bunch of articles, and I ended up reading Basecamp’s blog. For some reason, this part of this [random post](https://m.signalvnoise.com/postmortem-on-the-read-only-outage-of-basecamp-on-november-9th-2018/) really struck a chord.
