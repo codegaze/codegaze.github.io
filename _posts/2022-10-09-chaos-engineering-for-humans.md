@@ -71,4 +71,4 @@ I would consider this suitable for an environment with a great culture. You need
 
 And one last thing, in case this wasn’t clear. You can apply this to any kind of team, not just Engineering teams.
 
-Happy experimentation!
+Happy experimenting!
