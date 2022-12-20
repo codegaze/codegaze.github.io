@@ -2,7 +2,7 @@
 layout: post
 title: On The Power Of Individuals
 description: High-performing teams are fascinating.
-categories: ["Leadership", "Team Work"]
+categories: ["Leadership", "Teamwork"]
 social_image: powerofindividuals.png
 ---
 
