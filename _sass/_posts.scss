@@ -84,6 +84,22 @@
   h2 {
     margin-bottom: 0.9rem;
   }
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  li {
+    position: relative;
+    padding-left: 2.3rem;
+    line-height: 1.4em;
+    padding-bottom: 0.5rem;
+  }
+  li:before {
+    content: '→';
+    position: absolute;
+    left: 0.8rem;
+    font-weight: bold;
+  }
 }
 .post__footer {
   border-top: 1px solid #ABABAB;
