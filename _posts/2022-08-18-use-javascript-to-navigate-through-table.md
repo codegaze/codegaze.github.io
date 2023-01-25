@@ -10,7 +10,7 @@ The browser API has given us many tools to navigate through a webpage, and if do
 In some case though, you might need to enhance some of the navigation experience. Usually, this is a challenge in an application environment, or more specifically, on some elements of the application. And here is when JavaScript comes in handy.
 
 ## A Beautiful Table
-If you are using Gmail, then you probably have seen that you can navigate between the mail list with your up and down arrow keys. Gmail uses a table, and I have no idea what they are doing under the hood, but let's see what we can accomplish this.
+If you are using Gmail, then you probably have seen that you can navigate between the mail list with your up and down arrow keys. Gmail uses a table, and I have no idea what they are doing under the hood, but let's see how we can accomplish this.
 
 We will go through some sections of the code, but keep in mind that we can use this code for various HTML elements.
 
