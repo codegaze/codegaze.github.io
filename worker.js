@@ -1,6 +1,6 @@
 var staticAssetsCacheName = 'StaticAssets',
     imageAssetsCacheName = 'ImgStatic',
-    version = 'v2.33::';
+    version = 'v2.34::';
 
 var staticPrimaryAssets = [
   '/',
