@@ -1,0 +1,25 @@
+{
+  "name": "codegaze.github.io",
+  "version": "2.0.0",
+  "description": "Thanos Kolovos personal playground blog",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf ./_site",
+    "build": "npm run clean && npx @11ty/eleventy ",
+    "start": "npx @11ty/eleventy  --serve --watch"
+  },
+  "keywords": [],
+  "author": "Thanos Kolovos",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "postcss": "^8.4.49",
+    "postcss-import": "^16.1.0",
+    "postcss-nested": "^7.0.2"
+  }
+}

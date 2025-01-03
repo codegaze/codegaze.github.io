@@ -3,20 +3,22 @@ layout: post
 title: First Steps With Facebook's Instant Articles
 description: First steps with Facebook's Instant Articles and things I dealt with
 post_description: And things I dealt with.
-categories: Coding
+categories: ["Coding"]
 ---
 
 ## Introduction
+
 I think Instant Articles is the Facebook's way of saying "You had one job" to all developers out there. For me (a developer) is nothing more than a way to give your content to users fast without all the problems that our CMS's and code add to the user experience.
 
 But I have one question:
 
->If you are willing to do some work to give your content stripped down to a third party service, why can't you make the same things to you website to make it better?
+> If you are willing to do some work to give your content stripped down to a third party service, why can't you make the same things to you website to make it better?
 
 Anyway I 'll give a mini start guide for the RSS feed thing for everyone who is interested, with some issues I dealt with.
 
 ## What happened
-Started working with Facebook's Instant Articles a few days ago. After two days of frustration I got my first articles consumed by this new Facebook feature. This might be due to my lack of patience with facebook's documentation or their lack of good documentation. I just tried the RSS way to add content to the Articles (Who the f*ck is going to add manually content to this thing FFS?!)
+
+Started working with Facebook's Instant Articles a few days ago. After two days of frustration I got my first articles consumed by this new Facebook feature. This might be due to my lack of patience with facebook's documentation or their lack of good documentation. I just tried the RSS way to add content to the Articles (Who the f\*ck is going to add manually content to this thing FFS?!)
 
 I'm not going to guide you through the steps of enabling the Instant Articles because there are ton of articles out there, but I am going to guide you through the painful work of creating a compatible RSS feed by yourself and not by using some plugin.
 
@@ -42,7 +44,7 @@ For the `Claim your Url` tool **first** you need to add the og tag to your websi
 
 Now, the best part. You need to provide a url with your RSS file that you can do tests. Just write your url and don't be scared. This is a development feature. You can do anything you want and nothing goes public.
 
->Forgot to say that you need to "Get the Pages Manager App" to preview your articles and styles on iOS or Android. Yeap, there is no other way to preview/debug your instant articles, only your mobile device!
+> Forgot to say that you need to "Get the Pages Manager App" to preview your articles and styles on iOS or Android. Yeap, there is no other way to preview/debug your instant articles, only your mobile device!
 
 I followed the instructions of facebook for a compatible RSS and built something like this:
 
@@ -50,31 +52,31 @@ I followed the instructions of facebook for a compatible RSS and built something
 
 <rss version="2.0"
 xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>News Publisher</title>
-    <link>http://www.example.com/</link>
-    <description>
-      Read our awesome news, every day.
-    </description>
-    <language>en-us</language>
-    <lastBuildDate>2014-12-11T04:44:16Z</lastBuildDate>
-    <item>
-      <title>This is an Instant Article</title>
-      <link>http://example.com/article.html</link>
-      <content:encoded>
-        <![CDATA[
-        <!doctype html>
-        <html lang="en" prefix="op: http://media.facebook.com/op#">
-          <head>
-            <meta charset="utf-8">
-            <link rel="canonical" href="http://example.com/article.html">
-            <meta property="op:markup_version" content="v1.0">
-          </head>
-          <body>
-            <article>
-              <header>
-                <!— Article header goes here -->
-              </header>
+<channel>
+<title>News Publisher</title>
+<link>http://www.example.com/</link>
+<description>
+Read our awesome news, every day.
+</description>
+<language>en-us</language>
+<lastBuildDate>2014-12-11T04:44:16Z</lastBuildDate>
+<item>
+<title>This is an Instant Article</title>
+<link>http://example.com/article.html</link>
+<content:encoded>
+<![CDATA[
+<!doctype html>
+<html lang="en" prefix="op: http://media.facebook.com/op#">
+<head>
+<meta charset="utf-8">
+<link rel="canonical" href="http://example.com/article.html">
+<meta property="op:markup_version" content="v1.0">
+</head>
+<body>
+<article>
+<header>
+<!— Article header goes here -->
+</header>
 
               <!— Article body goes here -->
 
@@ -88,6 +90,7 @@ xmlns:content="http://purl.org/rss/1.0/modules/content/">
       </content:encoded>
     </item>
     ....
+
 </channel>
 </rss>
 {% endhighlight %}
@@ -124,9 +127,8 @@ Facebook Instant Articles need clean HTML code. If your image is wrapped in a pa
 
 This means you may have to do some code-post-clean-up work.
 
-
 **2016-09-25 Update:**
-Chris Coyer wrote a interesting  [article](https://mediatemple.net/blog/tips/wordpress-apple-news-instant-articles-amp/) about making content available to Instant Articles, Apple News and AMP. Not everyone uses Wordpress (only the 25% of the internet websites do :P), but it'a a great case study.
+Chris Coyer wrote a interesting [article](https://mediatemple.net/blog/tips/wordpress-apple-news-instant-articles-amp/) about making content available to Instant Articles, Apple News and AMP. Not everyone uses Wordpress (only the 25% of the internet websites do :P), but it'a a great case study.
 
 <hr class="post__separator"/>
 

@@ -9,24 +9,26 @@ title: Home
       <h2>Latest Writings</h2>
       <a href="{{site.baseurl}}/writings/" class="button">View All →</a>
     </div>
-    <hr/>
+    <hr />
   </header>
-{% for post in site.posts limit:8 %}
+  {% for post in collections.posts limit:8 %}
   <article class="posts-grid__item">
     <a href="{{ site.baseurl }}{{ post.url }}" class="posts-grid__link">
-      <h3 class="posts-grid__item-title">
-        {{ post.title }}
-      </h3>
+      <h3 class="posts-grid__item-title">{{ post.data.title }}</h3>
     </a>
-    <p class="posts-grid__summary">{{ post.excerpt| strip_html }}</p>
+    <p class="posts-grid__summary">{{ post.content | excerpt }}</p>
     <div class="posts-grid__meta">
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
-      <span> -
-      {% for category in post.categories %}
-        <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{ category }}</a>
-      {% endfor %}
+      <time datetime="{{ post.date | date_to_xmlschema }}"
+        >{{ post.date | date_to_long_string_locale }}</time
+      >
+      <span>
+        - {% for category in post.data.categories %}
+        <a href="{{site.baseurl}}/categories/#{{category|slugify}}"
+          >{{ category }}</a
+        >
+        {% endfor %}
       </span>
     </div>
   </article>
-{% endfor %}
+  {% endfor %}
 </section>

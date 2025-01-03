@@ -3,7 +3,7 @@ layout: post
 title: Checking Your Open Ports With lsof
 description: Checking your open ports with lsof, while doing some development work or not.
 post_description: While doing some development work or not.
-categories: Workflow
+categories: [Workflow]
 ---
 
 Ok, some terminal stuff today. 💻
@@ -22,7 +22,7 @@ Well, `lsof` FTW, which is a command that `lists open files`. In Unix systems th
 
 A colleague of mine sent me this which gives a list of ports that listen to requests:
 
-```lsof -i -P -n | grep LISTEN```
+`lsof -i -P -n | grep LISTEN`
 
 Which translates to:
 {% highlight html %}
@@ -35,7 +35,7 @@ lsof -i // List all the connections
 In our vue cli example you would see something like that:
 
 {% highlight html %}
-node      69218 thanos   24u  IPv4 0x89e5844963379b35      0t0  TCP *:8081
+node 69218 thanos 24u IPv4 0x89e5844963379b35 0t0 TCP \*:8081
 {% endhighlight %}
 
 When you see `*:port` means open to everyone. Everything else that has `127.0.0.1` or `[::1]` before the port will be listening only to local requests.

@@ -5,34 +5,36 @@ title: Writings
 ---
 
 <section class="posts-grid">
-  {%- assign posts = site.posts -%}
-  {%- assign groupedByYear = posts | group_by_exp:"post","post.date | date:'%Y' " -%}
-
-  {%- for yearitem in groupedByYear -%}
+  {%- assign posts = collections.posts -%} {%- assign groupedByYear = posts |
+  group_by_exp:"post","post.date | date:'%Y' " -%} {%- for yearitem in
+  groupedByYear -%}
   <yearlist>
     <header class="posts-grid__header">
-      <h2>{{ yearitem.name }}</h2> [{{yearitem.items|size}} posts]
+      <h2>{{ yearitem.name }}</h2>
+      [{{yearitem.items|size}} posts]
     </header>
-    <hr>
+    <hr />
     <list>
-    {%- for item in yearitem.items -%}
-       <article class="posts-grid__item">
+      {%- for item in yearitem.items -%}
+      <article class="posts-grid__item">
         <a href="{{ site.baseurl }}{{ item.url }}" class="posts-grid__link">
-          <h3 class="posts-grid__item-title">
-            {{ item.title }}
-          </h3>
+          <h3 class="posts-grid__item-title">{{ item.data.title }}</h3>
         </a>
-        <p class="posts-grid__summary">{{ item.excerpt| strip_html }}</p>
+        <p class="posts-grid__summary">{{ item.content| excerpt }}</p>
         <div class="posts-grid__meta">
-          <time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date_to_long_string }}</time>
-          <span> -
-          {% for category in item.categories %}
-            <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{ category }}</a>
-          {% endfor %}
+          <time datetime="{{ item.date | date_to_xmlschema }}"
+            >{{ item.date | date_to_long_string_locale }}</time
+          >
+          <span>
+            - {% for category in item.data.categories %}
+            <a href="{{site.baseurl}}/categories/#{{category|slugify}}"
+              >{{ category }}</a
+            >
+            {% endfor %}
           </span>
         </div>
       </article>
-    {% endfor %}
+      {% endfor %}
     </list>
   </yearlist>
   {% endfor %}

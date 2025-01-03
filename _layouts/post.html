@@ -3,33 +3,41 @@ layout: default
 ---
 
 <article class="post">
-  <h1 class="post__title">{{ page.title }}</h1>
+  <h1 class="post__title">{{ title }}</h1>
   <div class="post__info">
     <time datetime="{{ page.date | date_to_xmlschema }}" class="post__date">
-      {{ page.date | date_to_long_string }}
-    </time> -
-    {% for category in page.categories %}<a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{ category }}</a> {% endfor %}
+      {{ page.date | date_to_long_string_locale }}
+    </time>
+    - {% for category in categories %}<a
+      href="{{site.baseurl}}/categories/#{{category|slugify}}"
+      >{{ category }}</a
+    >
+    {% endfor %}
   </div>
-  <div class="post__content">
-    {{ content }}
-  </div>
+  <div class="post__content">{{ content }}</div>
   <footer class="post__footer">
-    Read more articles about {% for category in page.categories %}<a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{ category }}</a>{% if forloop.last != true %}, {% endif %}{% endfor %}.
+    Read more articles about {% for category in categories %}<a
+      href="{{site.baseurl}}/categories/#{{category|slugify}}"
+      >{{ category }}</a
+    >{% if forloop.last != true %}, {% endif %}{% endfor %}.
   </footer>
 </article>
 
-<div id="disqus_thread"><script src="https://giscus.app/client.js"
-  data-repo="codegaze/codegaze.github.io"
-  data-repo-id="MDEwOlJlcG9zaXRvcnkzNTE1MjE0Nw=="
-  data-category="Codegazerants.com"
-  data-category-id="DIC_kwDOAhhhE84CTJFt"
-  data-mapping="pathname"
-  data-strict="0"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="bottom"
-  data-theme="light_tritanopia"
-  data-lang="en"
-  crossorigin="anonymous"
-  async>
-</script></div>
+<div id="disqus_thread">
+  <script
+    src="https://giscus.app/client.js"
+    data-repo="codegaze/codegaze.github.io"
+    data-repo-id="MDEwOlJlcG9zaXRvcnkzNTE1MjE0Nw=="
+    data-category="Codegazerants.com"
+    data-category-id="DIC_kwDOAhhhE84CTJFt"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light_tritanopia"
+    data-lang="en"
+    crossorigin="anonymous"
+    async
+  ></script>
+</div>

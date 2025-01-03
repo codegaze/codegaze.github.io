@@ -7,6 +7,7 @@ social_image: thebaittheswitchtheloop.png
 ---
 
 ## The Bait
+
 You find yourself on a call with three people on a Wednesday afternoon.
 
 One is the hiring manager, one HR representative and another person they introduced as “Page, a member of one of our teams”. They all look tired, but you notice they are trying to smile. It’s evident that this is a routine call for them. It could have been the third or fourth similar call for the day, and it looked like this one was outside their usual working hours. Or not.
@@ -24,6 +25,7 @@ That last session comes to an end after one and a half hours. Something feels sl
 Based on this, it’s “go” time. The money is good, and you need a change. You have been looking for some time now, so you do it. You are excited and ready to join.
 
 ## The Switch
+
 Two months into the gig, you haven’t done a 1:1 yet and haven’t seen the people from the interview again. You heard that Page, the “member of one of our teams”, resigned. These things happen. The hiring manager is usually lost somewhere in a meeting, [being busy](/2022/09/05/the-five-minutes-talk/).
 
 Your peers are amazing at their job, but they are disoriented most of the time, like no one knows why they do the things they do, and the team’s last project didn’t make it to production because of “reasons”. Six months of design and implementation are out of the window. You have no idea about the next steps. Someone will tell you, but not knowing what is coming is not your strong suit.
@@ -38,6 +40,7 @@ Six months passed - during which similar not-so-good things happened - and you a
 Of course, you take the job.
 
 ## The Loop
+
 Bait and Switch it’s a known sales technique to get customers to buy in with low prices and then raise prices as you go towards the signing time or after you are bound with a contract. It’s used as a bad practice in UX, and It’s also used in interviews when an interviewee is not the person applying for work (who does that?!?).
 
 This is different. This is the case of a company overselling to the candidate. Not small things about setting priorities or gym perks. I’m talking about significant differences in culture. The things that might differentiate a healthy from a toxic environment.
@@ -49,12 +52,15 @@ Every new hire is an investment. If you hire someone and they leave after a few 
 Then it hit me. They do know it.
 
 ### Take 1
+
 Once you are in, you are probably staying. Money and perks are the incentives. They depend on this being enough to retain people even if they are not completely happy. Even if a percentage of people leave, other people will stay.
 
 ### Take 2
+
 In big organizations in a growth state, hiring becomes a number in someone’s OKRs, “Hire 70 people”. This person might be so up the chain that it is probably too difficult to understand the actual situation in the organization. They do believe they have an amazing culture.
 
 ### Take 3
+
 Big organizations, big stakes. Current goals in someone’s OKRs are more important than anything else. Again, “Hire 70 people”. Every month they don’t hit this number, it translates to lost opportunities and lost revenue (crazy, right?), so they do anything to cover this number no matter what. If people leave, this can be a problem for another quarter, another person.
 
 And this is the Loop. An endless Loop of new goals to cover the numbers of the previous goal. Every month, every quarter.

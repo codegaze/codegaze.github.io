@@ -1,7 +1,7 @@
 ---
-layout: null
+permalink: /atom.xml
+eleventyExcludeFromCollections: true
 ---
-
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
@@ -14,15 +14,15 @@ layout: null
    <name>{{ site.author.name }}</name>
    <email>{{ site.author.email }} </email>
  </author>
-
- {% for post in site.posts %}
+ {% for post in collections.posts %}
  <entry>
-   <title>{{ post.title | xml_escape }}</title>
+   <title>{{ post.data.title | xml_escape }}</title>
    <link href="{{ site.url }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>{{ site.url }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+  <content type="html" xml:base="{{ site.url }}{{ post.url }}"><![CDATA[
+    {{ post.content | xml_escape }}
+  ]]></content>
  </entry>
  {% endfor %}
-
 </feed>
