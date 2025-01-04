@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf ./_site",
-    "build": "npm run clean && npx @11ty/eleventy ",
+    "build": "npm run clean && NODE_ENV=production npx @11ty/eleventy ",
     "start": "npx @11ty/eleventy  --serve --watch"
   },
   "keywords": [],
