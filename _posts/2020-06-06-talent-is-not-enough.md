@@ -2,10 +2,10 @@
 layout: post
 title: Talent Is Not Enough
 description: You also need hard work
-categories: Leadership
+categories: [Leadership]
 ---
 
-June 2019. Radiohead release [MiniDiscs [Hacked]](https://en.wikipedia.org/wiki/MiniDiscs_(Hacked)), a compilation of demos and rehearsals from the creation of the OK Computer era, one of the greatest albums of the 90s.
+June 2019. Radiohead release [MiniDiscs [Hacked]](<https://en.wikipedia.org/wiki/MiniDiscs_(Hacked)>), a compilation of demos and rehearsals from the creation of the OK Computer era, one of the greatest albums of the 90s.
 
 If for some reason you haven't listened to this album or don't know Radiohead please do. Although I'm not sure if there is still a person - apart from Sheldon Cooper - that doesn't know who Radiohead is. *Two pop culture references in two sentences, not bad for a start!*
 

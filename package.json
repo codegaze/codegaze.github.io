@@ -1,14 +1,25 @@
 {
-  "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-minify-css": "^1.2.3",
-    "gulp-plumber": "^1.0.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-util": "^3.0.7",
-    "gulp-concat": "latest",
-    "gulp-uglify": "latest",
-    "eslint": "^4.18.2",
-    "eslint-plugin-promise": "^3.4.0",
-    "eslint-plugin-standard": "^2.0.1"
+  "name": "codegaze.github.io",
+  "version": "2.0.0",
+  "description": "Thanos Kolovos personal playground blog",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf ./_site",
+    "build": "npm run clean && npx @11ty/eleventy ",
+    "start": "npx @11ty/eleventy  --serve --watch"
+  },
+  "keywords": [],
+  "author": "Thanos Kolovos",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.6",
+    "postcss": "^8.4.49",
+    "postcss-import": "^16.1.0",
+    "postcss-nested": "^7.0.2"
   }
 }

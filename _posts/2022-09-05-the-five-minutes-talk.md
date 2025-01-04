@@ -2,7 +2,7 @@
 layout: post
 title: The Five Minutes Talk
 description: The Five Minutes Talk. Why you should never look busy
-categories: Leadership
+categories: [Leadership]
 social_image: fiveminutestalk.png
 ---
 

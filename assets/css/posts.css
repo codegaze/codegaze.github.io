@@ -1,6 +1,6 @@
 .posts-grid {
   margin: 0 auto;
-  max-width: remTron(570);
+  max-width: calc(570/var(--cs-base-font-size) * 1rem);
   &__item {
     width: 100%;
     margin-bottom: 2.6rem;
@@ -64,7 +64,6 @@
   text-align: center;
 }
 
-// Meta data line below post title
 .post__date {
   display: inline-block;
   margin-top: -.5rem;
@@ -72,9 +71,6 @@
   color: #585858;
 }
 
-.post h4 {
-  // color: #ABABAB;
-}
 .post__title {
   text-align: center;
 }
