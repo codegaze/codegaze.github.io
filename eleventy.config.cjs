@@ -9,6 +9,7 @@ const postNested = require("postcss-nested");
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPassthroughCopy("assets/img/");
+  eleventyConfig.addPassthroughCopy("public/");
   eleventyConfig.addPassthroughCopy("assets/manifest/");
   eleventyConfig.addPassthroughCopy("demos/");
   eleventyConfig.addExtension("xml", { key: "liquid" });
