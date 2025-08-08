@@ -3,10 +3,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  {% if title == "Home" %}
-  <meta name="description" content="Homepage of Thanos Kolovos" />
+  {% if description == nil %}
+  <meta name="description" content="Personal Blog of Thanos Kolovos" />
   {% else %}
-  <meta name="description" content="{{ page.description }}" />
+  <meta name="description" content="{{ description }}" />
   {% endif %}
   <title>
     {% if title == "Home" %} {{ site.title }} &middot; Homepage of Thanos
@@ -39,8 +39,12 @@
     property="og:image"
     content="{{ site.url }}/assets/img/social/linkedin.png?v=2"
   />
+  {% endif %} {% if description == nul %}
+  <meta property="og:description" content="Personal Blog of Thanos Kolovos" />
+  {% else %}
+  <meta property="og:description" content="{{ description }}" />
   {% endif %}
-  <meta property="og:description" content="{{ page.description }}" />
+
   <meta property="og:image:width" content="400" />
   <meta property="og:image:height" content="400" />
 
@@ -48,7 +52,14 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@codegaze" />
   <meta name="twitter:title" content="{{ title }}" />
-  <meta name="twitter:description" content="{{ page.description }}" />
+  {% if description == nul %}
+  <meta
+    property="twitter:description"
+    content="Personal Blog of Thanos Kolovos"
+  />
+  {% else %}
+  <meta property="twitter:description" content="{{ description }}" />
+  {% endif %}
   <meta name="twitter:creator" content="@codegaze" />
   <meta
     name="twitter:image"
