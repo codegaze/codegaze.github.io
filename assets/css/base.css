@@ -13,7 +13,7 @@ body {
 
 html {
   font-size: calc(var(--cs-base-font-size) * 1px);
-  line-height: 1.35;
+  line-height: var(--cs-line-height-body);
   overflow-y: scroll;
   @media (min-width: 38em) {
     font-size: 18px;
@@ -24,6 +24,7 @@ body {
   font-family: var(--cs-base-font-family-plain);
   color: var(--cs-font-color);
   background-color: var(--cs-bg);
+  font-size: var(--cs-font-size-body);
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -54,12 +55,12 @@ a {
 img {
   display: block;
   max-width: 100%;
-  margin: 0 0 1rem;
+  margin: 0 0 var(--cs-space-4);
   border-radius: 5px;
 }
 
 table {
-  margin-bottom: 1rem;
+  margin-bottom: var(--cs-space-4);
   width: 100%;
   font-size: 85%;
   border: 1px solid #e5e5e5;
@@ -68,7 +69,7 @@ table {
 
 td,
 th {
-  padding: 0.25rem 0.5rem;
+  padding: var(--cs-space-2) var(--cs-space-4);
   border: 1px solid #e5e5e5;
 }
 

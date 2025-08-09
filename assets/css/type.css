@@ -1,43 +1,52 @@
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: .5rem;
-  font-weight: bold;
-  line-height: 1.25;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: var(--cs-space-3);
+  font-weight: 700;
+  line-height: var(--cs-line-height-headings);
   color: var(--cs-heading-color);
   text-rendering: optimizeLegibility;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: var(--cs-font-size-h1);
 }
 h2 {
-  margin-top: 2rem;
-  font-size: 1.4rem;
+  margin-top: var(--cs-space-10);
+  font-size: var(--cs-font-size-h2);
 }
 
 h3 {
-  margin-top: 1.5rem;
-  font-size: 1.25rem;
+  margin-top: var(--cs-space-8);
+  font-size: var(--cs-font-size-h3);
 }
 
-h4, h5, h6 {
-  margin-top: 1rem;
-  font-size: 1rem;
+h4,
+h5,
+h6 {
+  margin-top: var(--cs-space-6);
+  font-size: var(--cs-font-size-h4);
 }
 
 p {
   margin-top: 0;
-  margin-bottom: 1.3rem;
-  font-size: 19px;
+  margin-bottom: var(--cs-space-5);
 }
 
 strong {
   color: #303030;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-ul, ol, dl {
+ul,
+ol,
+dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: var(--cs-space-5);
 }
 
 dt {
@@ -45,7 +54,7 @@ dt {
 }
 
 dd {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 abbr {
@@ -61,30 +70,31 @@ abbr {
 }
 
 blockquote {
-  padding: .5rem 1rem;
-  margin: 0 0rem 1.3rem 0;
+  padding: var(--cs-space-2) var(--cs-space-4);
+  margin: 0 0 var(--cs-space-5) 0;
   color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
+  border-left: 0.25rem solid #e5e5e5;
 
   p:last-child {
     margin-bottom: 0;
   }
 
   @media (min-width: 30em) {
-    padding-right: 5rem;
-    padding-left: 1.25rem;
+    padding-right: var(--cs-space-12);
+    padding-left: calc(var(--cs-space-4) + 0.25rem);
   }
 }
-
 
 a[href^="#fn:"],
 a[href^="#fnref:"] {
   display: inline-block;
-  margin-left: .1rem;
+  margin-left: 0.1rem;
   font-weight: bold;
 }
 
+/* reverted link decoration overrides */
+
 .footnotes {
-  margin-top: 2rem;
+  margin-top: var(--cs-space-8);
   font-size: 85%;
 }

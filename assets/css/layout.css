@@ -1,19 +1,19 @@
 .layout {
   &__row {
     max-width: calc(820 / var(--cs-base-font-size) * 1rem);
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: var(--cs-space-6);
+    padding-right: var(--cs-space-6);
     margin-left: auto;
     margin-right: auto;
     &--header {
-      margin-top: calc(var(--cs-base-gutter) * 4);
+      margin-top: var(--cs-space-12);
     }
     &--main {
-      margin-top: calc(var(--cs-base-gutter) * 4);
+      margin-top: var(--cs-space-12);
     }
     &--footer {
-      margin-top: 2em;
-      padding-bottom: 1rem;
+      margin-top: var(--cs-space-12);
+      padding-bottom: var(--cs-space-4);
     }
   }
 }
