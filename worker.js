@@ -1,6 +1,6 @@
 var staticAssetsCacheName = "StaticAssetsList",
   imageAssetsCacheName = "ImgStaticList",
-  version = "v3::";
+  version = "v3:1:";
 
 var staticPrimaryAssets = ["/", "/index.css"];
 
