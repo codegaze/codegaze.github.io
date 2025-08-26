@@ -11,7 +11,7 @@ title: Home
     </div>
     <hr />
   </header>
-  {% for post in collections.posts limit:8 %}
+  {% for post in collections.posts limit:10 %}
   <article class="posts-grid__item">
     <a href="{{ site.baseurl }}{{ post.url }}" class="posts-grid__link">
       <h3 class="posts-grid__item-title">{{ post.data.title }}</h3>
