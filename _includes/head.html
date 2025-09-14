@@ -29,17 +29,17 @@
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="og:site_name" content="Codegaze" />
   <meta property="og:type" content="website" />
-  {% if page.social_image %}
+  {% if social_image %}
   <meta
     property="og:image"
-    content="{{ site.url }}/assets/img/posts/{{page.social_image}}"
+    content="{{ site.url }}/assets/img/posts/{{social_image}}"
   />
   {% else %}
   <meta
     property="og:image"
     content="{{ site.url }}/assets/img/social/linkedin.png?v=2"
   />
-  {% endif %} {% if description == nul %}
+  {% endif %} {% if description == null %}
   <meta property="og:description" content="Personal Blog of Thanos Kolovos" />
   {% else %}
   <meta property="og:description" content="{{ description }}" />
@@ -52,7 +52,7 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@codegaze" />
   <meta name="twitter:title" content="{{ title }}" />
-  {% if description == nul %}
+  {% if description == null %}
   <meta
     property="twitter:description"
     content="Personal Blog of Thanos Kolovos"
