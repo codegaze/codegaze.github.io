@@ -20,7 +20,9 @@ title: Writings
         <a href="{{ site.baseurl }}{{ item.url }}" class="posts-grid__link">
           <h3 class="posts-grid__item-title">{{ item.data.title }}</h3>
         </a>
-        <p class="posts-grid__summary">{{ item.content| excerpt }}</p>
+        <p class="posts-grid__summary">
+          {{ item.data.excerpt | default: item.content | excerpt }}
+        </p>
         <div class="posts-grid__meta">
           <time datetime="{{ item.date | date_to_xmlschema }}"
             >{{ item.date | date_to_long_string_locale }}</time
