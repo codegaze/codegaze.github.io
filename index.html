@@ -16,7 +16,9 @@ title: Home
     <a href="{{ site.baseurl }}{{ post.url }}" class="posts-grid__link">
       <h3 class="posts-grid__item-title">{{ post.data.title }}</h3>
     </a>
-    <p class="posts-grid__summary">{{ post.content | excerpt }}</p>
+    <p class="posts-grid__summary">
+      {{ post.data.excerpt | default: post.content | excerpt }}
+    </p>
     <div class="posts-grid__meta">
       <time datetime="{{ post.date | date_to_xmlschema }}"
         >{{ post.date | date_to_long_string_locale }}</time
