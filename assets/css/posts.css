@@ -103,6 +103,22 @@
   font-size: 15px;
 }
 
+.post__related {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.post__related-item {
+  position: relative;
+  padding-left: 1.5rem;
+}
+.post__related-item:before {
+  content: "→";
+  position: absolute;
+  left: 0.4rem;
+  font-weight: bold;
+}
 .video-fluid-wrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */

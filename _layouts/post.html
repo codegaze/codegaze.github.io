@@ -16,10 +16,28 @@ layout: default
   </div>
   <div class="post__content">{{ content }}</div>
   <footer class="post__footer">
-    Read more articles about {% for category in categories %}<a
-      href="{{site.baseurl}}/categories/#{{category|slugify}}"
-      >{{ category }}</a
-    >{% if forloop.last != true %}, {% endif %}{% endfor %}.
+    {% assign first_category = categories[0] %} {% assign all_related_posts =
+    collections.posts %} {% if all_related_posts.size > 0 %}
+    <ul class="post__related">
+      <div><strong>Related Writings:</strong></div>
+      {% assign count = 0 %} {% for post in all_related_posts %} {% assign
+      has_category = false %} {% for post_category in post.data.categories %} {%
+      if post_category == first_category %} {% assign has_category = true %} {%
+      endif %} {% endfor %} {% if has_category and post.url != page.url and
+      count < 5 %}
+      <li class="post__related-item">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.data.title }}</a>
+      </li>
+      {% assign count = count | plus: 1 %} {% endif %} {% endfor %}
+    </ul>
+    {% else %}
+    <p>
+      Read more about {% for category in categories %}<a
+        href="{{site.baseurl}}/categories/#{{category|slugify}}"
+        >{{ category }}</a
+      >{% if forloop.last != true %}, {% endif %}{% endfor %}.
+    </p>
+    {% endif %}
   </footer>
 </article>
 
