@@ -17,7 +17,8 @@ layout: default
   <div class="post__content">{{ content }}</div>
   <footer class="post__footer">
     {% assign first_category = categories[0] %} {% assign all_related_posts =
-    collections.posts %} {% if all_related_posts.size > 0 %}
+    collections.posts %} {% assign related_urls = "" | split: "" %} {% if
+    all_related_posts.size > 0 %}
     <ul class="post__related">
       <div><strong>Related Writings:</strong></div>
       {% assign count = 0 %} {% for post in all_related_posts %} {% assign
@@ -28,7 +29,8 @@ layout: default
       <li class="post__related-item">
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.data.title }}</a>
       </li>
-      {% assign count = count | plus: 1 %} {% endif %} {% endfor %}
+      {% assign related_urls = related_urls | push: post.url %} {% assign count
+      = count | plus: 1 %} {% endif %} {% endfor %}
     </ul>
     {% else %}
     <p>
@@ -37,6 +39,21 @@ layout: default
         >{{ category }}</a
       >{% if forloop.last != true %}, {% endif %}{% endfor %}.
     </p>
+    {% endif %} {% assign all_posts = collections.posts %} {% assign
+    latest_count = 0 %} {% assign has_latest = false %} {% for post in all_posts
+    %} {% if post.url != page.url %} {% assign is_related = false %} {% for
+    related_url in related_urls %} {% if post.url == related_url %} {% assign
+    is_related = true %} {% break %} {% endif %} {% endfor %} {% if is_related
+    == false and latest_count < 5 %} {% if has_latest == false %}
+    <ul class="post__related">
+      <div><strong>Latest Writings:</strong></div>
+      {% assign has_latest = true %} {% endif %}
+      <li class="post__related-item">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.data.title }}</a>
+      </li>
+      {% assign latest_count = latest_count | plus: 1 %} {% endif %} {% endif %}
+      {% endfor %} {% if has_latest %}
+    </ul>
     {% endif %}
   </footer>
 </article>

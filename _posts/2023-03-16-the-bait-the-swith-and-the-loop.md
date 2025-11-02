@@ -2,7 +2,7 @@
 layout: post
 title: The Bait, the Switch & the Loop
 description: A dark pattern in interviews
-categories: ["Interviews"]
+categories: ["Interviews", "Career"]
 social_image: thebaittheswitchtheloop.png
 ---
 

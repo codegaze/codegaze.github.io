@@ -101,8 +101,17 @@
   border-top: 1px solid #ababab;
   padding-top: 1rem;
   font-size: 15px;
-}
+  display: grid;
 
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 768px) {
+  .post__footer {
+    grid-template-columns: 1fr; /* One column */
+    grid-template-rows: auto; /* Rows stack automatically */
+  }
+}
 .post__related {
   list-style-type: none;
   padding: 0;
