@@ -4,7 +4,7 @@ title: "The Safety Of Busyness"
 description: Your manager asks what you accomplished in the last quarter. You realize you don't have an answer.
 excerpt: Your manager asks what you accomplished in the last quarter. You start listing things. Helped ship three features. Stayed late and unblocked two projects and fixed countless bugs She nods. Then asks, 'But what did you solve?'. You stop and think. You realize you don't have an answer.
 categories: ["Career"]
-social_image: importance-being-idle.png
+social_image: the-safety-of-busyness.png
 ---
 
 Your manager asks what you accomplished in the last quarter. You start listing things. Helped ship three features. Stayed late and unblocked two projects and fixed countless bugs.
