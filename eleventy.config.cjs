@@ -5,6 +5,8 @@ const fs = require("fs");
 const postcss = require("postcss");
 const postcssImport = require("postcss-import");
 const postNested = require("postcss-nested");
+const markdownIt = require("markdown-it");
+const markdownItAttrs = require("markdown-it-link-attributes");
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(syntaxHighlight);
@@ -99,6 +101,19 @@ module.exports = (eleventyConfig) => {
       return formatter;
     }
   );
+
+  let markdownLib = markdownIt({ html: true, linkify: true }).use(
+    markdownItAttrs,
+    {
+      pattern: /^https?:\/\//, // only external links
+      attrs: {
+        target: "_blank",
+        rel: "noopener noreferrer",
+      },
+    }
+  );
+
+  eleventyConfig.setLibrary("md", markdownLib);
 
   return {
     dir: {
