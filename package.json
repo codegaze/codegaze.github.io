@@ -14,7 +14,7 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.6",
