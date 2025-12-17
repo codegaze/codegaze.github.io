@@ -10,7 +10,7 @@ It's Monday. You're sitting across from your manager in the 1:1 you rescheduled 
 
 You've prepared for this. Careful words. Not accusatory. Just the facts. The pattern. How it's affecting you.
 
-"Last week in the leadership meeting, I presented the scaling analysis. When you presented it to the room, my contribution wasn't mentioned. This has happened a few times now. And I notice I'm becoming hesitant to bring my best thinking forward".
+"Last week in the leadership meeting, you presented the scaling analysis that I prepared and my contribution wasn't mentioned. This has happened a few times now. And I notice I'm becoming hesitant to bring my best thinking forward".
 
 They listen. Actually listen. They nod at the right moments. They ask clarifying questions like they're trying to understand. Halfway through, they say "I hear you. That's not my intent.".
 
