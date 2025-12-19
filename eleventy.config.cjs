@@ -102,6 +102,21 @@ module.exports = (eleventyConfig) => {
     }
   );
 
+  eleventyConfig.addLiquidFilter("date_to_xmlschema", function (input) {
+    const date = new Date(input);
+    return date.toISOString();
+  });
+
+  eleventyConfig.addLiquidFilter("xml_escape", function (input) {
+    if (!input) return "";
+    return input
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&apos;");
+  });
+
   let markdownLib = markdownIt({ html: true, linkify: true }).use(
     markdownItAttrs,
     {
