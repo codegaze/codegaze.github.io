@@ -29,15 +29,6 @@ body {
   -ms-text-size-adjust: 100%;
 }
 
-body:after {
-  content: "";
-  position: fixed;
-  background: var(--cs-secondary-color);
-  height: 5px;
-  bottom: 0;
-  width: 100%;
-}
-
 a {
   color: var(--cs-link-color);
   text-decoration-line: none;

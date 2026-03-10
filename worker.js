@@ -1,6 +1,6 @@
 var staticAssetsCacheName = "StaticAssetsList",
   imageAssetsCacheName = "ImgStaticList",
-  version = "v3:1:33";
+  version = "v3:1:34";
 
 var staticPrimaryAssets = ["/", "/index.css"];
 
@@ -25,12 +25,12 @@ self.addEventListener("activate", (event) => {
             .map(function (key) {
               console.log(" New key available, delete old key: " + key);
               return caches.delete(key);
-            })
+            }),
         );
       })
       .catch(function () {
         console.log("Something Went wrong");
-      })
+      }),
   );
 });
 
@@ -48,7 +48,7 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       caches.match(event.request).then(function (response) {
         return response || fetch(event.request);
-      })
+      }),
     );
   }
 });
